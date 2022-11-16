@@ -1,4 +1,6 @@
 import puppeteer from "puppeteer";
+import { sets, pokemons } from "./constants/pokemons.js";
+import { createUrl } from "./utils/utils.js";
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -6,9 +8,9 @@ import puppeteer from "puppeteer";
 
   //Iterate thru objects and make this function
   //split name and go to page
-  await page.goto(
-    "https://www.pokedata.io/card/Base+Set+1st+Edition/Charizard+Holo+4"
-  );
+  const url = createUrl(sets[0], pokemons[0]);
+  console.log("url created: ", url);
+  await page.goto(createUrl(sets[0], pokemons[0]));
 
   await page.waitForXPath(
     '//*[@id="root"]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/table/tbody/tr[1]/td[2]/h3/text()[2]'
