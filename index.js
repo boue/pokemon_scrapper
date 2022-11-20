@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import { sets, pokemons } from "./constants/pokemons.js";
+import { sets, pokemons, psaLinks } from "./constants/pokemons.js";
 import { createUrl } from "./utils/utils.js";
 
 (async () => {
@@ -7,10 +7,20 @@ import { createUrl } from "./utils/utils.js";
   const page = await browser.newPage();
   const data = [];
 
+  function millisToMinutesAndSeconds(millis) {
+    var minutes = Math.floor(millis / 60000);
+    var seconds = ((millis % 60000) / 1000).toFixed(0);
+    return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+  }
+
+  const start = performance.now();
+
   try {
-    for (const pokemon of pokemons) {
+    for (const [i, pokemon] of pokemons.entries()) {
       let url = createUrl(sets[0], pokemon);
-      console.log("url created: ", url);
+      console.log(`Scrapping set ${sets[0]}...`);
+      console.log(`Featuring: ${pokemon.toUpperCase()}`);
+      console.log(`url created: ${url}`);
       await page.goto(url, { waitUntil: "domcontentloaded" });
 
       await page.waitForXPath(
@@ -38,10 +48,8 @@ import { createUrl } from "./utils/utils.js";
         elHandleRaw[0]
       );
 
-      await page.goto(
-        "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/charizard-holo-1st-edition-4/605253",
-        { waitUntil: "domcontentloaded" }
-      );
+      console.log(`Heading to PSA: ${psaLinks[i]}`);
+      await page.goto(psaLinks[i], { waitUntil: "domcontentloaded" });
 
       await page.waitForXPath(
         '//*[@id="tablePricesSummary"]/tbody/tr[1]/td[5]/a'
@@ -80,6 +88,10 @@ import { createUrl } from "./utils/utils.js";
     console.log(e.message);
   }
 
+  const end = performance.now();
+  const timeTaken = millisToMinutesAndSeconds(end - start);
+
   console.log("Here are your daily pokemon prices: ", data);
+  console.log(`Script took: ${timeTaken}`);
   await browser.close();
 })();
