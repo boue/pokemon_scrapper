@@ -92,6 +92,6 @@ import { createUrl } from "./utils/utils.js";
   const timeTaken = millisToMinutesAndSeconds(end - start);
 
   console.log("Here are your daily pokemon prices: ", data);
-  console.log(`Script took: ${timeTaken}`);
+  console.log(`Script took: ${timeTaken} minutes`);
   await browser.close();
 })();
