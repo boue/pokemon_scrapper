@@ -2,7 +2,15 @@ import dotenv from "dotenv";
 import { Client, Events, GatewayIntentBits } from "discord.js";
 dotenv.config();
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+//https://discordjs.guide/popular-topics/intents.html#the-intents-bitfield
+const client = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers,
+  ],
+});
 
 client.once(Events.ClientReady, (c) => {
   console.log(`Ready! Logged in as ${c.user.tag}`);
