@@ -1,6 +1,8 @@
 {
   "type": "module",
   "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
     "puppeteer": "^19.2.2"
   }
 }
