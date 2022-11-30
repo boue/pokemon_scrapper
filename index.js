@@ -1,26 +1,32 @@
 import puppeteer from "puppeteer";
 import { sets, pokemons, psaLinks } from "./constants/pokemons.js";
-import { createUrl } from "./utils/utils.js";
+import { createUrl, millisToMinutesAndSeconds } from "./utils/utils.js";
+import nodeCron from "node-cron";
+import ora from "ora";
+import fs from "fs";
+import chalk from "chalk";
 
-(async () => {
+async function scrapePokemonData() {
+  const spinner = ora({
+    text: "Launcing puppeteer",
+    color: "blue",
+    hideCursor: false,
+  }).start();
+
+  spinner.text = "Launching headless browser page";
+
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   const data = [];
-
-  function millisToMinutesAndSeconds(millis) {
-    var minutes = Math.floor(millis / 60000);
-    var seconds = ((millis % 60000) / 1000).toFixed(0);
-    return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-  }
 
   const start = performance.now();
 
   try {
     for (const [i, pokemon] of pokemons.entries()) {
       let url = createUrl(sets[0], pokemon);
-      console.log(`Scrapping set ${sets[0]}...`);
-      console.log(`Featuring: ${pokemon.toUpperCase()}`);
-      console.log(`url created: ${url}`);
+      spinner.text = `Scrapping set ${sets[0]}...`;
+      spinner.text = `Featuring: ${pokemon.toUpperCase()}`;
+      spinner.text = `url created: ${url}`;
       await page.goto(url, { waitUntil: "domcontentloaded" });
 
       await page.waitForXPath(
@@ -48,7 +54,7 @@ import { createUrl } from "./utils/utils.js";
         elHandleRaw[0]
       );
 
-      console.log(`Heading to PSA: ${psaLinks[i]}`);
+      spinner.text = `Heading to PSA: ${psaLinks[i]}`;
       await page.goto(psaLinks[i], { waitUntil: "domcontentloaded" });
 
       await page.waitForXPath(
@@ -90,8 +96,17 @@ import { createUrl } from "./utils/utils.js";
 
   const end = performance.now();
   const timeTaken = millisToMinutesAndSeconds(end - start);
+  fs.writeFileSync("./data/data.json", JSON.stringify(data));
 
-  console.log("Here are your daily pokemon prices: ", data);
-  console.log(`Script took: ${timeTaken} minutes`);
+  console.log(
+    chalk.yellow.bold(
+      "Here are your daily pokemon prices: ",
+      JSON.stringify(data)
+    ),
+    chalk.blue.bold(`Script took: ${timeTaken} minutes`)
+  );
+
   await browser.close();
-})();
+}
+
+const job = nodeCron.schedule("0 2 * * *", scrapePokemonData);
