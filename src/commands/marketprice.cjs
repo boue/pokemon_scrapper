@@ -6,7 +6,6 @@ module.exports = {
     .setName("marketprice")
     .setDescription("Gives you market price"),
   async execute(interaction) {
-    const color = ["red", "green", "blue", "magenta", "cyan", "gray"];
     const formattedPokemons = Object.entries(data)
       .map((key, value) => {
         return (
@@ -16,11 +15,11 @@ module.exports = {
           "\n" +
           "Current PSA10 Price: " +
           "$" +
-          key["1"]["psa10"] +
+          parseInt(key["1"]["psa10"].replace(/,/g, "")) +
           "\n" +
           "Current PSA9 Price: " +
           "$" +
-          key["1"]["psa9"] +
+          parseInt(key["1"]["psa9"].replace(/,/g, "")) +
           "\n" +
           "Current POP10: " +
           key["1"]["pop10"] +
