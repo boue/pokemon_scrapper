@@ -8,7 +8,7 @@ import chalk from "chalk";
 
 async function scrapePokemonData() {
   const spinner = ora({
-    text: "Launcing puppeteer",
+    text: "Launching puppeteer",
     color: "blue",
     hideCursor: false,
   }).start();
@@ -24,10 +24,11 @@ async function scrapePokemonData() {
   try {
     for (const [i, pokemon] of pokemons.entries()) {
       let url = createUrl(sets[0], pokemon);
+      console.log(url);
       spinner.text = `Scrapping set ${sets[0]}...`;
       spinner.text = `Featuring: ${pokemon.toUpperCase()}`;
       spinner.text = `url created: ${url}`;
-      await page.goto(url, { waitUntil: "domcontentloaded" });
+      await page.goto(url, { waitUntil: "networkidle0" });
 
       await page.waitForXPath(
         '//*[@id="root"]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/table/tbody/tr[1]/td[2]/h3'
@@ -42,15 +43,15 @@ async function scrapePokemonData() {
         '//*[@id="root"]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[1]/div/table/tbody/tr[2]/td/h3/text()[2]'
       );
       let psa10Value = await page.evaluate(
-        (el) => el.textContent,
+        (el) => el?.textContent,
         elHandlePsa10[0]
       );
       let psa9Value = await page.evaluate(
-        (el) => el.textContent,
+        (el) => el?.textContent,
         elHandlePsa9[0]
       );
       let rawValue = await page.evaluate(
-        (el) => el.textContent,
+        (el) => el?.textContent,
         elHandleRaw[0]
       );
 
@@ -109,4 +110,6 @@ async function scrapePokemonData() {
   await browser.close();
 }
 
-const job = nodeCron.schedule("0 2 * * *", scrapePokemonData);
+await scrapePokemonData();
+
+// const job = nodeCron.schedule("* * * * *", scrapePokemonData);
