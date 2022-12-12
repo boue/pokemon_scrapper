@@ -11,6 +11,7 @@
     "puppeteer": "^19.2.2"
   },
   "scripts": {
+    "start:dev": "nodemon ./src/bot.js",
     "start": "node ./scripts/deploy-commands.cjs && node ./src/bot.cjs",
     "nodemon": "nodemon npm run start"
   }
