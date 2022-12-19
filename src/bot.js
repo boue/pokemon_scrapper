@@ -83,7 +83,7 @@ client.on("interactionCreate", async (interaction) => {
     }
     if (interaction.commandName === "price") {
       const target = interaction.options.getString("pokemon");
-      const reason = interaction.options.getString("psa");
+      const reason = interaction.options.getString("value");
 
       const caughtPokemon = Object.entries(data).find((p) => {
         return p["1"]["name"] === target;

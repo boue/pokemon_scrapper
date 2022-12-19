@@ -40,8 +40,9 @@ async function scrapePokemonData() {
         '//*[@id="root"]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/table/tbody/tr[1]/td[3]/h3/text()[2]'
       );
       let elHandleRaw = await page.$x(
-        '//*[@id="root"]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[1]/div/table/tbody/tr[2]/td/h3/text()[2]'
+        "/html/body/div[1]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[1]/div/div/div[1]/div[2]/div/div/div/table/tbody/tr[2]/td/h3/text()[2]"
       );
+
       let psa10Value = await page.evaluate(
         (el) => el?.textContent,
         elHandlePsa10[0]
@@ -79,6 +80,8 @@ async function scrapePokemonData() {
         (el) => el.textContent,
         elHandlePsa10Pop[0]
       );
+
+      console.log("raw value: ", rawValue);
 
       const pokemonData = {
         name: pokemon,

@@ -32,11 +32,12 @@ const PokemonPriceCommand = new SlashCommandBuilder()
   )
   .addStringOption((option) =>
     option
-      .setName("psa")
-      .setDescription("Select PSA value")
+      .setName("value")
+      .setDescription("Select value")
       .addChoices(
         { name: "psa10", value: "psa10" },
-        { name: "psa9", value: "psa9" }
+        { name: "psa9", value: "psa9" },
+        { name: "raw", value: "raw" }
       )
       .setRequired(true)
   );
