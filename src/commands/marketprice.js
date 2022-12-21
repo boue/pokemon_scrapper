@@ -1,5 +1,3 @@
-// const { SlashCommandBuilder } = require("discord.js");
-// const data = require("../../data/data.json");
 import { SlashCommandBuilder } from "@discordjs/builders";
 import data from "../../data/data.json" assert { type: "json" };
 

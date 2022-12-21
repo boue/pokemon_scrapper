@@ -10,6 +10,7 @@ import path from "path";
 import MarketPriceCommand from "./commands/marketprice.js";
 import PokemonPriceCommand from "./commands/pokemonprice.js";
 import PsaComparisonCommand from "./commands/psacomparison.js";
+import MarketCapCommand from "./commands/marketcap.js";
 
 config();
 
@@ -81,6 +82,30 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.commandName === "marketprice") {
       await interaction.reply(formattedPokemons);
     }
+    if (interaction.commandName === "marketcap") {
+      const target = interaction.options.getString("pokemon");
+      const reason = interaction.options.getString("value");
+      const popValue = reason.substring(3);
+      const pop = `pop${popValue}`;
+
+      const caughtPokemon = Object.entries(data).find((p) => {
+        return p["1"]["name"] === target;
+      });
+
+      const marketcap =
+        parseInt(caughtPokemon[1][reason]) * parseInt(caughtPokemon[1][pop]);
+
+      const formattedPokemon =
+        "\n" +
+        "Name: " +
+        caughtPokemon[1]["name"] +
+        "\n" +
+        "Marketcap is: " +
+        "$" +
+        marketcap.toFixed(2);
+
+      await interaction.reply(formattedPokemon);
+    }
     if (interaction.commandName === "price") {
       const target = interaction.options.getString("pokemon");
       const reason = interaction.options.getString("value");
@@ -137,6 +162,7 @@ async function main() {
     MarketPriceCommand,
     PokemonPriceCommand,
     PsaComparisonCommand,
+    MarketCapCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");

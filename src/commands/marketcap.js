@@ -1,10 +1,12 @@
+// const { SlashCommandBuilder } = require("discord.js");
+// const data = require("../../data/data.json");
 import { SlashCommandBuilder } from "@discordjs/builders";
 import data from "../../data/data.json" assert { type: "json" };
 
 // for now supports one set
-const PokemonPriceCommand = new SlashCommandBuilder()
-  .setName("price")
-  .setDescription("Gives you individual pokemon price")
+const MarketCapCommand = new SlashCommandBuilder()
+  .setName("marketcap")
+  .setDescription("Multiples Last Sale Of PSA value to its Population")
   .addStringOption((option) =>
     option
       .setName("pokemon")
@@ -34,9 +36,8 @@ const PokemonPriceCommand = new SlashCommandBuilder()
       .setDescription("Select value")
       .addChoices(
         { name: "psa10", value: "psa10" },
-        { name: "psa9", value: "psa9" },
-        { name: "raw", value: "raw" }
+        { name: "psa9", value: "psa9" }
       )
       .setRequired(true)
   );
-export default PokemonPriceCommand.toJSON();
+export default MarketCapCommand.toJSON();
