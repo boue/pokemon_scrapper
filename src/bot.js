@@ -12,6 +12,7 @@ import PokemonPriceCommand from "./commands/pokemonprice.js";
 import PsaComparisonCommand from "./commands/psacomparison.js";
 import MarketCapCommand from "./commands/marketcap.js";
 import TotalMarketCap from "./commands/totalmarketcap.js";
+import PsaSpreadCommand from "./commands/psaspread.js";
 
 config();
 
@@ -82,6 +83,37 @@ client.on("interactionCreate", async (interaction) => {
   try {
     if (interaction.commandName === "marketprice") {
       await interaction.reply(formattedPokemons);
+    }
+    if (interaction.commandName === "psaspread") {
+      const target1 = interaction.options.getString("pokemon1");
+      const target2 = interaction.options.getString("pokemon2");
+
+      const pokemon1 = Object.entries(data).find((p) => {
+        return p["1"]["name"] === target1;
+      });
+      const pokemon2 = Object.entries(data).find((p) => {
+        return p["1"]["name"] === target2;
+      });
+
+      if (pokemon1[1]["name"] === pokemon2[1]["name"])
+        throw new Error("Please pick two different pokemons.");
+
+      const value =
+        (parseInt(pokemon1[1]["psa10"]) - 20) /
+          (parseInt(pokemon2[1]["psa9"]) * 100) -
+        100;
+
+      const formattedPokemon =
+        "\n" +
+        "Spread of: " +
+        pokemon1[1]["name"] +
+        " psa10 and " +
+        pokemon2[1]["name"] +
+        " psa9" +
+        "\n" +
+        value.toFixed(2);
+
+      await interaction.reply(formattedPokemon);
     }
     if (interaction.commandName === "totalmarketcap") {
       const set = interaction.options.getString("set");
@@ -175,7 +207,7 @@ client.on("interactionCreate", async (interaction) => {
   } catch (error) {
     console.error(error);
     await interaction.reply({
-      content: "There was an error executing this command",
+      content: error.message ?? "There was an error executing this command",
     });
   }
 });
@@ -187,6 +219,7 @@ async function main() {
     PsaComparisonCommand,
     MarketCapCommand,
     TotalMarketCap,
+    PsaSpreadCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");
