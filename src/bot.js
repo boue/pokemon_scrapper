@@ -66,8 +66,8 @@ client.on("ready", () => {
   ].join("");
   console.log(`${client.user.tag} has logged in!`);
 
-  console.log("Cron job scheduled for once every min");
-  let scheduledMessage = new cron.CronJob("0 8 * * *", () => {
+  console.log("Cron job scheduled for once a day");
+  let scheduledMessage = new cron.CronJob("0 0 * * *", () => {
     const guild = client.guilds.cache.get(GUILD_ID);
     const channel = guild.channels.cache.get(CHANNEL_ID);
     channel.send(dailyReport);
