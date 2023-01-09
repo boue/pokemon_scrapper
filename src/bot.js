@@ -107,9 +107,13 @@ client.on("interactionCreate", async (interaction) => {
         "\n" +
         "Spread of: " +
         pokemon1[1]["name"] +
-        " psa10 and " +
+        " psa10 ($" +
+        parseInt(pokemon1[1]["psa10"]) +
+        ") and " +
         pokemon2[1]["name"] +
-        " psa9" +
+        " psa9 ($" +
+        parseInt(pokemon2[1]["psa9"]) +
+        " :" +
         "\n" +
         "%" +
         value.toFixed(2);
