@@ -59,22 +59,22 @@ const client = new Client({
 const rest = new REST({ version: "10" }).setToken(TOKEN);
 
 client.on("ready", () => {
-  const dailyReport = [
-    "This is your daily marketprice report: ",
-    "\n",
-    ...formattedPokemons,
-  ].join("");
+  // const dailyReport = [
+  //   "This is your daily marketprice report: ",
+  //   "\n",
+  //   ...formattedPokemons,
+  // ].join("");
   console.log(`${client.user.tag} has logged in!`);
 
-  console.log("Cron job scheduled for once a day");
-  let scheduledMessage = new cron.CronJob("0 0 * * *", () => {
-    const guild = client.guilds.cache.get(GUILD_ID);
-    const channel = guild.channels.cache.get(CHANNEL_ID);
-    channel.send(dailyReport);
-  });
+  // console.log("Cron job scheduled for once a day");
+  // let scheduledMessage = new cron.CronJob("0 0 * * *", () => {
+  //   const guild = client.guilds.cache.get(GUILD_ID);
+  //   const channel = guild.channels.cache.get(CHANNEL_ID);
+  //   channel.send(dailyReport);
+  // });
 
-  // When you want to start it, use:
-  scheduledMessage.start();
+  // // When you want to start it, use:
+  // scheduledMessage.start();
 });
 
 client.on("interactionCreate", async (interaction) => {
