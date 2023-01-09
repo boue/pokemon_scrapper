@@ -113,7 +113,7 @@ client.on("interactionCreate", async (interaction) => {
         pokemon2[1]["name"] +
         " psa9 ($" +
         parseInt(pokemon2[1]["psa9"]) +
-        " :" +
+        ") :" +
         "\n" +
         "%" +
         value.toFixed(2);
