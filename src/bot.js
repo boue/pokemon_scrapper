@@ -13,6 +13,7 @@ import PsaComparisonCommand from "./commands/psacomparison.js";
 import MarketCapCommand from "./commands/marketcap.js";
 import TotalMarketCap from "./commands/totalmarketcap.js";
 import PsaSpreadCommand from "./commands/psaspread.js";
+import CompareAllCommand from "./commands/compareall.js";
 
 config();
 
