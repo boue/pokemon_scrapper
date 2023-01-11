@@ -110,8 +110,9 @@ client.on("interactionCreate", async (interaction) => {
         throw new Error("Please pick two different pokemons.");
 
       const value =
-        (parseInt(pokemon1[1]["psa10"]) - 20) /
-          (parseInt(pokemon2[1]["psa9"]) * 100) -
+        ((parseInt(pokemon1[1]["psa10"]) - 20) /
+          parseInt(pokemon2[2]["psa9"])) *
+          100 -
         100;
 
       const formattedPokemon =
