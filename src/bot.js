@@ -50,9 +50,7 @@ const formattedPokemons = Object.entries(data)
 
 const differencePokemons = Object.entries(data)
   .map((key, value) => {
-    const difference =
-      parseInt(key["1"]["psa10"]).replace(/,/g, "") -
-      parseInt(key["1"]["psa9"]).replace(/,/g, "");
+    const difference = parseInt(key["1"]["psa10"]) - parseInt(key["1"]["psa9"]);
 
     return key["1"]["name"] + ": $" + difference + "\n";
   })
