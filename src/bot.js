@@ -111,7 +111,7 @@ client.on("interactionCreate", async (interaction) => {
 
       const value =
         ((parseInt(pokemon1[1]["psa10"]) - 20) /
-          parseInt(pokemon2[2]["psa9"])) *
+          parseInt(pokemon2[1]["psa9"])) *
           100 -
         100;
 
