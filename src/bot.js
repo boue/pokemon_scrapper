@@ -54,7 +54,7 @@ const differencePokemons = Object.entries(data)
       (parseInt(key["1"]["psa10"]) - 20) / (parseInt(key["1"]["psa9"]) * 100) -
       100;
 
-    return key["1"]["name"] + ": %" + difference.toFixed(0) + "\n";
+    return key["1"]["name"] + ": %" + Math.round(difference) + "\n";
   })
   .join("");
 
