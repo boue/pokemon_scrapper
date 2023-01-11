@@ -47,6 +47,14 @@ const formattedPokemons = Object.entries(data)
   })
   .join("");
 
+const differencePokemons = Object.entries(data)
+  .map((key, value) => {
+    const difference = parseInt(key["1"]["psa10"]) - parseInt(key["1"]["psa9"]);
+
+    return key["1"]["name"] + ": $" + difference.replace(/,/g, "") + "\n";
+  })
+  .join("");
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -188,6 +196,9 @@ client.on("interactionCreate", async (interaction) => {
 
       await interaction.reply(formattedPokemon);
     }
+    if (interaction.commandName === "compareall") {
+      await interaction.reply(differencePokemons);
+    }
     if (interaction.commandName === "psacomparison") {
       const target = interaction.options.getString("pokemon");
 
@@ -225,6 +236,7 @@ async function main() {
     MarketCapCommand,
     TotalMarketCap,
     PsaSpreadCommand,
+    CompareAllCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");
