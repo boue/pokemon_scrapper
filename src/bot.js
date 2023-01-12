@@ -48,15 +48,19 @@ const formattedPokemons = Object.entries(data)
   })
   .join("");
 
+const sortedDifferencePokemons = [];
+
 const differencePokemons = Object.entries(data)
   .map((key, value) => {
     const difference =
       ((parseInt(key["1"]["psa10"]) - 20) / parseInt(key["1"]["psa9"])) * 100 -
       100;
 
-    return key["1"]["name"] + ": " + difference.toFixed(2) + "%" + "\n";
+    return [key["1"]["name"], difference.toFixed(2)];
   })
-  .join("");
+  .sort(function (a, b) {
+    return a[1] - b[1];
+  });
 
 const client = new Client({
   intents: [
@@ -201,7 +205,15 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply(formattedPokemon);
     }
     if (interaction.commandName === "compareall") {
-      await interaction.reply(differencePokemons);
+      const formattedReply = "";
+
+      differencePokemons.forEach((pokemon) => {
+        return formattedReply.concat(
+          pokemon[0] + ": " + pokemon[1] + "%" + "\n"
+        );
+      });
+
+      await interaction.reply(formattedReply);
     }
     if (interaction.commandName === "psacomparison") {
       const target = interaction.options.getString("pokemon");
