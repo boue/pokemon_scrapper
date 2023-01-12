@@ -80,8 +80,6 @@ async function scrapePokemonData() {
         elHandlePsa10Pop[0]
       );
 
-      console.log("raw value: ", rawValue);
-
       const pokemonData = {
         name: pokemon,
         psa10: psa10Value,
