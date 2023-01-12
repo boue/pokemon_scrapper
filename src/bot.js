@@ -50,13 +50,9 @@ const formattedPokemons = Object.entries(data)
 
 const differencePokemons = Object.entries(data)
   .map((key, value) => {
-    parseInt(caughtPokemon[1][reason].replace(/,/g, ""));
     const psa10 = parseInt(key["1"]["psa10"].replace(/,/g, "")) - 20;
     const psa9 = parseInt(key["1"]["psa9"].replace(/,/g, ""));
-    console.log("psa9: ", psa9);
-    const divided = psa10 / psa9;
-    const multipliedResult = divided * 100;
-    const result = multipliedResult - 100;
+    const result = (psa10 / psa9) * 100 - 100;
 
     return [key["1"]["name"], result.toFixed(2)];
   })
