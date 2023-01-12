@@ -4,7 +4,7 @@ import data from "../../data/data.json" assert { type: "json" };
 // for now supports one set
 const PsaComparisonCommand = new SlashCommandBuilder()
   .setName("psacomparison")
-  .setDescription("Gives you difference between PSA10 and PSA9")
+  .setDescription("Gives you spread between PSA10 and PSA9")
   .addStringOption((option) =>
     option
       .setName("pokemon")

@@ -219,9 +219,9 @@ client.on("interactionCreate", async (interaction) => {
         return p["1"]["name"] === target;
       });
 
-      const value =
-        parseInt(caughtPokemon[1]["psa10"]) /
-        parseInt(caughtPokemon[1]["psa9"]);
+      const psa10 = parseInt(caughtPokemon[1]["psa10"].replace(/,/g, "")) - 20;
+      const psa9 = parseInt(caughtPokemon[1]["psa9"].replace(/,/g, ""));
+      const result = (psa10 / psa9) * 100 - 100;
 
       const formattedPokemon =
         "\n" +
@@ -229,7 +229,8 @@ client.on("interactionCreate", async (interaction) => {
         caughtPokemon[1]["name"] +
         "\n" +
         "Comparison Value is: " +
-        value.toFixed(2);
+        result.toFixed(2) +
+        "%";
 
       await interaction.reply(formattedPokemon);
     }
