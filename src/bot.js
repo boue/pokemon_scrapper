@@ -60,8 +60,6 @@ const differencePokemons = Object.entries(data)
     return b[1] - a[1];
   });
 
-console.log("difference: ", differencePokemons);
-
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
