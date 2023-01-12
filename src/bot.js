@@ -50,6 +50,7 @@ const formattedPokemons = Object.entries(data)
 
 const differencePokemons = Object.entries(data)
   .map((key, value) => {
+    console.log("name is: ", key["1"]["name"]);
     console.log(
       "top value is: ",
       (parseInt(key["1"]["psa10"]) - 20) / parseInt(key["1"]["psa9"])
