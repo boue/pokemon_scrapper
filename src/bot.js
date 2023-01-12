@@ -227,6 +227,11 @@ client.on("interactionCreate", async (interaction) => {
         "\n" +
         "Name: " +
         caughtPokemon[1]["name"] +
+        "PSA10 value: $" +
+        caughtPokemon[1]["psa10"] +
+        "\n" +
+        "PSA9 value: $" +
+        caughtPokemon[1]["psa9"] +
         "\n" +
         "Comparison Value is: " +
         result.toFixed(2) +

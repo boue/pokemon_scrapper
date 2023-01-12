@@ -6,6 +6,8 @@ import ora from "ora";
 import fs from "fs";
 import chalk from "chalk";
 
+const TIMEOUT_LIMIT = 60000;
+
 async function scrapePokemonData() {
   const spinner = ora({
     text: "Launching puppeteer",
@@ -17,6 +19,8 @@ async function scrapePokemonData() {
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  await page.setDefaultNavigationTimeout(TIMEOUT_LIMIT);
+  await page.setDefaultTimeout(TIMEOUT_LIMIT);
   const data = [];
 
   const start = performance.now();
