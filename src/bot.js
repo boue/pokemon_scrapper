@@ -205,12 +205,11 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply(formattedPokemon);
     }
     if (interaction.commandName === "compareall") {
-      const formattedReply = "";
+      let formattedReply = "";
 
       differencePokemons.forEach((pokemon) => {
-        return formattedReply.concat(
-          pokemon[0] + ": " + pokemon[1] + "%" + "\n"
-        );
+        const tempStr = pokemon[0] + ": " + pokemon[1] + "%" + "\n";
+        return (formattedReply += tempStr);
       });
 
       await interaction.reply(formattedReply);
