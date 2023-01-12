@@ -57,6 +57,8 @@ const differencePokemons = Object.entries(data)
     );
     const difference =
       ((parseInt(key["1"]["psa10"]) - 20) / parseInt(key["1"]["psa9"])) * 100;
+
+    console.log("difference is: ", difference);
     const result = difference - 100;
 
     return [key["1"]["name"], result.toFixed(2)];
