@@ -227,6 +227,7 @@ client.on("interactionCreate", async (interaction) => {
         "\n" +
         "Name: " +
         caughtPokemon[1]["name"] +
+        "\n" +
         "Original value of PSA10: $" +
         caughtPokemon[1]["psa10"] +
         "\n" +
