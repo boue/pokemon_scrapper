@@ -227,10 +227,10 @@ client.on("interactionCreate", async (interaction) => {
         "\n" +
         "Name: " +
         caughtPokemon[1]["name"] +
-        "PSA10 value: $" +
+        "Original value of PSA10: $" +
         caughtPokemon[1]["psa10"] +
         "\n" +
-        "PSA9 value: $" +
+        "Original value of PSA9: $" +
         caughtPokemon[1]["psa9"] +
         "\n" +
         "Comparison Value is: " +
