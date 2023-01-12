@@ -53,6 +53,7 @@ const differencePokemons = Object.entries(data)
     const psa10 = parseInt(key["1"]["psa10"]) - 20;
     const psa9 = parseInt(key["1"]["psa9"]);
     const divided = psa10 / psa9;
+    console.log("divided: ", divided);
     const multipliedResult = divided * 100;
 
     console.log("multipliedResult is: ", multipliedResult);
