@@ -48,8 +48,6 @@ const formattedPokemons = Object.entries(data)
   })
   .join("");
 
-const sortedDifferencePokemons = [];
-
 const differencePokemons = Object.entries(data)
   .map((key, value) => {
     const difference =
@@ -61,6 +59,8 @@ const differencePokemons = Object.entries(data)
   .sort(function (a, b) {
     return a[1] - b[1];
   });
+
+console.log("difference: ", differencePokemons);
 
 const client = new Client({
   intents: [
