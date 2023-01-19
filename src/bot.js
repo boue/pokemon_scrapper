@@ -14,6 +14,7 @@ import MarketCapCommand from "./commands/marketcap.js";
 import TotalMarketCap from "./commands/totalmarketcap.js";
 import PsaSpreadCommand from "./commands/psaspread.js";
 import CompareAllCommand from "./commands/compareall.js";
+import PopulationCommand from "./commands/population.js";
 
 config();
 
@@ -202,6 +203,26 @@ client.on("interactionCreate", async (interaction) => {
 
       await interaction.reply(formattedPokemon);
     }
+    if (interaction.commandName === "population") {
+      const target = interaction.options.getString("pokemon");
+      const reason = interaction.options.getString("value");
+
+      const caughtPokemon = Object.entries(data).find((p) => {
+        return p["1"]["name"] === target;
+      });
+
+      const formattedPokemon =
+        "\n" +
+        "Name: " +
+        caughtPokemon[1]["name"] +
+        "\n" +
+        reason +
+        ": " +
+        parseInt(caughtPokemon[1][reason].replace(/,/g, "")) +
+        "\n";
+
+      await interaction.reply(formattedPokemon);
+    }
     if (interaction.commandName === "compareall") {
       let formattedReply = "";
 
@@ -257,6 +278,7 @@ async function main() {
     TotalMarketCap,
     PsaSpreadCommand,
     CompareAllCommand,
+    PopulationCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");
