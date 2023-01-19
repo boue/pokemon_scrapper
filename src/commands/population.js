@@ -3,7 +3,7 @@ import data from "../../data/data.json" assert { type: "json" };
 
 // for now supports one set
 const PopulationCommand = new SlashCommandBuilder()
-  .setName("price")
+  .setName("population")
   .setDescription("Gives you individual pokemon population")
   .addStringOption((option) =>
     option
