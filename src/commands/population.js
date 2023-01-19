@@ -33,8 +33,8 @@ const PopulationCommand = new SlashCommandBuilder()
       .setName("value")
       .setDescription("Select value")
       .addChoices(
-        { name: "pop10", value: "psa10" },
-        { name: "pop9", value: "psa9" }
+        { name: "pop10", value: "pop10" },
+        { name: "pop9", value: "pop9" }
       )
       .setRequired(true)
   );
