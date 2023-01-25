@@ -230,9 +230,6 @@ client.on("interactionCreate", async (interaction) => {
 
       const targetSetData = sets.find((s) => s.name === setName);
 
-      console.log("weight class: ", weightClass);
-      console.log("the weight: ", targetSetData[weightClass]);
-
       const result =
         "\n" +
         "Set: " +
