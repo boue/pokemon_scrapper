@@ -16,8 +16,7 @@ import PsaSpreadCommand from "./commands/psaspread.js";
 import CompareAllCommand from "./commands/compareall.js";
 import PopulationCommand from "./commands/population.js";
 import SetWeightCommand from "./commands/setweights.js";
-import { sets } from "../constants/pokemons";
-
+import { sets } from "../constants/pokemons.js";
 config();
 
 const TOKEN = process.env.DISCORDJS_BOT_TOKEN;
