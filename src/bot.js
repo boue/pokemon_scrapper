@@ -230,6 +230,9 @@ client.on("interactionCreate", async (interaction) => {
 
       const targetSetData = sets.find((s) => s.name === setName);
 
+      console.log("weight class: ", weightClass);
+      console.log("the weight: ", targetSetData[weightClass]);
+
       const result =
         "\n" +
         "Set: " +
@@ -238,7 +241,7 @@ client.on("interactionCreate", async (interaction) => {
         "Average " +
         weightClass +
         " pack: " +
-        targetSetData?.weightClass +
+        targetSetData[weightClass] +
         "\n";
 
       await interaction.reply(result);
