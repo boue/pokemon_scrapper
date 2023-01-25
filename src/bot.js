@@ -15,6 +15,8 @@ import TotalMarketCap from "./commands/totalmarketcap.js";
 import PsaSpreadCommand from "./commands/psaspread.js";
 import CompareAllCommand from "./commands/compareall.js";
 import PopulationCommand from "./commands/population.js";
+import SetWeightCommand from "./commands/setweights.js";
+import { sets } from "../constants/pokemons";
 
 config();
 
@@ -223,6 +225,25 @@ client.on("interactionCreate", async (interaction) => {
 
       await interaction.reply(formattedPokemon);
     }
+    if (interaction.commandName === "weight") {
+      const setName = interaction.options.getString("set");
+      const weightClass = interaction.options.getString("weight");
+
+      const targetSetData = sets.find((s) => s.name === setName);
+
+      const result =
+        "\n" +
+        "Set: " +
+        targetSetData?.name +
+        "\n" +
+        "Average " +
+        weightClass +
+        " pack: " +
+        targetSetData?.weightClass +
+        "\n";
+
+      await interaction.reply(result);
+    }
     if (interaction.commandName === "compareall") {
       let formattedReply = "";
 
@@ -279,6 +300,7 @@ async function main() {
     PsaSpreadCommand,
     CompareAllCommand,
     PopulationCommand,
+    SetWeightCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");

@@ -34,6 +34,12 @@ export const psaLinks = [
   "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/magneton-holo-1st-edition-9/605266",
 ];
 
-export const sets = ["Base Set 1st Edition"];
+export const sets = [
+  {
+    name: "Base Set 1st Edition",
+    light: 20.75,
+    heavy: 21.23,
+  },
+];
 
 export const POKE_DATA_DOMAIN = "https://www.pokedata.io";

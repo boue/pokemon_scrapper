@@ -27,9 +27,9 @@ async function scrapePokemonData() {
 
   try {
     for (const [i, pokemon] of pokemons.entries()) {
-      let url = createUrl(sets[0], pokemon);
+      let url = createUrl(sets[0].name, pokemon);
       console.log(url);
-      spinner.text = `Scrapping set ${sets[0]}...`;
+      spinner.text = `Scrapping set ${sets[0].name}...`;
       spinner.text = `Featuring: ${pokemon.toUpperCase()}`;
       spinner.text = `url created: ${url}`;
       await page.goto(url, { waitUntil: "networkidle0" });
