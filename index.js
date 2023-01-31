@@ -19,10 +19,11 @@ let db, jobs;
 
 async function run() {
   try {
+    if (!mongoC) return;
     await mongoC.connect();
     console.log("connected to cloud database");
-    const db = mongoC?.db("jobs");
-    const jobs = db?.collection("data");
+    db = mongoC?.db("jobs");
+    jobs = db?.collection("data");
 
     (async () => {
       const spinner = ora({
@@ -114,13 +115,14 @@ async function run() {
 
           data.push(pokemonData);
         }
+        await browser.close();
       } catch (e) {
         console.log(e.message);
       }
 
       const end = performance.now();
       const timeTaken = millisToMinutesAndSeconds(end - start);
-      // fs.writeFileSync("./data/data.json", JSON.stringify(data));
+      fs.writeFileSync("./data/data.json", JSON.stringify(data));
       jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
         console.log("Inserted successfully");
         mongoC.close();
@@ -133,17 +135,9 @@ async function run() {
         ),
         chalk.blue.bold(`Script took: ${timeTaken} minutes`)
       );
-
-      browser.close();
     })();
-    // Find the first document in the collection
-    // const first = await collection?.findOne();
-    // console.log(first);
   } catch (e) {
     console.error(e);
-    return;
-  } finally {
-    console.log("done");
     return;
   }
 }
