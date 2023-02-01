@@ -11,10 +11,10 @@ config();
 
 const TIMEOUT_LIMIT = 60000;
 
-const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
+const MONGODB_URI =
+  "mongodb+srv://pokedev:Pokemon4life2020$@cluster0.qyjzz6s.mongodb.net/?retryWrites=true&w=majority";
 
-const uri = `mongodb+srv://pokedev:${MONGO_PASSWORD}@cluster0.qyjzz6s.mongodb.net/?retryWrites=true&w=majority`;
-const mongoC = new MongoClient(uri);
+const mongoC = new MongoClient(MONGODB_URI);
 let db, jobs;
 
 async function run() {

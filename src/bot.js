@@ -24,6 +24,7 @@ const CLIENT_ID = process.env.DISCORDJS_CLIENT_ID;
 const GUILD_ID = process.env.DISCORDJS_GUILD_ID;
 const CHANNEL_ID = process.env.DISCORDJS_CHANNEL_ID;
 
+//Connect to mongoDB to get values
 //to sort by date
 // db.posts.find().sort({ createdAt: -1 })
 const formattedPokemons = Object.entries(data)
