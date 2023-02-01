@@ -12,7 +12,6 @@ config();
 const TIMEOUT_LIMIT = 60000;
 
 const MONGODB_URI = process.env.MONGODB_URI;
-
 const mongoC = new MongoClient(MONGODB_URI);
 let db, jobs;
 
