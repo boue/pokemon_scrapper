@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer";
 import { config } from "dotenv";
-import { sets, pokemons, psaLinks } from "./constants/pokemons.js";
-import { createUrl, millisToMinutesAndSeconds } from "./utils/utils.js";
+import { sets, pokemons, psaLinks } from "../constants/pokemons.js";
+import { createUrl, millisToMinutesAndSeconds } from "../utils/utils.js";
 import nodeCron from "node-cron";
 import ora from "ora";
 import fs from "fs";
@@ -19,6 +19,7 @@ let db, jobs;
 
 async function run() {
   try {
+    console.log("running data scrapping job...");
     if (!mongoC) return;
     await mongoC.connect();
     console.log("connected to cloud database");
