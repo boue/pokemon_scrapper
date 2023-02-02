@@ -9,15 +9,9 @@ const TIMEOUT_LIMIT = 250000;
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const mongoC = new MongoClient(MONGODB_URI);
-const browser = await puppeteer.launch({
-  headless: true,
-  args: ["--no-sandbox"],
-});
 let db, jobs;
 
 async function run() {
-  if (!browser || !mongoC) return;
-
   try {
     console.log("running data scrapping job...");
     await mongoC.connect();
@@ -26,6 +20,10 @@ async function run() {
     jobs = db?.collection("data");
 
     (async () => {
+      const browser = await puppeteer.launch({
+        headless: true,
+        args: ["--no-sandbox"],
+      });
       const page = await browser.newPage();
       await page.setDefaultNavigationTimeout(TIMEOUT_LIMIT);
       await page.setDefaultTimeout(TIMEOUT_LIMIT);
@@ -112,13 +110,14 @@ async function run() {
         console.log(`Job done in ${timeTaken}`);
       } catch (e) {
         console.log(e.message);
+      } finally {
+        await browser.close();
       }
     })();
   } catch (e) {
     console.error(e);
     return;
   } finally {
-    await browser.close();
     mongoC.close();
   }
 }
