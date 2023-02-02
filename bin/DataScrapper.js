@@ -19,12 +19,13 @@ async function run() {
     console.log("connected to cloud database");
     db = mongoC?.db("jobs");
     jobs = db?.collection("data");
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox"],
+    });
+    if (!browser) return;
 
     (async () => {
-      const browser = await puppeteer.launch({
-        headless: true,
-        args: ["--no-sandbox"],
-      });
       const page = await browser.newPage();
       await page.setDefaultNavigationTimeout(TIMEOUT_LIMIT);
       await page.setDefaultTimeout(TIMEOUT_LIMIT);
@@ -117,6 +118,7 @@ async function run() {
     console.error(e);
     return;
   } finally {
+    await browser.close();
     mongoC.close();
   }
 }
