@@ -2,11 +2,8 @@ import puppeteer from "puppeteer";
 import { config } from "dotenv";
 import { sets, pokemons, psaLinks } from "./constants/pokemons.js";
 import { createUrl, millisToMinutesAndSeconds } from "./utils/utils.js";
-import nodeCron from "node-cron";
-import ora from "ora";
-import fs from "fs";
-import chalk from "chalk";
 import { MongoClient } from "mongodb";
+
 config();
 
 const TIMEOUT_LIMIT = 250000;
@@ -17,21 +14,13 @@ let db, jobs;
 
 async function run() {
   try {
-    if (!mongoC) return;
+    console.log("running data scrapping job...");
     await mongoC.connect();
     console.log("connected to cloud database");
     db = mongoC?.db("jobs");
     jobs = db?.collection("data");
 
     (async () => {
-      const spinner = ora({
-        text: "Launching puppeteer",
-        color: "blue",
-        hideCursor: false,
-      }).start();
-
-      spinner.text = "Launching headless browser page";
-
       const browser = await puppeteer.launch({
         headless: true,
         args: ["--no-sandbox"],
@@ -46,10 +35,7 @@ async function run() {
       try {
         for (const [i, pokemon] of pokemons.entries()) {
           let url = createUrl(sets[0].name, pokemon);
-          console.log(url);
-          spinner.text = `Scrapping set ${sets[0].name}...`;
-          spinner.text = `Featuring: ${pokemon.toUpperCase()}`;
-          spinner.text = `url created: ${url}`;
+          console.log(`Now starting scrapping ${url}`);
           await page.goto(url, { waitUntil: "networkidle0" });
 
           await page.waitForXPath(
@@ -78,8 +64,8 @@ async function run() {
             elHandleRaw[0]
           );
 
-          spinner.text = `Heading to PSA: ${psaLinks[i]}`;
-          await page.goto(psaLinks[i], { waitUntil: "domcontentloaded" });
+          console.log(`Heading to PSA: ${psaLinks[i]}`);
+          await page.goto(psaLinks[i], { waitUntil: "networkidle0" });
 
           await page.waitForXPath(
             '//*[@id="tablePricesSummary"]/tbody/tr[1]/td[5]/a'
@@ -103,8 +89,6 @@ async function run() {
             elHandlePsa10Pop[0]
           );
 
-          console.log("raw value: ", rawValue);
-
           const pokemonData = {
             name: pokemon,
             psa10: psa10Value,
@@ -114,28 +98,21 @@ async function run() {
             raw: rawValue,
           };
 
+          console.log("Captured :", pokemonData);
           data.push(pokemonData);
         }
-        await browser.close();
+        const end = performance.now();
+        const timeTaken = millisToMinutesAndSeconds(end - start);
+        jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
+          console.log("Inserted all data in Database successfully");
+          mongoC.close();
+        });
+        console.log(`Job done in ${timeTaken}`);
       } catch (e) {
         console.log(e.message);
+      } finally {
+        await browser.close();
       }
-
-      const end = performance.now();
-      const timeTaken = millisToMinutesAndSeconds(end - start);
-      fs.writeFileSync("./data/data.json", JSON.stringify(data));
-      jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
-        console.log("Inserted successfully");
-        mongoC.close();
-      });
-
-      console.log(
-        chalk.yellow.bold(
-          "Here are your daily pokemon prices: ",
-          JSON.stringify(data)
-        ),
-        chalk.blue.bold(`Script took: ${timeTaken} minutes`)
-      );
     })();
   } catch (e) {
     console.error(e);
