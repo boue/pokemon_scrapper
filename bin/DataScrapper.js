@@ -116,9 +116,6 @@ async function run() {
   } catch (e) {
     console.error(e);
     return;
-  } finally {
-    mongoC.close();
-    return;
   }
 }
 
