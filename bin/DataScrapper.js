@@ -34,7 +34,7 @@ async function run() {
       spinner.text = "Launching headless browser page";
 
       const browser = await puppeteer.launch({
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
+        args: ["--no-sandbox"],
       });
       const page = await browser.newPage();
       await page.setDefaultNavigationTimeout(TIMEOUT_LIMIT);
