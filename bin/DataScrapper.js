@@ -64,7 +64,7 @@ async function run() {
           );
 
           console.log(`Heading to PSA: ${psaLinks[i]}`);
-          await page.goto(psaLinks[i], { waitUntil: "domcontentloaded" });
+          await page.goto(psaLinks[i], { waitUntil: "networkidle0" });
 
           await page.waitForXPath(
             '//*[@id="tablePricesSummary"]/tbody/tr[1]/td[5]/a'
