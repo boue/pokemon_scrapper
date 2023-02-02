@@ -34,7 +34,7 @@ async function run() {
       spinner.text = "Launching headless browser page";
 
       const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         args: ["--no-sandbox"],
       });
       const page = await browser.newPage();
