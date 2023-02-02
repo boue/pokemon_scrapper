@@ -100,6 +100,7 @@ async function run() {
             raw: rawValue,
           };
 
+          console.log("Captured :", pokemonData);
           data.push(pokemonData);
         }
         await browser.close();
