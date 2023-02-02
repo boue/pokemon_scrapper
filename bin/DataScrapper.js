@@ -118,6 +118,7 @@ async function run() {
     return;
   } finally {
     mongoC.close();
+    return;
   }
 }
 
