@@ -101,22 +101,23 @@ async function run() {
           console.log("Captured :", pokemonData);
           data.push(pokemonData);
         }
-        await browser.close();
+        const end = performance.now();
+        const timeTaken = millisToMinutesAndSeconds(end - start);
+        jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
+          console.log("Inserted successfully");
+          mongoC.close();
+        });
+        console.log(`job done in ${timeTaken}`);
       } catch (e) {
         console.log(e.message);
       }
-
-      const end = performance.now();
-      const timeTaken = millisToMinutesAndSeconds(end - start);
-      jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
-        console.log("Inserted successfully");
-        mongoC.close();
-      });
-      console.log(`job done in ${timeTaken}`);
     })();
   } catch (e) {
     console.error(e);
     return;
+  } finally {
+    await browser.close();
+    mongoC.close();
   }
 }
 
