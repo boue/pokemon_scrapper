@@ -104,10 +104,10 @@ async function run() {
         const end = performance.now();
         const timeTaken = millisToMinutesAndSeconds(end - start);
         jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
-          console.log("Inserted successfully");
+          console.log("Inserted all data in Database successfully");
           mongoC.close();
         });
-        console.log(`job done in ${timeTaken}`);
+        console.log(`Job done in ${timeTaken}`);
       } catch (e) {
         console.log(e.message);
       }
