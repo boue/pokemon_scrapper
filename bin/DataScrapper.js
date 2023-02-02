@@ -109,7 +109,6 @@ async function run() {
 
       const end = performance.now();
       const timeTaken = millisToMinutesAndSeconds(end - start);
-      fs.writeFileSync("./data/data.json", JSON.stringify(data));
       jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
         console.log("Inserted successfully");
         mongoC.close();
