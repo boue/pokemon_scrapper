@@ -9,7 +9,7 @@ import chalk from "chalk";
 import { MongoClient } from "mongodb";
 config();
 
-const TIMEOUT_LIMIT = 100000;
+const TIMEOUT_LIMIT = 250000;
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const mongoC = new MongoClient(MONGODB_URI);
