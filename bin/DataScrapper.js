@@ -100,7 +100,6 @@ async function run() {
           console.log("Captured :", pokemonData);
           data.push(pokemonData);
         }
-        await browser.close();
         const end = performance.now();
         const timeTaken = millisToMinutesAndSeconds(end - start);
         jobs.insertOne({ data, createdAt: new Date() }).then((result) => {
