@@ -114,7 +114,7 @@ async function run() {
         console.log("Inserted successfully");
         mongoC.close();
       });
-      console.log("job done");
+      console.log(`job done in ${timeTaken}`);
     })();
   } catch (e) {
     console.error(e);
