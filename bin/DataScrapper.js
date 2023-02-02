@@ -2,10 +2,6 @@ import puppeteer from "puppeteer";
 import { config } from "dotenv";
 import { sets, pokemons, psaLinks } from "../constants/pokemons.js";
 import { createUrl, millisToMinutesAndSeconds } from "../utils/utils.js";
-import nodeCron from "node-cron";
-import ora from "ora";
-import fs from "fs";
-import chalk from "chalk";
 import { MongoClient } from "mongodb";
 config();
 
@@ -25,14 +21,6 @@ async function run() {
     jobs = db?.collection("data");
 
     (async () => {
-      const spinner = ora({
-        text: "Launching puppeteer",
-        color: "blue",
-        hideCursor: false,
-      }).start();
-
-      spinner.text = "Launching headless browser page";
-
       const browser = await puppeteer.launch({
         headless: true,
         args: ["--no-sandbox"],
@@ -47,10 +35,7 @@ async function run() {
       try {
         for (const [i, pokemon] of pokemons.entries()) {
           let url = createUrl(sets[0].name, pokemon);
-          console.log(url);
-          spinner.text = `Scrapping set ${sets[0].name}...`;
-          spinner.text = `Featuring: ${pokemon.toUpperCase()}`;
-          spinner.text = `url created: ${url}`;
+          console.log(`Now starting scrapping ${url}`);
           await page.goto(url, { waitUntil: "networkidle0" });
 
           await page.waitForXPath(
@@ -79,7 +64,7 @@ async function run() {
             elHandleRaw[0]
           );
 
-          spinner.text = `Heading to PSA: ${psaLinks[i]}`;
+          console.log(`Heading to PSA: ${psaLinks[i]}`);
           await page.goto(psaLinks[i], { waitUntil: "domcontentloaded" });
 
           await page.waitForXPath(
@@ -129,14 +114,7 @@ async function run() {
         console.log("Inserted successfully");
         mongoC.close();
       });
-
-      console.log(
-        chalk.yellow.bold(
-          "Here are your daily pokemon prices: ",
-          JSON.stringify(data)
-        ),
-        chalk.blue.bold(`Script took: ${timeTaken} minutes`)
-      );
+      console.log("job done");
     })();
   } catch (e) {
     console.error(e);
