@@ -148,8 +148,8 @@ client.on("interactionCreate", async (interaction) => {
 
       let marketCaps = data.map((pokemon) => {
         return (
-          parseInt(pokemon[reason]).replace(/,/g, "") *
-          parseInt(pokemon[pop]).replace(/,/g, "")
+          parseInt(pokemon[reason].replace(/,/g, "")) *
+          parseInt(pokemon[pop].replace(/,/g, ""))
         );
       });
 
