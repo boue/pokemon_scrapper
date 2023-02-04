@@ -169,7 +169,7 @@ client.on("interactionCreate", async (interaction) => {
         return p["1"]["name"] === target;
       });
 
-      console.log("population value = ", parseInt(caughtPokemon[1][pop]));
+      console.log("caught pokemon = ", caughtPokemon[1]);
       console.log("population value = ", parseInt(caughtPokemon[1][pop]));
       console.log("price = ", parseInt(caughtPokemon[1][reason]));
 
