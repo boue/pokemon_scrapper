@@ -147,7 +147,10 @@ client.on("interactionCreate", async (interaction) => {
       const pop = `pop${popValue}`;
 
       let marketCaps = data.map((pokemon) => {
-        return parseInt(pokemon[reason]) * parseInt(pokemon[pop]);
+        return (
+          parseInt(pokemon[reason]).replace(/,/g, "") *
+          parseInt(pokemon[pop]).replace(/,/g, "")
+        );
       });
 
       const totalMarketCap = marketCaps.reduce((a, b) => a + b);
