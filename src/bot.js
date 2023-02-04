@@ -174,7 +174,8 @@ client.on("interactionCreate", async (interaction) => {
       console.log("price = ", parseInt(caughtPokemon[1][reason]));
 
       const marketcap =
-        parseInt(caughtPokemon[1][reason]) * parseInt(caughtPokemon[1][pop]);
+        parseInt(caughtPokemon[1][reason].replace(/,/g, "")) *
+        parseInt(caughtPokemon[1][pop].replace(/,/g, ""));
 
       const formattedPokemon =
         "\n" +
