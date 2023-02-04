@@ -163,9 +163,15 @@ client.on("interactionCreate", async (interaction) => {
       const popValue = reason.substring(3);
       const pop = `pop${popValue}`;
 
+      console.log("population value substring = ", popValue);
+
       const caughtPokemon = Object.entries(data).find((p) => {
         return p["1"]["name"] === target;
       });
+
+      console.log("population value = ", parseInt(caughtPokemon[1][pop]));
+      console.log("population value = ", parseInt(caughtPokemon[1][pop]));
+      console.log("price = ", parseInt(caughtPokemon[1][reason]));
 
       const marketcap =
         parseInt(caughtPokemon[1][reason]) * parseInt(caughtPokemon[1][pop]);
