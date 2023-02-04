@@ -25,6 +25,7 @@ const GUILD_ID = process.env.DISCORDJS_GUILD_ID;
 const CHANNEL_ID = process.env.DISCORDJS_CHANNEL_ID;
 
 //Connect to mongoDB to get values
+//if data contains data then go or else just return
 //to sort by date
 // db.posts.find().sort({ createdAt: -1 })
 const formattedPokemons = Object.entries(data)
@@ -152,12 +153,7 @@ client.on("interactionCreate", async (interaction) => {
       const totalMarketCap = marketCaps.reduce((a, b) => a + b);
 
       const result =
-        "\n" +
-        "Total Marketcap for: " +
-        set +
-        "\n" +
-        "$" +
-        totalMarketCap.toFixed(2);
+        "\n" + "Total Marketcap for: " + set + "\n" + "$" + totalMarketCap;
 
       await interaction.reply(result);
     }
@@ -181,7 +177,7 @@ client.on("interactionCreate", async (interaction) => {
         "\n" +
         "Marketcap is: " +
         "$" +
-        marketcap.toFixed(2);
+        marketcap;
 
       await interaction.reply(formattedPokemon);
     }
