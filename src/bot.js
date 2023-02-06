@@ -118,8 +118,8 @@ client.on("interactionCreate", async (interaction) => {
         throw new Error("Please pick two different pokemons.");
 
       const value =
-        ((parseInt(pokemon1[1]["psa10"]) - 20) /
-          parseInt(pokemon2[1]["psa9"])) *
+        ((parseInt(pokemon1[1]["psa10"].replace(/,/g, "")) - 20) /
+          parseInt(pokemon2[1]["psa9"].replace(/,/g, ""))) *
           100 -
         100;
 
@@ -128,11 +128,11 @@ client.on("interactionCreate", async (interaction) => {
         "Spread of: " +
         pokemon1[1]["name"] +
         " psa10 ($" +
-        parseInt(pokemon1[1]["psa10"]) +
+        parseInt(pokemon1[1]["psa10"].replace(/,/g, "")) +
         ") and " +
         pokemon2[1]["name"] +
         " psa9 ($" +
-        parseInt(pokemon2[1]["psa9"]) +
+        parseInt(pokemon2[1]["psa9"].replace(/,/g, "")) +
         ") :" +
         "\n" +
         "%" +
@@ -171,10 +171,6 @@ client.on("interactionCreate", async (interaction) => {
       const caughtPokemon = Object.entries(data).find((p) => {
         return p["1"]["name"] === target;
       });
-
-      console.log("caught pokemon = ", caughtPokemon[1]);
-      console.log("population value = ", parseInt(caughtPokemon[1][pop]));
-      console.log("price = ", parseInt(caughtPokemon[1][reason]));
 
       const marketcap =
         parseInt(caughtPokemon[1][reason].replace(/,/g, "")) *
