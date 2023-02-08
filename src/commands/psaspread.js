@@ -70,7 +70,7 @@ const PsaSpreadCommand = new SlashCommandBuilder()
         "REMINDER: PSA10/PS9, PSA10/RAW, PSA9/RAW are the options supported"
       )
       .addChoices(
-        { name: "psa9", value: "psa10" },
+        { name: "psa9", value: "psa9" },
         { name: "raw", value: "raw" }
       )
       .setRequired(true)
