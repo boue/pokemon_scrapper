@@ -106,6 +106,8 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.commandName === "psaspread") {
       const target1 = interaction.options.getString("pokemon1");
       const target2 = interaction.options.getString("pokemon2");
+      const value1 = interaction.options.getString("value1");
+      const value2 = interaction.options.getString("value2");
 
       const pokemon1 = Object.entries(data).find((p) => {
         return p["1"]["name"] === target1;
@@ -117,9 +119,22 @@ client.on("interactionCreate", async (interaction) => {
       if (pokemon1[1]["name"] === pokemon2[1]["name"])
         throw new Error("Please pick two different pokemons.");
 
-      const value =
-        ((parseInt(pokemon1[1]["psa10"].replace(/,/g, "")) - 20) /
-          parseInt(pokemon2[1]["psa9"].replace(/,/g, ""))) *
+      if (value1 === value2)
+        throw new Error("Please pick two different values to compare.");
+
+      if (value1 === "psa9" && value2 === "psa10")
+        throw new Error(
+          "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
+        );
+
+      if (value1 === "psa9" && value2 === "psa10")
+        throw new Error(
+          "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
+        );
+
+      let value =
+        ((parseInt(pokemon1[1][value1].replace(/,/g, "")) - 20) /
+          parseInt(pokemon2[1][value2].replace(/,/g, ""))) *
           100 -
         100;
 
@@ -127,12 +142,14 @@ client.on("interactionCreate", async (interaction) => {
         "\n" +
         "Spread of: " +
         pokemon1[1]["name"] +
-        " psa10 ($" +
-        parseInt(pokemon1[1]["psa10"].replace(/,/g, "")) +
+        pokemon1[1][value1] +
+        "  ($" +
+        parseInt(pokemon1[1][value1].replace(/,/g, "")) +
         ") and " +
         pokemon2[1]["name"] +
-        " psa9 ($" +
-        parseInt(pokemon2[1]["psa9"].replace(/,/g, "")) +
+        pokemon2[1][value2] +
+        " ($" +
+        parseInt(pokemon2[1][value2].replace(/,/g, "")) +
         ") :" +
         "\n" +
         "%" +

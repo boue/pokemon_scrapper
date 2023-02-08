@@ -5,7 +5,7 @@ import data from "../../data/data.json" assert { type: "json" };
 const PsaSpreadCommand = new SlashCommandBuilder()
   .setName("psaspread")
   .setDescription(
-    "Gives you the spread between PSA10 and PSA9 - !Pick different Pokemons!"
+    "Gives you the spread between PSA10/PS9, PSA10/RAW, PSA9/RAW - !Pick different Pokemons!"
   )
   .addStringOption((option) =>
     option
@@ -32,6 +32,16 @@ const PsaSpreadCommand = new SlashCommandBuilder()
   )
   .addStringOption((option) =>
     option
+      .setName("value1")
+      .setDescription("Select value")
+      .addChoices(
+        { name: "psa10", value: "psa10" },
+        { name: "psa9", value: "psa9" }
+      )
+      .setRequired(true)
+  )
+  .addStringOption((option) =>
+    option
       .setName("pokemon2")
       .setDescription("Select the second pokemon - pick a different!å")
       .addChoices(
@@ -50,6 +60,18 @@ const PsaSpreadCommand = new SlashCommandBuilder()
         { name: "Raichu Holo 14", value: "Raichu Holo 14" },
         { name: "Venusaur Holo 15", value: "Venusaur Holo 15" },
         { name: "Zapdos Holo 16", value: "Zapdos Holo 16" }
+      )
+      .setRequired(true)
+  )
+  .addStringOption((option) =>
+    option
+      .setName("value2")
+      .setDescription(
+        "REMINDER: PSA10/PS9, PSA10/RAW, PSA9/RAW are the options supported"
+      )
+      .addChoices(
+        { name: "psa9", value: "psa10" },
+        { name: "raw", value: "raw" }
       )
       .setRequired(true)
   );
