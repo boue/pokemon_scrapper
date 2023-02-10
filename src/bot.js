@@ -127,11 +127,6 @@ client.on("interactionCreate", async (interaction) => {
           "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
         );
 
-      if (value1 === "psa9" && value2 === "psa10")
-        throw new Error(
-          "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
-        );
-
       let value =
         ((parseInt(pokemon1[1][value1].replace(/,/g, "")) - 20) /
           parseInt(pokemon2[1][value2].replace(/,/g, ""))) *
@@ -277,25 +272,45 @@ client.on("interactionCreate", async (interaction) => {
     }
     if (interaction.commandName === "psacomparison") {
       const target = interaction.options.getString("pokemon");
+      const value1 = interaction.options.getString("value1");
+      const value2 = interaction.options.getString("value2");
 
       const caughtPokemon = Object.entries(data).find((p) => {
         return p["1"]["name"] === target;
       });
 
-      const psa10 = parseInt(caughtPokemon[1]["psa10"].replace(/,/g, "")) - 20;
-      const psa9 = parseInt(caughtPokemon[1]["psa9"].replace(/,/g, ""));
-      const result = (psa10 / psa9) * 100 - 100;
+      if (value1 === value2)
+        throw new Error("Please pick two different values to compare.");
+
+      if (value1 === "psa9" && value2 === "psa10")
+        throw new Error(
+          "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
+        );
+
+      // const psa10 = parseInt(caughtPokemon[1][value1].replace(/,/g, "")) - 20;
+      // const psa9 = parseInt(caughtPokemon[1][value2].replace(/,/g, ""));
+      // const result = (psa10 / psa9) * 100 - 100;
+
+      let result =
+        ((parseInt(caughtPokemon[1][value1].replace(/,/g, "")) - 20) /
+          parseInt(caughtPokemon[1][value2].replace(/,/g, ""))) *
+          100 -
+        100;
 
       const formattedPokemon =
         "\n" +
         "Name: " +
         caughtPokemon[1]["name"] +
         "\n" +
-        "Original value of PSA10: $" +
-        caughtPokemon[1]["psa10"] +
+        "Original value of " +
+        pokemon1[1][value1] +
+        ": $" +
+        caughtPokemon[1][value1] +
         "\n" +
-        "Original value of PSA9: $" +
-        caughtPokemon[1]["psa9"] +
+        "Original value of " +
+        pokemon1[1][value2] +
+        ": $" +
+        caughtPokemon[1][value2] +
         "\n" +
         "Comparison Value is: " +
         result.toFixed(2) +

@@ -4,7 +4,9 @@ import data from "../../data/data.json" assert { type: "json" };
 // for now supports one set
 const PsaComparisonCommand = new SlashCommandBuilder()
   .setName("psacomparison")
-  .setDescription("Gives you spread between PSA10 and PSA9")
+  .setDescription(
+    "Gives you the spread between PSA10/PS9, PSA10/RAW, PSA9/RAW for one pokemon"
+  )
   .addStringOption((option) =>
     option
       .setName("pokemon")
@@ -25,6 +27,28 @@ const PsaComparisonCommand = new SlashCommandBuilder()
         { name: "Raichu Holo 14", value: "Raichu Holo 14" },
         { name: "Venusaur Holo 15", value: "Venusaur Holo 15" },
         { name: "Zapdos Holo 16", value: "Zapdos Holo 16" }
+      )
+      .setRequired(true)
+  )
+  .addStringOption((option) =>
+    option
+      .setName("value1")
+      .setDescription("Select value")
+      .addChoices(
+        { name: "psa10", value: "psa10" },
+        { name: "psa9", value: "psa9" }
+      )
+      .setRequired(true)
+  )
+  .addStringOption((option) =>
+    option
+      .setName("value2")
+      .setDescription(
+        "REMINDER: PSA10/PS9, PSA10/RAW, PSA9/RAW are the options supported"
+      )
+      .addChoices(
+        { name: "psa9", value: "psa9" },
+        { name: "raw", value: "raw" }
       )
       .setRequired(true)
   );

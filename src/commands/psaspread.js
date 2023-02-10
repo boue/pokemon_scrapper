@@ -43,7 +43,7 @@ const PsaSpreadCommand = new SlashCommandBuilder()
   .addStringOption((option) =>
     option
       .setName("pokemon2")
-      .setDescription("Select the second pokemon - pick a different!å")
+      .setDescription("Select the second pokemon - pick a different one!")
       .addChoices(
         { name: "Alakazam Holo 1", value: "Alakazam Holo 1" },
         { name: "Blastoise Holo 2", value: "Blastoise Holo 2" },
