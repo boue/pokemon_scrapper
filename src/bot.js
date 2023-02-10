@@ -281,7 +281,7 @@ client.on("interactionCreate", async (interaction) => {
 
       if (value1 === value2)
         throw new Error("Please pick two different values to compare.");
-      psa;
+
       if (value1 === "psa9" && value2 === "psa10")
         throw new Error(
           "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
