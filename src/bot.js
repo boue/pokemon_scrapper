@@ -281,7 +281,7 @@ client.on("interactionCreate", async (interaction) => {
 
       if (value1 === value2)
         throw new Error("Please pick two different values to compare.");
-
+      psa;
       if (value1 === "psa9" && value2 === "psa10")
         throw new Error(
           "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
@@ -299,20 +299,11 @@ client.on("interactionCreate", async (interaction) => {
 
       const formattedPokemon =
         "\n" +
-        "Name: " +
         caughtPokemon[1]["name"] +
-        "\n" +
-        "Original value of " +
-        pokemon1[1][value1] +
-        ": $" +
-        caughtPokemon[1][value1] +
-        "\n" +
-        "Original value of " +
-        pokemon1[1][value2] +
-        ": $" +
-        caughtPokemon[1][value2] +
-        "\n" +
-        "Comparison Value is: " +
+        value1 +
+        " with " +
+        value2 +
+        ":\n" +
         result.toFixed(2) +
         "%";
 
