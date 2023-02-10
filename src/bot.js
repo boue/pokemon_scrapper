@@ -300,6 +300,7 @@ client.on("interactionCreate", async (interaction) => {
       const formattedPokemon =
         "\n" +
         caughtPokemon[1]["name"] +
+        " " +
         value1 +
         " with " +
         value2 +
