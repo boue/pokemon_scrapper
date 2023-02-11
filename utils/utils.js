@@ -20,3 +20,15 @@ export const millisToMinutesAndSeconds = (millis) => {
   var seconds = ((millis % 60000) / 1000).toFixed(0);
   return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 };
+
+export const generateDataObject = (data) => {
+  return data.map((d) => {
+    let name = `${d.name} ${d.num}`;
+    let type = d.name.includes("Holo") ? "Holo" : "Non-holo";
+    let endLink = type === "Holo" ? `Holo+${d.num}` : d.num;
+    let link = `https://www.pokedata.io/card/Jungle+1st+Edition/${
+      d.name.split(" ")[0]
+    }+${endLink}`;
+    return { name, type, link };
+  });
+};
