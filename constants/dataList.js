@@ -1,3 +1,36 @@
+// curl 'https://www.pokedata.io/api/cards?set_name=Jungle+1st+Edition&stats=kwan' \
+// -H 'Accept: application/json, text/plain, */*' \
+// -H 'Accept-Language: en' \
+// -H 'Connection: keep-alive' \
+// -H 'Cookie: _ga=GA1.1.1391721026.1661915310; G_ENABLED_IDPS=google; G_AUTHUSER_H=0; _gcl_au=1.1.1427664095.1670359974; session=.eJw1zjtORDEMAMC7pOZJju34s5dZ2YktkKj2iQpxd2iYE8z3ePar7vfx6Pi86208P854DMZFHktpN0zd6RUHQlAZdZ08giyV1FvF1Tc3gPFUBTK1vbEquJVkSZIBhjGhGwdzqSuBnpWTLDsTsnB1Upj3hmSzCTD-Il93vf431KqEl3mui6fvK8TmJT7F6QTygvHzC3hVNqA.Y-gasw.wOP9Z7hFWoLv23bfvRCJaAAj0Cc; _ga_2NL1P9HJXT=GS1.1.1676155571.44.1.1676156171.0.0.0' \
+// -H 'Referer: https://www.pokedata.io/set/Jungle+1st+Edition' \
+// -H 'Sec-Fetch-Dest: empty' \
+// -H 'Sec-Fetch-Mode: cors' \
+// -H 'Sec-Fetch-Site: same-origin' \
+// -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+// -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+// -H 'sec-ch-ua-mobile: ?0' \
+// -H 'sec-ch-ua-platform: "macOS"' \
+// --compressed
+
+// fetch("https://www.pokedata.io/api/cards?set_name=Jungle+1st+Edition&stats=kwan", {
+//   "headers": {
+//     "accept": "application/json, text/plain, */*",
+//     "accept-language": "en",
+//     "sec-ch-ua": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\"",
+//     "sec-ch-ua-mobile": "?0",
+//     "sec-ch-ua-platform": "\"macOS\"",
+//     "sec-fetch-dest": "empty",
+//     "sec-fetch-mode": "cors",
+//     "sec-fetch-site": "same-origin"
+//   },
+//   "referrer": "https://www.pokedata.io/set/Jungle+1st+Edition",
+//   "referrerPolicy": "strict-origin-when-cross-origin",
+//   "body": null,
+//   "method": "GET",
+//   "mode": "cors",
+//   "credentials": "include"
+// });
 export const dataList = [
   {
     name: "Base Set 1st Edition",
