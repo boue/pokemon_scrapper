@@ -17,6 +17,7 @@ import CompareAllCommand from "./commands/compareall.js";
 import PopulationCommand from "./commands/population.js";
 import SetWeightCommand from "./commands/setweights.js";
 import { sets } from "../constants/pokemons.js";
+import { dataList } from "../constants/dataList";
 config();
 
 const TOKEN = process.env.DISCORDJS_BOT_TOKEN;
@@ -65,6 +66,12 @@ const differencePokemons = Object.entries(data)
   .sort(function (a, b) {
     return b[1] - a[1];
   });
+
+const findCard = (name, set) => {
+  const cardsInSet = data[set]?.cards;
+  const card = cardsInSet.find((card) => card.name === name);
+  return card;
+};
 
 const client = new Client({
   intents: [
@@ -134,18 +141,19 @@ client.on("interactionCreate", async (interaction) => {
     }
     if (interaction.commandName === "psaspread") {
       const target1 = interaction.options.getString("pokemon1");
+      const pokemon1 = findCard(
+        target1.split(" - ")[0],
+        target1.split(" - ")[1]
+      );
       const target2 = interaction.options.getString("pokemon2");
+      const pokemon2 = findCard(
+        target2.split(" - ")[0],
+        target2.split(" - ")[1]
+      );
       const value1 = interaction.options.getString("value1");
       const value2 = interaction.options.getString("value2");
 
-      const pokemon1 = Object.entries(data).find((p) => {
-        return p["1"]["name"] === target1;
-      });
-      const pokemon2 = Object.entries(data).find((p) => {
-        return p["1"]["name"] === target2;
-      });
-
-      if (pokemon1[1]["name"] === pokemon2[1]["name"])
+      if (pokemon1.name === pokemon2.name)
         throw new Error("Please pick two different pokemons.");
 
       if (value1 === value2)
@@ -156,24 +164,20 @@ client.on("interactionCreate", async (interaction) => {
           "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
         );
 
-      let value =
-        ((parseInt(pokemon1[1][value1].replace(/,/g, "")) - 20) /
-          parseInt(pokemon2[1][value2].replace(/,/g, ""))) *
-          100 -
-        100;
+      let value = ((pokemon1[value1] - 20) / pokemon2[value2]) * 100 - 100;
 
       const formattedPokemon =
         "\n" +
         "Spread of: " +
-        pokemon1[1]["name"] +
-        pokemon1[1][value1] +
+        pokemon1.name +
+        value1 +
         "  ($" +
-        parseInt(pokemon1[1][value1].replace(/,/g, "")) +
+        pokemon1[value1] +
         ") and " +
-        pokemon2[1]["name"] +
-        pokemon2[1][value2] +
+        pokemon2.name +
+        value2 +
         " ($" +
-        parseInt(pokemon2[1][value2].replace(/,/g, "")) +
+        pokemon2[value2] +
         ") :" +
         "\n" +
         "%" +
