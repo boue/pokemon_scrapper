@@ -91,11 +91,11 @@ async function run() {
 
           const pokemonData = {
             name: pokemon,
-            psa10: psa10Value,
-            psa9: psa9Value,
-            pop10: popPsa10Value,
-            pop9: popPsa9Value,
-            raw: rawValue,
+            psa10: parseInt(psa10Value.replace(/,/g, "")),
+            psa9: parseInt(psa9Value.replace(/,/g, "")),
+            pop10: parseInt(popPsa10Value.replace(/,/g, "")),
+            pop9: parseInt(popPsa9Value.replace(/,/g, "")),
+            raw: parseInt(rawValue.replace(/,/g, "")),
           };
 
           console.log("Captured :", pokemonData);

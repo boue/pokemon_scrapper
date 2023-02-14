@@ -101,6 +101,35 @@ client.on("interactionCreate", async (interaction) => {
 
   try {
     if (interaction.commandName === "marketprice") {
+      const set = interaction.options.getString("set");
+      const cardsInSet = data[set]?.cards;
+
+      const formattedPokemons = cardsInSet
+        .map(({ name, psa10, psa9, pop10, pop9, raw }) => {
+          return (
+            "\n" +
+            "Name: " +
+            name +
+            "\n" +
+            "Current PSA10 Price: " +
+            "$" +
+            psa10 +
+            "\n" +
+            "Current PSA9 Price: " +
+            "$" +
+            psa9 +
+            "\n" +
+            "Current POP10: " +
+            pop10 +
+            "\n" +
+            "Current POP9: " +
+            pop9 +
+            "\n" +
+            "\n"
+          );
+        })
+        .join("");
+
       await interaction.reply(formattedPokemons);
     }
     if (interaction.commandName === "psaspread") {
