@@ -9,10 +9,16 @@ const TotalMarketCap = new SlashCommandBuilder()
     option
       .setName("set")
       .setDescription("Select the set")
-      .addChoices({
-        name: "1st Edition Base Set",
-        value: "1st Edition Base Set",
-      })
+      .addChoices(
+        {
+          name: "1st Edition Base Set",
+          value: "1st Edition Base Set",
+        },
+        {
+          name: "Jungle 1st Edition",
+          value: "Jungle 1st Edition",
+        }
+      )
       .setRequired(true)
   )
   .addStringOption((option) =>

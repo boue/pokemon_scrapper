@@ -171,14 +171,14 @@ client.on("interactionCreate", async (interaction) => {
         "Spread of: " +
         pokemon1.name +
         value1 +
-        "  ($" +
+        "  $" +
         pokemon1[value1] +
-        ") and " +
+        " and " +
         pokemon2.name +
         value2 +
-        " ($" +
+        " $" +
         pokemon2[value2] +
-        ") :" +
+        " :" +
         "\n" +
         "%" +
         value.toFixed(2);
@@ -191,12 +191,11 @@ client.on("interactionCreate", async (interaction) => {
       const popValue = reason.substring(3);
       const pop = `pop${popValue}`;
 
-      let marketCaps = data.map((pokemon) => {
-        return (
-          parseInt(pokemon[reason].replace(/,/g, "")) *
-          parseInt(pokemon[pop].replace(/,/g, ""))
-        );
-      });
+      let marketCaps = data
+        .find((d) => d.name === set)
+        .cards.map((card) => {
+          card[reason] * card[pop];
+        });
 
       const totalMarketCap = marketCaps.reduce((a, b) => a + b);
 
