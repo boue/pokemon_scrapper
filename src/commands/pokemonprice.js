@@ -30,10 +30,12 @@ export const PokemonPriceCommand = new SlashCommandBuilder()
   .setName("price")
   .setDescription("Gives you individual pokemon price")
   .addStringOption((option) =>
-    option.setName("set").setDescription("Select the set").setAutocomplete(true)
+    option
+      .setName("set")
+      .setDescription("Select the set")
+      .setAutocomplete(true)
+      .setRequired(true)
   )
-  .setRequired(true)
-
   .addStringOption((option) =>
     option
       .setName("value")
