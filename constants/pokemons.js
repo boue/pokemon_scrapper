@@ -1,3 +1,5 @@
+// THIS IS DEPRECATED. USE DATALIST INSTEAD
+
 export const pokemons = [
   "Charizard Holo 4",
   "Blastoise Holo 2",
