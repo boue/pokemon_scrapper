@@ -4,15 +4,15 @@ import { Client, Events, GatewayIntentBits, Collection } from "discord.js";
 import { Routes } from "discord-api-types/v10";
 import data from "../data/dataList.json" assert { type: "json" };
 
-import MarketPriceCommand from "./commands/marketprice.js";
-import PokemonPriceCommand from "./commands/pokemonprice.js";
-import PsaComparisonCommand from "./commands/psacomparison.js";
-import MarketCapCommand from "./commands/marketcap.js";
-import TotalMarketCap from "./commands/totalmarketcap.js";
-import PsaSpreadCommand from "./commands/psaspread.js";
-import CompareAllCommand from "./commands/compareall.js";
-import PopulationCommand from "./commands/population.js";
-import SetWeightCommand from "./commands/setweights.js";
+// import MarketPriceCommand from "./commands/marketprice.js";
+import { PokemonPriceCommand, autocomplete } from "./commands/pokemonprice.js";
+// import PsaComparisonCommand from "./commands/psacomparison.js";
+// import MarketCapCommand from "./commands/marketcap.js";
+// import TotalMarketCap from "./commands/totalmarketcap.js";
+// import PsaSpreadCommand from "./commands/psaspread.js";
+// import CompareAllCommand from "./commands/compareall.js";
+// import PopulationCommand from "./commands/population.js";
+// import SetWeightCommand from "./commands/setweights.js";
 
 config();
 
@@ -45,6 +45,7 @@ client.on("ready", () => {
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) return;
   if (!interaction.isAutocomplete()) return;
+  autocomplete(interaction);
 
   try {
     // if (interaction.commandName === "marketprice") {
@@ -300,15 +301,15 @@ client.on("interactionCreate", async (interaction) => {
 
 async function main() {
   const commands = [
-    MarketPriceCommand,
+    // MarketPriceCommand,
     PokemonPriceCommand,
-    PsaComparisonCommand,
-    MarketCapCommand,
-    TotalMarketCap,
-    PsaSpreadCommand,
-    CompareAllCommand,
-    PopulationCommand,
-    SetWeightCommand,
+    // PsaComparisonCommand,
+    // MarketCapCommand,
+    // TotalMarketCap,
+    // PsaSpreadCommand,
+    // CompareAllCommand,
+    // PopulationCommand,
+    // SetWeightCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");
