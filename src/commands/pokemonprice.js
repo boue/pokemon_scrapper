@@ -31,8 +31,15 @@ export const PokemonPriceCommand = new SlashCommandBuilder()
   .setDescription("Gives you individual pokemon price")
   .addStringOption((option) =>
     option
-      .setName("set")
-      .setDescription("Select the set")
+      .setName("Base Set 1st Edition")
+      .setDescription("Search a card in Base Set 1st Edition")
+      .setAutocomplete(true)
+      .setRequired(true)
+  )
+  .addStringOption((option) =>
+    option
+      .setName("Jungle 1st Edition")
+      .setDescription("Search a card in Jungle 1st Edition")
       .setAutocomplete(true)
       .setRequired(true)
   )
