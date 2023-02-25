@@ -1,4 +1,4 @@
-// import { SlashCommandBuilder } from "@discordjs/builders";
+import { SlashCommandBuilder } from "@discordjs/builders";
 // import data from "../../data/data.json" assert { type: "json" };
 
 // // for now supports one set
