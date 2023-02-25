@@ -2,11 +2,8 @@ import { config } from "dotenv";
 import { REST } from "@discordjs/rest";
 import { Client, Events, GatewayIntentBits, Collection } from "discord.js";
 import { Routes } from "discord-api-types/v10";
-import data from "../data/data.json" assert { type: "json" };
-import cron from "cron";
+import data from "../data/dataList.json" assert { type: "json" };
 
-import fs from "fs";
-import path from "path";
 import MarketPriceCommand from "./commands/marketprice.js";
 import PokemonPriceCommand from "./commands/pokemonprice.js";
 import PsaComparisonCommand from "./commands/psacomparison.js";
@@ -16,44 +13,13 @@ import PsaSpreadCommand from "./commands/psaspread.js";
 import CompareAllCommand from "./commands/compareall.js";
 import PopulationCommand from "./commands/population.js";
 import SetWeightCommand from "./commands/setweights.js";
-import { sets } from "../constants/pokemons.js";
-import { dataList } from "../constants/dataList";
+
 config();
 
 const TOKEN = process.env.DISCORDJS_BOT_TOKEN;
 const CLIENT_ID = process.env.DISCORDJS_CLIENT_ID;
 const GUILD_ID = process.env.DISCORDJS_GUILD_ID;
 const CHANNEL_ID = process.env.DISCORDJS_CHANNEL_ID;
-
-//Connect to mongoDB to get values
-//if data contains data then go or else just return
-//to sort by date
-// db.posts.find().sort({ createdAt: -1 })
-const formattedPokemons = Object.entries(data)
-  .map((key, value) => {
-    return (
-      "\n" +
-      "Name: " +
-      key["1"]["name"] +
-      "\n" +
-      "Current PSA10 Price: " +
-      "$" +
-      parseInt(key["1"]["psa10"].replace(/,/g, "")) +
-      "\n" +
-      "Current PSA9 Price: " +
-      "$" +
-      parseInt(key["1"]["psa9"].replace(/,/g, "")) +
-      "\n" +
-      "Current POP10: " +
-      key["1"]["pop10"] +
-      "\n" +
-      "Current POP9: " +
-      key["1"]["pop9"] +
-      "\n" +
-      "\n"
-    );
-  })
-  .join("");
 
 const findCard = (name, set) => {
   const cardsInSet = data[set]?.cards;
@@ -73,22 +39,7 @@ const client = new Client({
 const rest = new REST({ version: "10" }).setToken(TOKEN);
 
 client.on("ready", () => {
-  // const dailyReport = [
-  //   "This is your daily marketprice report: ",
-  //   "\n",
-  //   ...formattedPokemons,
-  // ].join("");
   console.log(`${client.user.tag} has logged in!`);
-
-  // console.log("Cron job scheduled for once a day");
-  // let scheduledMessage = new cron.CronJob("0 0 * * *", () => {
-  //   const guild = client.guilds.cache.get(GUILD_ID);
-  //   const channel = guild.channels.cache.get(CHANNEL_ID);
-  //   channel.send(dailyReport);
-  // });
-
-  // // When you want to start it, use:
-  // scheduledMessage.start();
 });
 
 client.on("interactionCreate", async (interaction) => {
