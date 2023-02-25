@@ -103,9 +103,11 @@ export const autocomplete = async (interaction) => {
       "Wigglytuff Holo 16",
     ];
   }
+  console.log("these are the choices: ", choices);
   const filtered = choices.filter((choice) =>
     choice.startsWith(focusedOption.value)
   );
+  console.log("these are the filtered choices: ", filtered);
   await interaction.respond(
     filtered.map((choice) => ({ name: choice, value: choice }))
   );
