@@ -44,10 +44,11 @@ client.on("ready", () => {
 
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) return;
+  console.log("interaction is a command!!");
   if (!interaction.isAutocomplete()) return;
-  autocomplete(interaction);
-
+  console.log("interaction is autocomplete!!");
   try {
+    await autocomplete(interaction);
     // if (interaction.commandName === "marketprice") {
     //   const set = interaction.options.getString("set");
     //   const cardsInSet = data[set]?.cards;

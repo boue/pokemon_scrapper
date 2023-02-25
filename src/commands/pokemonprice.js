@@ -48,6 +48,7 @@ const PokemonPriceCommand = new SlashCommandBuilder()
   .toJSON();
 
 const autocomplete = async (interaction) => {
+  console.log("inside autocomplete");
   const focusedOption = interaction.options.getFocused(true);
   let choices;
 
