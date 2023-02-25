@@ -29,30 +29,33 @@ import { SlashCommandBuilder } from "@discordjs/builders";
 export const PokemonPriceCommand = new SlashCommandBuilder()
   .setName("price")
   .setDescription("Gives you individual pokemon price")
-  .addStringOption((option) =>
-    option
-      .setName("base")
-      .setDescription("Search a card in Base Set 1st Edition")
-      .setAutocomplete(true)
-      .setRequired(true)
+  .addStringOption(
+    (option) =>
+      option
+        .setName("base")
+        .setDescription("Search a card in Base Set 1st Edition")
+        .setAutocomplete(true)
+    // .setRequired(true)
   )
-  .addStringOption((option) =>
-    option
-      .setName("jungle")
-      .setDescription("Search a card in Jungle 1st Edition")
-      .setAutocomplete(true)
-      .setRequired(true)
+  .addStringOption(
+    (option) =>
+      option
+        .setName("jungle")
+        .setDescription("Search a card in Jungle 1st Edition")
+        .setAutocomplete(true)
+    // .setRequired(true)
   )
-  .addStringOption((option) =>
-    option
-      .setName("value")
-      .setDescription("Select value")
-      .addChoices(
-        { name: "psa10", value: "psa10" },
-        { name: "psa9", value: "psa9" },
-        { name: "raw", value: "raw" }
-      )
-      .setRequired(true)
+  .addStringOption(
+    (option) =>
+      option
+        .setName("value")
+        .setDescription("Select value")
+        .addChoices(
+          { name: "psa10", value: "psa10" },
+          { name: "psa9", value: "psa9" },
+          { name: "raw", value: "raw" }
+        )
+    // .setRequired(true)
   )
   .toJSON();
 

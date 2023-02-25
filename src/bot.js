@@ -43,12 +43,19 @@ client.on("ready", () => {
 });
 
 client.on("interactionCreate", async (interaction) => {
-  if (!interaction.isCommand()) return;
+  // if (!interaction.isCommand()) return;
   console.log("interaction is a command!!");
   if (!interaction.isAutocomplete()) return;
   console.log("interaction is autocomplete!!");
+
+  const command = interaction.client.commands.get(interaction.commandName);
+
+  if (!command) {
+    console.error(`No command matching ${interaction.commandName} was found.`);
+    return;
+  }
   try {
-    await autocomplete(interaction);
+    await command.autocomplete(interaction);
     // if (interaction.commandName === "marketprice") {
     //   const set = interaction.options.getString("set");
     //   const cardsInSet = data[set]?.cards;
