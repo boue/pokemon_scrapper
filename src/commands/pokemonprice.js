@@ -26,7 +26,7 @@
 //   );
 // export default PokemonPriceCommand.toJSON();
 
-const PokemonPriceCommand = new SlashCommandBuilder()
+export const PokemonPriceCommand = new SlashCommandBuilder()
   .setName("price")
   .setDescription("Gives you individual pokemon price")
   .addStringOption((option) =>
@@ -47,7 +47,7 @@ const PokemonPriceCommand = new SlashCommandBuilder()
   )
   .toJSON();
 
-const autocomplete = async (interaction) => {
+export const autocomplete = async (interaction) => {
   console.log("inside autocomplete");
   const focusedOption = interaction.options.getFocused(true);
   let choices;
@@ -97,11 +97,6 @@ const autocomplete = async (interaction) => {
   await interaction.respond(
     filtered.map((choice) => ({ name: choice, value: choice }))
   );
-};
-
-export default {
-  PokemonPriceCommand,
-  autocomplete,
 };
 // module.exports = {
 //   data: new SlashCommandBuilder()
