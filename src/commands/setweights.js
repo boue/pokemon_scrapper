@@ -6,11 +6,11 @@ const SetWeightCommand = new SlashCommandBuilder()
   .addStringOption((option) =>
     option
       .setName("set")
-      .setDescription("Select a set")
-      .addChoices({
-        name: "Base Set 1st Edition",
-        value: "Base Set 1st Edition",
-      })
+      .setDescription("Select the set")
+      .addChoices(
+        { name: "Base Set 1st Edition", value: "Base Set 1st Edition" },
+        { name: "Jungle 1st Edition", value: "Jungle 1st Edition" }
+      )
       .setRequired(true)
   )
   .addStringOption((option) =>

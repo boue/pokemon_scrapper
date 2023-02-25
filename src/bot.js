@@ -55,18 +55,6 @@ const formattedPokemons = Object.entries(data)
   })
   .join("");
 
-const differencePokemons = Object.entries(data)
-  .map((key, value) => {
-    const psa10 = parseInt(key["1"]["psa10"].replace(/,/g, "")) - 20;
-    const psa9 = parseInt(key["1"]["psa9"].replace(/,/g, ""));
-    const result = (psa10 / psa9) * 100 - 100;
-
-    return [key["1"]["name"], result.toFixed(2)];
-  })
-  .sort(function (a, b) {
-    return b[1] - a[1];
-  });
-
 const findCard = (name, set) => {
   const cardsInSet = data[set]?.cards;
   const card = cardsInSet.find((card) => card.name === name);
@@ -205,25 +193,22 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply(result);
     }
     if (interaction.commandName === "marketcap") {
-      const target = interaction.options.getString("pokemon");
-      const reason = interaction.options.getString("value");
+      const pokemon = interaction.options.getString("pokemon");
+      const value = interaction.options.getString("value");
       const popValue = reason.substring(3);
       const pop = `pop${popValue}`;
 
-      console.log("population value substring = ", popValue);
+      const caughtPokemon = findCard(
+        pokemon.split(" - ")[0],
+        pokemon.split(" - ")[1]
+      );
 
-      const caughtPokemon = Object.entries(data).find((p) => {
-        return p["1"]["name"] === target;
-      });
-
-      const marketcap =
-        parseInt(caughtPokemon[1][reason].replace(/,/g, "")) *
-        parseInt(caughtPokemon[1][pop].replace(/,/g, ""));
+      const marketcap = caughtPokemon[reason] * caughtPokemon[pop];
 
       const formattedPokemon =
         "\n" +
         "Name: " +
-        caughtPokemon[1]["name"] +
+        caughtPokemon["name"] +
         "\n" +
         "Marketcap is: " +
         "$" +
@@ -232,43 +217,45 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply(formattedPokemon);
     }
     if (interaction.commandName === "price") {
-      const target = interaction.options.getString("pokemon");
-      const reason = interaction.options.getString("value");
+      const pokemon = interaction.options.getString("pokemon");
+      const value = interaction.options.getString("value");
 
-      const caughtPokemon = Object.entries(data).find((p) => {
-        return p["1"]["name"] === target;
-      });
+      const caughtPokemon = findCard(
+        pokemon.split(" - ")[0],
+        pokemon.split(" - ")[1]
+      );
 
       const formattedPokemon =
         "\n" +
         "Name: " +
-        caughtPokemon[1]["name"] +
+        caughtPokemon["name"] +
         "\n" +
         "Current " +
         reason +
         " Price: " +
         "$" +
-        parseInt(caughtPokemon[1][reason].replace(/,/g, "")) +
+        caughtPokemon[value] +
         "\n";
 
       await interaction.reply(formattedPokemon);
     }
     if (interaction.commandName === "population") {
-      const target = interaction.options.getString("pokemon");
-      const reason = interaction.options.getString("value");
+      const pokemon = interaction.options.getString("pokemon");
+      const value = interaction.options.getString("value");
 
-      const caughtPokemon = Object.entries(data).find((p) => {
-        return p["1"]["name"] === target;
-      });
+      const caughtPokemon = findCard(
+        pokemon.split(" - ")[0],
+        pokemon.split(" - ")[1]
+      );
 
       const formattedPokemon =
         "\n" +
         "Name: " +
-        caughtPokemon[1]["name"] +
+        caughtPokemon["name"] +
         "\n" +
         reason +
         ": " +
-        parseInt(caughtPokemon[1][reason].replace(/,/g, "")) +
+        caughtPokemon[value] +
         "\n";
 
       await interaction.reply(formattedPokemon);
@@ -293,7 +280,22 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply(result);
     }
     if (interaction.commandName === "compareall") {
+      const set = interaction.options.getString("set");
+
       let formattedReply = "";
+
+      const differencePokemons = data
+        .find((d) => d.name === set)
+        ?.cards?.map((card) => {
+          const psa10 = card["psa10"] - 20;
+          const psa9 = card["psa9"];
+          const result = (psa10 / psa9) * 100 - 100;
+
+          return [card["name"], result.toFixed(2)];
+        })
+        .sort(function (a, b) {
+          return b[1] - a[1];
+        });
 
       differencePokemons.forEach((pokemon) => {
         const tempStr = pokemon[0] + ": " + pokemon[1] + "%" + "\n";
@@ -303,13 +305,14 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply(formattedReply);
     }
     if (interaction.commandName === "psacomparison") {
-      const target = interaction.options.getString("pokemon");
+      const pokemon = interaction.options.getString("pokemon");
       const value1 = interaction.options.getString("value1");
       const value2 = interaction.options.getString("value2");
 
-      const caughtPokemon = Object.entries(data).find((p) => {
-        return p["1"]["name"] === target;
-      });
+      const caughtPokemon = findCard(
+        pokemon.split(" - ")[0],
+        pokemon.split(" - ")[1]
+      );
 
       if (value1 === value2)
         throw new Error("Please pick two different values to compare.");
@@ -319,19 +322,12 @@ client.on("interactionCreate", async (interaction) => {
           "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
         );
 
-      // const psa10 = parseInt(caughtPokemon[1][value1].replace(/,/g, "")) - 20;
-      // const psa9 = parseInt(caughtPokemon[1][value2].replace(/,/g, ""));
-      // const result = (psa10 / psa9) * 100 - 100;
-
       let result =
-        ((parseInt(caughtPokemon[1][value1].replace(/,/g, "")) - 20) /
-          parseInt(caughtPokemon[1][value2].replace(/,/g, ""))) *
-          100 -
-        100;
+        ((caughtPokemon[value1] - 20) / caughtPokemon[value2]) * 100 - 100;
 
       const formattedPokemon =
         "\n" +
-        caughtPokemon[1]["name"] +
+        caughtPokemon["name"] +
         " " +
         value1 +
         " with " +
