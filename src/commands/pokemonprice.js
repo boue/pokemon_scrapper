@@ -31,14 +31,14 @@ export const PokemonPriceCommand = new SlashCommandBuilder()
   .setDescription("Gives you individual pokemon price")
   .addStringOption((option) =>
     option
-      .setName("Base")
+      .setName("base")
       .setDescription("Search a card in Base Set 1st Edition")
       .setAutocomplete(true)
       .setRequired(true)
   )
   .addStringOption((option) =>
     option
-      .setName("Jungle")
+      .setName("jungle")
       .setDescription("Search a card in Jungle 1st Edition")
       .setAutocomplete(true)
       .setRequired(true)
@@ -61,7 +61,7 @@ export const autocomplete = async (interaction) => {
   const focusedOption = interaction.options.getFocused(true);
   let choices;
 
-  if (focusedOption.name === "Base") {
+  if (focusedOption.name === "base") {
     choices = [
       "Charizard Holo 4",
       "Blastoise Holo 2",
@@ -81,7 +81,7 @@ export const autocomplete = async (interaction) => {
     ];
   }
 
-  if (focusedOption.name === "Jungle") {
+  if (focusedOption.name === "jungle") {
     choices = [
       "Electrode Holo 2",
       "Flareon Holo 3",
