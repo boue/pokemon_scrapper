@@ -179,9 +179,7 @@ client.on("interactionCreate", async (interaction) => {
     //   await interaction.reply(formattedPokemon);
     // }
     if (interaction.commandName === "price") {
-      const pokemon = interaction.options.getString("base")
-        ? interaction.options.getString("base")
-        : interaction.options.getString("jungle");
+      const pokemon = interaction.options.getString("base");
       console.log("pokemon is: ", pokemon);
       const value = interaction.options.getString("value");
       console.log("value is: ", value);
