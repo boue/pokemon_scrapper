@@ -81,7 +81,9 @@ export const autocomplete = async (interaction) => {
     "Magneton Holo 9",
   ];
 
-  const filtered = choices.filter((choice) => choice.startsWith(focusedOption));
+  const filtered = choices.filter((choice) =>
+    choice.lowerCase().startsWith(focusedOption)
+  );
   // const filtered = choices.filter((choice) =>
   //   choice.startsWith(focusedOption.value)
   // );
