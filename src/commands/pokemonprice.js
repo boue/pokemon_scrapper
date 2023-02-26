@@ -62,6 +62,7 @@ export const PokemonPriceCommand = new SlashCommandBuilder()
 export const autocomplete = async (interaction) => {
   console.log("inside autocomplete");
   const focusedOption = interaction.options.getFocused();
+  console.log("this is the focused option: ", focusedOption);
   const choices = [
     "Charizard Holo 4",
     "Blastoise Holo 2",
@@ -80,7 +81,7 @@ export const autocomplete = async (interaction) => {
     "Magneton Holo 9",
   ];
 
-  const filtered = choices.filter((choice) => choice.startsWith(focusedValue));
+  const filtered = choices.filter((choice) => choice.startsWith(focusedOption));
   // const filtered = choices.filter((choice) =>
   //   choice.startsWith(focusedOption.value)
   // );

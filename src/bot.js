@@ -44,9 +44,9 @@ client.on("ready", () => {
 
 client.on("interactionCreate", async (interaction) => {
   // if (!interaction.isCommand()) return;
-  console.log("interaction is a command!!");
-  if (!interaction.isAutocomplete()) return;
-  console.log("interaction is autocomplete!!");
+  // console.log("interaction is a command!!");
+  // if (!interaction.isAutocomplete()) return;
+  // console.log("interaction is autocomplete!!");
 
   // const command = interaction.client.commands.get(interaction.commandName);
 
@@ -55,8 +55,10 @@ client.on("interactionCreate", async (interaction) => {
   //   return;
   // }
   try {
-    await autocomplete(interaction);
-
+    if (interaction.isAutocomplete()) {
+      console.log("inside autocomplete");
+      await autocomplete(interaction);
+    }
     // if (interaction.commandName === "marketprice") {
     //   const set = interaction.options.getString("set");
     //   const cardsInSet = data[set]?.cards;
