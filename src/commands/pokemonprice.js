@@ -82,7 +82,7 @@ export const autocomplete = async (interaction) => {
   ];
 
   const filtered = choices.filter((choice) =>
-    choice.lowerCase().startsWith(focusedOption)
+    choice.toLowerCase().startsWith(focusedOption)
   );
   // const filtered = choices.filter((choice) =>
   //   choice.startsWith(focusedOption.value)
