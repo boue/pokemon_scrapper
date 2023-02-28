@@ -71,7 +71,6 @@ client.on("interactionCreate", async (interaction) => {
     }
     if (interaction.commandName === "weight") {
       console.log("inside setweights execution");
-      await interaction.reply("Working on it");
       await executeSetWeights(interaction);
     }
   } catch (error) {

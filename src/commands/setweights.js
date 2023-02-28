@@ -27,7 +27,6 @@ export const SetWeightCommand = new SlashCommandBuilder()
   .toJSON();
 
 export const execute = async (interaction) => {
-  console.log("interaction: ", interaction);
   const setName = interaction.options.getString("set");
   const weight = interaction.options.getString("weight");
 
@@ -46,5 +45,5 @@ export const execute = async (interaction) => {
     targetSetData[weight] +
     "\n";
 
-  await interaction.editReply(result);
+  await interaction.reply(result);
 };
