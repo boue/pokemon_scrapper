@@ -19,6 +19,10 @@ import {
   SetWeightCommand,
   execute as executeSetWeights,
 } from "./commands/setweights.js";
+import {
+  MarketSummaryCommand,
+  execute as executeSummary,
+} from "./commands/marketsummary.js";
 // import PsaComparisonCommand from "./commands/psacomparison.js";
 // import MarketCapCommand from "./commands/marketcap.js";
 // import TotalMarketCap from "./commands/totalmarketcap.js";
@@ -61,17 +65,26 @@ client.on("interactionCreate", async (interaction) => {
     }
     if (interaction.commandName === "price") {
       console.log("inside price execution");
-      await interaction.reply("Working on it");
+      await interaction.reply("Working on getting you price info...");
       await executePokemonPrice(interaction);
     }
     if (interaction.commandName === "population") {
       console.log("inside population execution");
-      await interaction.reply("Working on it");
+      await interaction.reply("Working on getting you population info...");
       await executePopulation(interaction);
     }
     if (interaction.commandName === "weight") {
       console.log("inside setweights execution");
       await executeSetWeights(interaction);
+    }
+    if (interaction.commandName === "weight") {
+      console.log("inside setweights execution");
+      await executeSetWeights(interaction);
+    }
+    if (interaction.commandName === "marketsummary") {
+      console.log("inside marketsummary execution");
+      await interaction.reply("Working on getting you a summary...");
+      await executeSummary(interaction);
     }
   } catch (error) {
     console.error(error);
@@ -85,6 +98,7 @@ async function main() {
   const commands = [
     // MarketPriceCommand,
     PokemonPriceCommand,
+    MarketSummaryCommand,
     // PsaComparisonCommand,
     // MarketCapCommand,
     // TotalMarketCap,
