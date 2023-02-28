@@ -1,4 +1,12 @@
 import { POKE_DATA_DOMAIN } from "../constants/pokemons.js";
+import data from "../data/data.json" assert { type: "json" };
+
+export const findCard = (name, set) => {
+  const setFound = data.find((d) => d.name === set);
+  const cardsInSet = setFound?.cards;
+  const card = cardsInSet.find((card) => card.name === name);
+  return card;
+};
 
 const parseAndAdd = (str) => {
   let tempArray = [];

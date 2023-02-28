@@ -1,12 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import data from "../../data/data.json" assert { type: "json" };
-
-const findCard = (name, set) => {
-  const setFound = data.find((d) => d.name === set);
-  const cardsInSet = setFound?.cards;
-  const card = cardsInSet.find((card) => card.name === name);
-  return card;
-};
+import { findCard } from "../../utils/utils.js";
 
 export const PokemonPriceCommand = new SlashCommandBuilder()
   .setName("price")
@@ -41,7 +34,6 @@ export const PokemonPriceCommand = new SlashCommandBuilder()
   .toJSON();
 
 export const autocomplete = async (interaction) => {
-  console.log("inside autocomplete");
   const focusedOption = interaction.options.getFocused(true);
 
   let choices = null;
@@ -110,7 +102,7 @@ export const execute = async (interaction) => {
   console.log("pokemon is: ", pokemon);
   const caughtPokemon = findCard(pokemon, set);
 
-  const formattedPokemon =
+  const priceMessage =
     "\n" +
     "Name: " +
     caughtPokemon["name"] +
@@ -122,5 +114,7 @@ export const execute = async (interaction) => {
     caughtPokemon[value] +
     "\n";
 
-  await interaction.reply(formattedPokemon);
+  console.log("formatted Pokemon in price: ", priceMessage);
+
+  await interaction.editReply(priceMessage);
 };

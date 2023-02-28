@@ -8,15 +8,22 @@ import data from "../data/dataList.json" assert { type: "json" };
 import {
   PokemonPriceCommand,
   autocomplete,
-  execute,
+  execute as executePokemonPrice,
 } from "./commands/pokemonprice.js";
+import {
+  PopulationCommand,
+  autocomplete as autocompletePopulation,
+  execute as executePopulation,
+} from "./commands/population.js";
+import {
+  SetWeightCommand,
+  execute as executeSetWeights,
+} from "./commands/setweights.js";
 // import PsaComparisonCommand from "./commands/psacomparison.js";
 // import MarketCapCommand from "./commands/marketcap.js";
 // import TotalMarketCap from "./commands/totalmarketcap.js";
 // import PsaSpreadCommand from "./commands/psaspread.js";
 // import CompareAllCommand from "./commands/compareall.js";
-// import PopulationCommand from "./commands/population.js";
-// import SetWeightCommand from "./commands/setweights.js";
 
 config();
 
@@ -52,41 +59,26 @@ client.on("interactionCreate", async (interaction) => {
       console.log("inside autocomplete");
       await autocomplete(interaction);
     }
-    if (interaction.isChatInputCommand()) {
-      await execute(interaction);
+    if (interaction.commandName === "price") {
+      console.log("inside price execution");
+      await interaction.reply("Working on it");
+      await executePokemonPrice(interaction);
     }
-    // if (interaction.commandName === "price") {
-    // const pokemon = interaction.options.getString("base");
-    // console.log("pokemon is: ", pokemon);
-    // const value = interaction.options.getString("value");
-    // console.log("value is: ", value);
-
-    // const caughtPokemon = findCard(
-    //   pokemon.split(" - ")[0],
-    //   pokemon.split(" - ")[1]
-    // );
-
-    // console.log("caughtPokemon is: ", caughtPokemon);
-
-    // const formattedPokemon =
-    //   "\n" +
-    //   "Name: " +
-    //   caughtPokemon["name"] +
-    //   "\n" +
-    //   "Current " +
-    //   reason +
-    //   " Price: " +
-    //   "$" +
-    //   caughtPokemon[value] +
-    //   "\n";
-
-    // await interaction.reply(formattedPokemon);
-    // }
+    if (interaction.commandName === "population") {
+      console.log("inside population execution");
+      await interaction.reply("Working on it");
+      await executePopulation(interaction);
+    }
+    if (interaction.commandName === "weight") {
+      console.log("inside setweights execution");
+      await interaction.reply("Working on it");
+      await executeSetWeights(interaction);
+    }
   } catch (error) {
     console.error(error);
-    await interaction.reply({
-      content: error.message ?? "There was an error executing this command",
-    });
+    // await interaction.reply({
+    //   content: error.message ?? "There was an error executing this command",
+    // });
   }
 });
 
@@ -99,8 +91,8 @@ async function main() {
     // TotalMarketCap,
     // PsaSpreadCommand,
     // CompareAllCommand,
-    // PopulationCommand,
-    // SetWeightCommand,
+    PopulationCommand,
+    SetWeightCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");

@@ -1,6 +1,7 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
+import data from "../../data/data.json" assert { type: "json" };
 
-const SetWeightCommand = new SlashCommandBuilder()
+export const SetWeightCommand = new SlashCommandBuilder()
   .setName("weight")
   .setDescription("Gives you weight averages for a set")
   .addStringOption((option) =>
@@ -22,5 +23,28 @@ const SetWeightCommand = new SlashCommandBuilder()
         { name: "heavy", value: "heavy" }
       )
       .setRequired(true)
-  );
-export default SetWeightCommand.toJSON();
+  )
+  .toJSON();
+
+export const execute = async (interaction) => {
+  console.log("interaction: ", interaction);
+  const setName = interaction.options.getString("set");
+  const weight = interaction.options.getString("weight");
+
+  const targetSetData = data?.find((set) => {
+    return set?.name === setName;
+  });
+
+  const result =
+    "\n" +
+    "Set: " +
+    setName +
+    "\n" +
+    "Average " +
+    weight +
+    " pack: " +
+    targetSetData[weight] +
+    "\n";
+
+  await interaction.editReply(result);
+};
