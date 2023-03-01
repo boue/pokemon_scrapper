@@ -4,7 +4,7 @@ import { findCard } from "../../utils/utils.js";
 export const PopulationCommand = new SlashCommandBuilder()
   .setName("population")
   .setDescription(
-    "Gives you individual pokemon population, , pick only one set after you pick value"
+    "Gives you individual pokemon population, pick only one set after you pick value"
   )
   .addStringOption((option) =>
     option
@@ -92,7 +92,7 @@ export const execute = async (interaction) => {
   const pokemonJungle = interaction.options.getString("jungle");
 
   if (pokemonBase && pokemonJungle) {
-    throw new Error("You can only search one set at a time");
+    throw new Error("You can only search one pokemon at a time");
   }
 
   const pokemon = pokemonBase || pokemonJungle;

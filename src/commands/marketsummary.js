@@ -25,7 +25,7 @@ export const execute = async (interaction) => {
   const pokemonJungle = interaction.options.getString("jungle");
 
   if (pokemonBase && pokemonJungle) {
-    throw new Error("You can only search one set at a time");
+    throw new Error("You can only search one pokemon at a time");
   }
 
   const pokemon = pokemonBase || pokemonJungle;

@@ -81,7 +81,6 @@ export const autocomplete = async (interaction) => {
   const filtered = choices.filter((choice) =>
     choice.toLowerCase().startsWith(focusedOption.value)
   );
-  console.log("these are the filtered choices: ", filtered);
   await interaction.respond(
     filtered.map((choice) => ({ name: choice, value: choice }))
   );
@@ -92,7 +91,7 @@ export const execute = async (interaction) => {
   const pokemonJungle = interaction.options.getString("jungle");
 
   if (pokemonBase && pokemonJungle) {
-    throw new Error("You can only search one set at a time");
+    throw new Error("You can only search one pokemon at a time");
   }
 
   const pokemon = pokemonBase || pokemonJungle;
