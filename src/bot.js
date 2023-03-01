@@ -31,9 +31,11 @@ import {
   MarketCapCommand,
   execute as executeMarketCap,
 } from "./commands/marketcap.js";
+import {
+  CompareAllCommand,
+  execute as executeCompareAllCommand,
+} from "./commands/compareall.js";
 // import PsaComparisonCommand from "./commands/psacomparison.js";
-// import MarketCapCommand from "./commands/marketcap.js";
-// import TotalMarketCap from "./commands/totalmarketcap.js";
 // import PsaSpreadCommand from "./commands/psaspread.js";
 // import CompareAllCommand from "./commands/compareall.js";
 
@@ -99,6 +101,11 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply("Working on getting you a market cap...");
       await executeMarketCap(interaction);
     }
+    if (interaction.commandName === "compareall") {
+      console.log("inside compareall execution");
+      await interaction.reply("Working on getting you a comparison...");
+      await executeCompareAllCommand(interaction);
+    }
   } catch (error) {
     console.error(error);
     // await interaction.reply({
@@ -115,7 +122,7 @@ async function main() {
     MarketCapCommand,
     TotalMarketCapCommand,
     // PsaSpreadCommand,
-    // CompareAllCommand,
+    CompareAllCommand,
     PopulationCommand,
     SetWeightCommand,
   ];
