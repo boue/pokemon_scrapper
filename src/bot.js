@@ -23,6 +23,10 @@ import {
   MarketSummaryCommand,
   execute as executeSummary,
 } from "./commands/marketsummary.js";
+import {
+  TotalMarketCapCommand,
+  execute as executeTotalMarketCap,
+} from "./commands/totalmarketcap.js";
 // import PsaComparisonCommand from "./commands/psacomparison.js";
 // import MarketCapCommand from "./commands/marketcap.js";
 // import TotalMarketCap from "./commands/totalmarketcap.js";
@@ -86,6 +90,10 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply("Working on getting you a summary...");
       await executeSummary(interaction);
     }
+    if (interaction.commandName === "totalmarketcap") {
+      console.log("inside totalmarketcap execution");
+      await executeTotalMarketCap(interaction);
+    }
   } catch (error) {
     console.error(error);
     // await interaction.reply({
@@ -101,7 +109,7 @@ async function main() {
     MarketSummaryCommand,
     // PsaComparisonCommand,
     // MarketCapCommand,
-    // TotalMarketCap,
+    TotalMarketCapCommand,
     // PsaSpreadCommand,
     // CompareAllCommand,
     PopulationCommand,
