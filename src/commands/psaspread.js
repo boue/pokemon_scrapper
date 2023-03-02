@@ -86,11 +86,9 @@ export const execute = async (interaction) => {
   const set = pokemonBase ? "Base Set 1st Edition" : "Jungle 1st Edition";
   const caughtPokemon1 = findCard(pokemon, set);
 
-  console.log("caughtPokemon1: ", caughtPokemon1);
-
   const pokemon2 = pokemonBase2 || pokemonJungle2;
   console.log("pokemon2: ", pokemon2);
-  const set2 = pokemonBase ? "Base Set 1st Edition" : "Jungle 1st Edition";
+  const set2 = pokemonBase2 ? "Base Set 1st Edition" : "Jungle 1st Edition";
   console.log("set2: ", set2);
   const caughtPokemon2 = findCard(pokemon2, set2);
 
