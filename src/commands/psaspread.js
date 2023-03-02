@@ -69,15 +69,10 @@ export const execute = async (interaction) => {
   const value1 = interaction.options.getString("value1");
   const value2 = interaction.options.getString("value2");
 
-  if (value1 === value2)
+  if (value1 === value2) {
     await interaction.editReply("Please pick two different values to compare.");
-  throw new Error("Please pick two different values to compare.");
-
-  if (value1 === "psa9" && value2 === "psa10")
-    await interaction.editReply(
-      "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
-    );
-  throw new Error("PSA9/PS10 is not supported. Pick PSA10 first then PS9.");
+    throw new Error("Please pick two different values to compare.");
+  }
 
   if (pokemonBase && pokemonJungle) {
     await interaction.editReply("You already picked your 1st Pokemon..");
