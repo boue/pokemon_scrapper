@@ -3,8 +3,11 @@ import data from "../data/data.json" assert { type: "json" };
 
 export const findCard = (name, set) => {
   const setFound = data.find((d) => d.name === set);
+  console.log("set found: ", setFound);
   const cardsInSet = setFound?.cards;
+  console.log("cards in set: ", cardsInSet);
   const card = cardsInSet.find((card) => card.name === name);
+  console.log("card found: ", card);
   return card;
 };
 

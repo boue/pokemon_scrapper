@@ -38,7 +38,10 @@ import {
   PsaComparisonCommand,
   execute as executePsaComparisonCommand,
 } from "./commands/psacomparison.js";
-// import PsaSpreadCommand from "./commands/psaspread.js";
+import {
+  PsaSpreadCommand,
+  execute as executePsaSpreadCommand,
+} from "./commands/psaspread.js";
 
 config();
 
@@ -108,6 +111,13 @@ client.on("interactionCreate", async (interaction) => {
       );
       await executePsaComparisonCommand(interaction);
     }
+    if (interaction.commandName === "psaspread") {
+      console.log("inside psaspread execution");
+      await interaction.reply(
+        "Working on getting you a PSA spread...REMINDER! -> PSA10/PS9, PSA10/RAW, PSA9/RAW are the options supported"
+      );
+      await executePsaSpreadCommand(interaction);
+    }
   } catch (error) {
     console.error(error);
     // await interaction.reply({
@@ -123,7 +133,7 @@ async function main() {
     PsaComparisonCommand,
     MarketCapCommand,
     TotalMarketCapCommand,
-    // PsaSpreadCommand,
+    PsaSpreadCommand,
     CompareAllCommand,
     PopulationCommand,
     SetWeightCommand,

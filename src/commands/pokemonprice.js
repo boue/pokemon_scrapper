@@ -38,7 +38,7 @@ export const autocomplete = async (interaction) => {
 
   let choices = null;
 
-  if (focusedOption.name === "base") {
+  if (focusedOption.name === "base" || focusedOption.name === "base2") {
     choices = [
       "Charizard Holo 4",
       "Blastoise Holo 2",
@@ -58,7 +58,7 @@ export const autocomplete = async (interaction) => {
     ];
   }
 
-  if (focusedOption.name === "jungle") {
+  if (focusedOption.name === "jungle" || focusedOption.name === "jungle2") {
     choices = [
       "Electrode Holo 2",
       "Flareon Holo 3",
