@@ -4,7 +4,6 @@ import { Client, Events, GatewayIntentBits, Collection } from "discord.js";
 import { Routes } from "discord-api-types/v10";
 import data from "../data/dataList.json" assert { type: "json" };
 
-// import MarketPriceCommand from "./commands/marketprice.js";
 import {
   PokemonPriceCommand,
   autocomplete,
@@ -35,9 +34,11 @@ import {
   CompareAllCommand,
   execute as executeCompareAllCommand,
 } from "./commands/compareall.js";
-// import PsaComparisonCommand from "./commands/psacomparison.js";
+import {
+  PsaComparisonCommand,
+  execute as executePsaComparisonCommand,
+} from "./commands/psacomparison.js";
 // import PsaSpreadCommand from "./commands/psaspread.js";
-// import CompareAllCommand from "./commands/compareall.js";
 
 config();
 
@@ -45,12 +46,6 @@ const TOKEN = process.env.DISCORDJS_BOT_TOKEN;
 const CLIENT_ID = process.env.DISCORDJS_CLIENT_ID;
 const GUILD_ID = process.env.DISCORDJS_GUILD_ID;
 const CHANNEL_ID = process.env.DISCORDJS_CHANNEL_ID;
-
-// const findCard = (name, set) => {
-//   const cardsInSet = data[set]?.cards;
-//   const card = cardsInSet.find((card) => card.name === name);
-//   return card;
-// };
 
 const client = new Client({
   intents: [
@@ -103,8 +98,15 @@ client.on("interactionCreate", async (interaction) => {
     }
     if (interaction.commandName === "compareall") {
       console.log("inside compareall execution");
-      await interaction.reply("Working on getting you a comparison...");
+      await interaction.reply("Working on comparing all...");
       await executeCompareAllCommand(interaction);
+    }
+    if (interaction.commandName === "psacomparison") {
+      console.log("inside psacomparison execution");
+      await interaction.reply(
+        "Working on getting you a PSA comparison...REMINDER! -> PSA10/PS9, PSA10/RAW, PSA9/RAW are the options supported"
+      );
+      await executePsaComparisonCommand(interaction);
     }
   } catch (error) {
     console.error(error);
@@ -118,7 +120,7 @@ async function main() {
   const commands = [
     PokemonPriceCommand,
     MarketSummaryCommand,
-    // PsaComparisonCommand,
+    PsaComparisonCommand,
     MarketCapCommand,
     TotalMarketCapCommand,
     // PsaSpreadCommand,
