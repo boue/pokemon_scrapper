@@ -51,13 +51,19 @@ export const execute = async (interaction) => {
   const value1 = interaction.options.getString("value1");
   const value2 = interaction.options.getString("value2");
 
-  if (value1 === value2)
+  if (value1 === value2) {
+    await interaction.editReply("Please pick two different values to compare.");
     throw new Error("Please pick two different values to compare.");
+  }
 
   if (value1 === "psa9" && value2 === "psa10")
-    throw new Error("PSA9/PS10 is not supported. Pick PSA10 first then PS9.");
+    await interaction.editReply(
+      "PSA9/PS10 is not supported. Pick PSA10 first then PS9."
+    );
+  // throw new Error("PSA9/PS10 is not supported. Pick PSA10 first then PS9.");
 
   if (pokemonBase && pokemonJungle) {
+    await interaction.editReply("You can only search one pokemon at a time");
     throw new Error("You can only search one pokemon at a time");
   }
 

@@ -39,6 +39,7 @@ export const autocomplete = async (interaction) => {
   let choices = null;
 
   if (focusedOption.name === "base" || focusedOption.name === "base2") {
+    console.log("here in base");
     choices = [
       "Charizard Holo 4",
       "Blastoise Holo 2",
@@ -59,6 +60,7 @@ export const autocomplete = async (interaction) => {
   }
 
   if (focusedOption.name === "jungle" || focusedOption.name === "jungle2") {
+    console.log("here in jungle");
     choices = [
       "Electrode Holo 2",
       "Flareon Holo 3",
@@ -91,6 +93,7 @@ export const execute = async (interaction) => {
   const pokemonJungle = interaction.options.getString("jungle");
 
   if (pokemonBase && pokemonJungle) {
+    await interaction.editReply("You can only search one pokemon at a time");
     throw new Error("You can only search one pokemon at a time");
   }
 
