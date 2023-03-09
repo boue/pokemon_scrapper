@@ -43,3 +43,21 @@ export const generateDataObject = (data) => {
     return { name, type, link };
   });
 };
+
+export const generateModernDataObject = (data) => {
+  return data.map((d) => {
+    let splitName = d.name.split(" ").join("+");
+    let name = `${splitName}+${d.num}`;
+    let type = d.num.includes("TG")
+      ? "Trainer Gallery"
+      : d.name.includes("V")
+      ? "V"
+      : d.name.includes("VMAX")
+      ? "VMAX"
+      : d.name.includes("V Star")
+      ? "V Star"
+      : "normal";
+    let link = `https://www.pokedata.io/card/Silver+Tempest/${name}`;
+    return { name, type, link };
+  });
+};

@@ -266,6 +266,10 @@ const dataList = [
       },
     ],
   },
+  {
+    name: "Silver Tempest",
+    cards: [],
+  },
 ];
 
 const jungleNonHolos = [
