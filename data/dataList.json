@@ -6,93 +6,123 @@
     "cards": [
       {
         "name": "Charizard Holo 4",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Charizard+Holo+4",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/charizard-holo-1st-edition-4/605253"
+        "psa10": 270600,
+        "psa9": 16144,
+        "pop10": 123,
+        "pop9": 712,
+        "raw": 2096
       },
       {
         "name": "Blastoise Holo 2",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Blastoise+Holo+2",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/blastoise-holo-1st-edition-2/605247"
+        "psa10": 23433,
+        "psa9": 4000,
+        "pop10": 101,
+        "pop9": 638,
+        "raw": 748
       },
       {
         "name": "Venusaur Holo 15",
-        "type": "Holo",
-        "pokeDataLink": "  https://www.pokedata.io/card/Base+Set+1st+Edition/Venusaur+Holo+15",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/venusaur-holo-1st-edition-15/605284"
+        "psa10": 20000,
+        "psa9": 3000,
+        "pop10": 144,
+        "pop9": 628,
+        "raw": 544
       },
       {
         "name": "Nidoking Holo 11",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Nidoking+Holo+11",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/nidoking-holo-1st-edition-11/605272"
+        "psa10": 8000,
+        "psa9": 1011,
+        "pop10": 90,
+        "pop9": 521,
+        "raw": 225
       },
       {
         "name": "Chansey Holo 3",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Chansey+Holo+3",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/chansey-holo-1st-edition-3/605249"
+        "psa10": 35000,
+        "psa9": 1160,
+        "pop10": 48,
+        "pop9": 432,
+        "raw": 180
       },
       {
         "name": "Clefairy Holo 5",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Clefairy+Holo+5",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/clefairy-holo-1st-edition-5/605255"
+        "psa10": 7350,
+        "psa9": 771,
+        "pop10": 66,
+        "pop9": 435,
+        "raw": 75
       },
       {
         "name": "Alakazam Holo 1",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Alakazam+Holo+1",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/alakazam-holo-1st-edition-1/605243"
+        "psa10": 18999,
+        "psa9": 1500,
+        "pop10": 91,
+        "pop9": 464,
+        "raw": 297
       },
       {
         "name": "Poliwrath Holo 13",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Poliwrath+Holo+13",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/poliwrath-holo-1st-edition-13/605278"
+        "psa10": 7300,
+        "psa9": 834,
+        "pop10": 100,
+        "pop9": 483,
+        "raw": 357
       },
       {
         "name": "Raichu Holo 14",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Raichu+Holo+14",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/raichu-holo-1st-edition-14/605281"
+        "psa10": 2318,
+        "psa9": 1150,
+        "pop10": 87,
+        "pop9": 450,
+        "raw": 233
       },
       {
         "name": "Ninetales Holo 12",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Ninetales+Holo+12",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/ninetales-holo-1st-edition-12/605274"
+        "psa10": 9611,
+        "psa9": 1299,
+        "pop10": 67,
+        "pop9": 437,
+        "raw": 132
       },
       {
         "name": "Hitmonchan Holo 7",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Hitmonchan+Holo+7",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/hitmonchan-holo-1st-edition-7/605262"
+        "psa10": 25000,
+        "psa9": 1099,
+        "pop10": 57,
+        "pop9": 369,
+        "raw": 123
       },
       {
         "name": "Mewtwo Holo 10",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Mewtwo+Holo+10",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/mewtwo-holo-1st-edition-10/605269"
+        "psa10": 200,
+        "psa9": 2041,
+        "pop10": 81,
+        "pop9": 491,
+        "raw": 50
       },
       {
         "name": "Zapdos Holo 16",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Zapdos+Holo+16",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/zapdos-holo-1st-edition-16/605286"
+        "psa10": 7549,
+        "psa9": 517,
+        "pop10": 131,
+        "pop9": 541,
+        "raw": 207
       },
       {
         "name": "Gyarados Holo 6",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Gyarados+Holo+6",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/gyarados-holo-1st-edition-6/605259"
+        "psa10": 19999,
+        "psa9": 1340,
+        "pop10": 88,
+        "pop9": 444,
+        "raw": 296
       },
       {
         "name": "Magneton Holo 9",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Base+Set+1st+Edition/Magneton+Holo+9",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/magneton-holo-1st-edition-9/605266"
+        "psa10": 210,
+        "psa9": 700,
+        "pop10": 64,
+        "pop9": 461,
+        "raw": 67
       }
     ]
   },
@@ -103,93 +133,298 @@
     "cards": [
       {
         "name": "Electrode Holo 2",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Electrode+Holo+2",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/electrode-holo-1st-edition-2/641290"
+        "psa10": 765,
+        "psa9": 107,
+        "pop10": 108,
+        "pop9": 727,
+        "raw": 38
       },
       {
         "name": "Flareon Holo 3",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Flareon+Holo+3",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/flareon-holo-1st-edition-3/641293"
+        "psa10": 1803,
+        "psa9": 257,
+        "pop10": 198,
+        "pop9": 996,
+        "raw": 51
       },
       {
         "name": "Jolteon Holo 4",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Jolteon+Holo+4",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/jolteon-holo-1st-edition-4/641296"
+        "psa10": 2199,
+        "psa9": 345,
+        "pop10": 132,
+        "pop9": 807,
+        "raw": 50
       },
       {
         "name": "Kangaskhan Holo 5",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Kangaskhan+Holo+5",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/kangaskhan-holo-1st-edition-5/641299"
+        "psa10": 2225,
+        "psa9": 143,
+        "pop10": 70,
+        "pop9": 662,
+        "raw": 33
       },
       {
         "name": "Mr. Mime Holo 6",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Mr.+Holo+6",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/mr-mime-holo-1st-edition-6/641302"
+        "psa10": 1200,
+        "psa9": 138,
+        "pop10": 103,
+        "pop9": 667,
+        "raw": 27
       },
       {
         "name": "Nidoqueen Holo 7",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Nidoqueen+Holo+7",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/nidoqueen-holo-1st-edition-7/641305"
+        "psa10": 1080,
+        "psa9": 137,
+        "pop10": 102,
+        "pop9": 661,
+        "raw": 24
       },
       {
         "name": "Pidgeot Holo 8",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Pidgeot+Holo+8",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pidgeot-holo-1st-edition-8/641308"
+        "psa10": 1550,
+        "psa9": 240,
+        "pop10": 109,
+        "pop9": 679,
+        "raw": 50
       },
       {
         "name": "Pinsir Holo 9",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Pinsir+Holo+9",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pinsir-holo-1st-edition-9/641311"
+        "psa10": 1017,
+        "psa9": 115,
+        "pop10": 106,
+        "pop9": 678,
+        "raw": 35
       },
       {
         "name": "Scyther Holo 10",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Scyther+Holo+10",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/scyther-holo-1st-edition-10/641314"
+        "psa10": 1350,
+        "psa9": 229,
+        "pop10": 135,
+        "pop9": 751,
+        "raw": 42
       },
       {
         "name": "Snorlax Holo 11",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Snorlax+Holo+11",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/snorlax-holo-1st-edition-11/641317"
+        "psa10": 3550,
+        "psa9": 533,
+        "pop10": 74,
+        "pop9": 705,
+        "raw": 64
       },
       {
         "name": "Vaporeon Holo 12",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Vaporeon+Holo+12",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vaporeon-holo-1st-edition-12/641320"
+        "psa10": 4000,
+        "psa9": 460,
+        "pop10": 69,
+        "pop9": 687,
+        "raw": 55
       },
       {
         "name": "Venomoth Holo 13",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Venomoth+Holo+13",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/venomoth-holo-1st-edition-13/641323"
+        "psa10": 750,
+        "psa9": 122,
+        "pop10": 104,
+        "pop9": 614,
+        "raw": 24
       },
       {
         "name": "Victreebel Holo 14",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Victreebel+Holo+14",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/victreebel-holo-1st-edition-14/641326"
+        "psa10": 1138,
+        "psa9": 125,
+        "pop10": 89,
+        "pop9": 576,
+        "raw": 23
       },
       {
         "name": "Vileplume Holo 15",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Vileplume+Holo+15",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vileplume-holo-1st-edition-15/641329"
+        "psa10": 900,
+        "psa9": 132,
+        "pop10": 103,
+        "pop9": 656,
+        "raw": 20
       },
       {
         "name": "Wigglytuff Holo 16",
-        "type": "Holo",
-        "pokeDataLink": "https://www.pokedata.io/card/Jungle+1st+Edition/Wigglytuff+Holo+16",
-        "psaLink": "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/wigglytuff-holo-1st-edition-16/641332"
+        "psa10": 1200,
+        "psa9": 149,
+        "pop10": 71,
+        "pop9": 545,
+        "raw": 30
+      }
+    ]
+  },
+  {
+    "name": "Silver Tempest",
+    "light": "N/A",
+    "heavy": "N/A",
+    "cards": [
+      {
+        "name": "Lugia V 186",
+        "psa10": 411,
+        "psa9": 211,
+        "pop10": 184,
+        "pop9": 938,
+        "raw": 186
+      },
+      {
+        "name": "Serena 193",
+        "psa10": 108,
+        "psa9": 47,
+        "pop10": 53,
+        "pop9": 232,
+        "raw": 33
+      },
+      {
+        "name": "Lugia VSTAR 202",
+        "psa10": 110,
+        "psa9": 38,
+        "pop10": 47,
+        "pop9": 185,
+        "raw": 31
+      },
+      {
+        "name": "Unown V 177",
+        "psa10": 113,
+        "psa9": 43,
+        "pop10": 89,
+        "pop9": 327,
+        "raw": 34
+      },
+      {
+        "name": "Regidrago V 184",
+        "psa10": 113,
+        "psa9": 43,
+        "pop10": 39,
+        "pop9": 266,
+        "raw": 34
+      },
+      {
+        "name": "Serena 207",
+        "psa10": 48,
+        "psa9": 21,
+        "pop10": 19,
+        "pop9": 72,
+        "raw": 13
+      },
+      {
+        "name": "Alolan Vulpix VSTAR 197",
+        "psa10": 84,
+        "psa9": 30,
+        "pop10": 18,
+        "pop9": 63,
+        "raw": 17
+      },
+      {
+        "name": "Skuntank V 181",
+        "psa10": 46,
+        "psa9": 25,
+        "pop10": 33,
+        "pop9": 167,
+        "raw": 17
+      },
+      {
+        "name": "Unown VSTAR 199",
+        "psa10": 35,
+        "psa9": 20,
+        "pop10": 17,
+        "pop9": 58,
+        "raw": 12
+      },
+      {
+        "name": "Candice 189",
+        "psa10": 55,
+        "psa9": 22,
+        "pop10": 203,
+        "pop9": 103,
+        "raw": 12
+      },
+      {
+        "name": "Wallace 194",
+        "psa10": 24,
+        "psa9": 10,
+        "pop10": 5,
+        "pop9": 13,
+        "raw": 9
+      },
+      {
+        "name": "Regieleki VMAX 198",
+        "psa10": 25,
+        "psa9": 10,
+        "pop10": 1,
+        "pop9": 11,
+        "raw": 9
+      },
+      {
+        "name": "Regidrago VSTAR 201",
+        "psa10": 30,
+        "psa9": 21,
+        "pop10": 4,
+        "pop9": 41,
+        "raw": 10
+      },
+      {
+        "name": "Candice 204",
+        "psa10": 32,
+        "psa9": null,
+        "pop10": 4,
+        "pop9": 37,
+        "raw": 10
+      },
+      {
+        "name": "Furisode Girl 205",
+        "psa10": 38,
+        "psa9": 16,
+        "pop10": 9,
+        "pop9": 43,
+        "raw": 9
+      },
+      {
+        "name": "Serperior VSTAR 196",
+        "psa10": 22,
+        "psa9": 15,
+        "pop10": 6,
+        "pop9": 35,
+        "raw": 9
+      },
+      {
+        "name": "Lance 206",
+        "psa10": 36,
+        "psa9": 13,
+        "pop10": 7,
+        "pop9": 25,
+        "raw": 9
+      },
+      {
+        "name": "Wallace 208",
+        "psa10": 25,
+        "psa9": 15,
+        "pop10": 2,
+        "pop9": 24,
+        "raw": 8
+      },
+      {
+        "name": "Lance 192",
+        "psa10": 33,
+        "psa9": 15,
+        "pop10": 10,
+        "pop9": 29,
+        "raw": 6
+      },
+      {
+        "name": "Worker 209",
+        "psa10": 26,
+        "psa9": 20,
+        "pop10": 1,
+        "pop9": 23,
+        "raw": 5
+      },
+      {
+        "name": "Brandon 203",
+        "psa10": 17,
+        "psa9": 10,
+        "pop10": 3,
+        "pop9": 13,
+        "raw": 5
       }
     ]
   }

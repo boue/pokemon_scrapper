@@ -58,6 +58,6 @@ export const generateModernDataObject = (data) => {
       ? "V Star"
       : "normal";
     let link = `https://www.pokedata.io/card/Silver+Tempest/${name}`;
-    return { name, type, link };
+    return { name: `${d.name} ${d.num}`, type, link };
   });
 };

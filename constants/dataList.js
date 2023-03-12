@@ -299,6 +299,174 @@ export const dataList = [
       },
     ],
   },
+  {
+    name: "Silver Tempest",
+    cards: [
+      {
+        name: "Lugia V 186",
+        type: "V Alternate Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lugia+V+186",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-v/summary/7653413",
+      },
+      {
+        name: "Serena 193",
+        type: "Trainer Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+193",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7729854",
+      },
+      {
+        name: "Lugia VSTAR 202",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Lugia+VSTAR+202",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-vstar/summary/7704011",
+      },
+      {
+        name: "Unown V 177",
+        type: "V Alternate Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-v/summary/7717224",
+      },
+      {
+        name: "Regidrago V 184",
+        type: "V Alternate Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-v/summary/7727442",
+      },
+      {
+        name: "Serena 207",
+        type: "Trainer Secret Rare Rainbow",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+207",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7759270",
+      },
+      {
+        name: "Alolan Vulpix VSTAR 197",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Alolan+Vulpix+VSTAR+197",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-alolan-vulpix-vstar/summary/7732305",
+      },
+      {
+        name: "Skuntank V 181",
+        type: "V Alternate Full Art Ultra Rare",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Skuntank+V+181",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-skuntank-v/summary/7727443",
+      },
+      {
+        name: "Unown VSTAR 199",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Unown+VSTAR+199",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-vstar/summary/7759260",
+      },
+      {
+        name: "Candice 189",
+        type: "Trainer Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Candice+189",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-candice/summary/7717484",
+      },
+      {
+        name: "Wallace 194",
+        type: "Trainer Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Wallace+194",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-wallace/summary/7779542",
+      },
+      {
+        name: "Regieleki VMAX 198",
+        type: "VMAX Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Regieleki+VMAX+198",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regieleki-vmax/summary/7763027",
+      },
+      {
+        name: "Regidrago VSTAR 201",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Regidrago+VSTAR+201",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-vstar/summary/7763030",
+      },
+      {
+        name: "Candice 204",
+        type: "Trainer Secret Rare Rainbow",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Candice+204",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-candice/summary/7759261",
+      },
+      {
+        name: "Furisode Girl 205",
+        type: "Trainer Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Furisode+Girl+205",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-furisode-girl/summary/7759265",
+      },
+      {
+        name: "Serperior VSTAR 196",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Serperior+VSTAR+196",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serperior-vstar/summary/7727486",
+      },
+      {
+        name: "Lance 206",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lance+206",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lance/summary/7759269",
+      },
+      {
+        name: "Wallace 208",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Wallace+208",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-wallace/summary/7763033",
+      },
+      {
+        name: "Lance 192",
+        type: "Trainer Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lance+192",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lance/summary/7759259",
+      },
+      // {
+      //   name: "Mawile VSTAR 200",
+      //   type: "V Star Secret Rare Rainbow",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Silver+Tempest/Mawile+VSTAR+200",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-mawile-vstar/values/7763029",
+      // },
+      {
+        name: "Worker 209",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Worker+209",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-worker/summary/7759272",
+      },
+      {
+        name: "Brandon 203",
+        type: "Trainer Secret Rare Rainbow",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Brandon+203",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-brandon/summary/7763032",
+      },
+    ],
+  },
 ];
 
 const jungleNonHolos = [

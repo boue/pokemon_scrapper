@@ -80,6 +80,36 @@ export const autocomplete = async (interaction) => {
     ];
   }
 
+  if (
+    focusedOption.name === "silvertempest" ||
+    focusedOption.name === "silvertempest2"
+  ) {
+    console.log("here in silvertempest");
+    choices = [
+      "Lugia V 186",
+      "Serena 193",
+      "Lugia VSTAR 202",
+      "Unown V 177",
+      "Regidrago V 184",
+      "Serena 207",
+      "Alolan Vulpix VSTAR 197",
+      "Skuntank V 181",
+      "Unown VSTAR 199",
+      "Candice 189",
+      "Wallace 194",
+      "Regieleki VMAX 198",
+      "Regidrago VSTAR 201",
+      "Candice 204",
+      "Furisode Girl 205",
+      "Serperior VSTAR 196",
+      "Lance 206",
+      "Wallace 208",
+      "Lance 192",
+      "Worker 209",
+      "Brandon 203",
+    ];
+  }
+
   const filtered = choices.filter((choice) =>
     choice.toLowerCase().startsWith(focusedOption.value)
   );

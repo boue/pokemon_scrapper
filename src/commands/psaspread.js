@@ -40,6 +40,13 @@ export const PsaSpreadCommand = new SlashCommandBuilder()
   )
   .addStringOption((option) =>
     option
+      .setName("silvertempest")
+      .setDescription("Select if your 1st Pokemon is in Silver Tempest")
+      .setMinLength(1)
+      .setAutocomplete(true)
+  )
+  .addStringOption((option) =>
+    option
       .setName("jungle")
       .setDescription("Select if your 1st Pokemon is in Jungle 1st Edition")
       .setMinLength(1)
@@ -59,13 +66,22 @@ export const PsaSpreadCommand = new SlashCommandBuilder()
       .setMinLength(1)
       .setAutocomplete(true)
   )
+  .addStringOption((option) =>
+    option
+      .setName("silvertempest2")
+      .setDescription("Select if your 2nd Pokemon is in Silver Tempest")
+      .setMinLength(1)
+      .setAutocomplete(true)
+  )
   .toJSON();
 
 export const execute = async (interaction) => {
   const pokemonBase = interaction.options.getString("base");
   const pokemonJungle = interaction.options.getString("jungle");
+  const pokemonSilverTempest = interaction.options.getString("silvertempest");
   const pokemonBase2 = interaction.options.getString("base2");
   const pokemonJungle2 = interaction.options.getString("jungle2");
+  const pokemonSilverTempest2 = interaction.options.getString("silvertempest2");
   const value1 = interaction.options.getString("value1");
   const value2 = interaction.options.getString("value2");
 
@@ -74,22 +90,30 @@ export const execute = async (interaction) => {
     throw new Error("Please pick two different values to compare.");
   }
 
-  if (pokemonBase && pokemonJungle) {
+  if (pokemonBase && pokemonJungle && pokemonSilverTempest) {
     await interaction.editReply("You already picked your 1st Pokemon..");
-    throw new Error("Pick base or jungle, not both.");
+    throw new Error("Pick one of: base, jungle or silvertempest.");
   }
-  if (pokemonBase2 && pokemonJungle2) {
+  if (pokemonBase2 && pokemonJungle2 && pokemonSilverTempest2) {
     await interaction.editReply("You already picked your 2nd Pokemon..");
-    throw new Error("Pick base2 or jungle2, not both.");
+    throw new Error("Pick one of: base2 ,jungle2, or silvertempest2.");
   }
 
-  const pokemon = pokemonBase || pokemonJungle;
-  const set = pokemonBase ? "Base Set 1st Edition" : "Jungle 1st Edition";
+  const pokemon = pokemonBase || pokemonJungle || pokemonSilverTempest;
+  const set = pokemonBase
+    ? "Base Set 1st Edition"
+    : pokemonJungle
+    ? "Jungle 1st Edition"
+    : "Silver Tempest";
   const caughtPokemon1 = findCard(pokemon, set);
 
-  const pokemon2 = pokemonBase2 || pokemonJungle2;
+  const pokemon2 = pokemonBase2 || pokemonJungle2 || pokemonSilverTempest2;
   console.log("pokemon2: ", pokemon2);
-  const set2 = pokemonBase2 ? "Base Set 1st Edition" : "Jungle 1st Edition";
+  const set2 = pokemonBase2
+    ? "Base Set 1st Edition"
+    : pokemonJungle2
+    ? "Jungle 1st Edition"
+    : "Silver Tempest";
   console.log("set2: ", set2);
   const caughtPokemon2 = findCard(pokemon2, set2);
 
