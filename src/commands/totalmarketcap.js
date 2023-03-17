@@ -16,6 +16,10 @@ export const TotalMarketCapCommand = new SlashCommandBuilder()
         {
           name: "Jungle 1st Edition",
           value: "Jungle 1st Edition",
+        },
+        {
+          name: "Silver Tempest",
+          value: "Silver Tempest",
         }
       )
       .setRequired(true)
