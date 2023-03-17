@@ -30,6 +30,13 @@ export const PopulationCommand = new SlashCommandBuilder()
       .setMinLength(1)
       .setAutocomplete(true)
   )
+  .addStringOption((option) =>
+    option
+      .setName("silvertempest")
+      .setDescription("Search a card in Silver Tempest set")
+      .setMinLength(1)
+      .setAutocomplete(true)
+  )
   .toJSON();
 
 export const autocomplete = async (interaction) => {
