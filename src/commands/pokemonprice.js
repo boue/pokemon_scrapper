@@ -31,6 +31,13 @@ export const PokemonPriceCommand = new SlashCommandBuilder()
       .setMinLength(1)
       .setAutocomplete(true)
   )
+  .addStringOption((option) =>
+    option
+      .setName("silvertempest")
+      .setDescription("Search a card in Silver Tempest set")
+      .setMinLength(1)
+      .setAutocomplete(true)
+  )
   .toJSON();
 
 export const autocomplete = async (interaction) => {
@@ -121,18 +128,26 @@ export const autocomplete = async (interaction) => {
 export const execute = async (interaction) => {
   const pokemonBase = interaction.options.getString("base");
   const pokemonJungle = interaction.options.getString("jungle");
+  const pokemonSilverTempest = interaction.options.getString("silvertempest");
 
-  if (pokemonBase && pokemonJungle) {
-    await interaction.editReply("You can only search one pokemon at a time");
-    throw new Error("You can only search one pokemon at a time");
-  }
+  // if (pokemonBase && pokemonJungle) {
+  //   await interaction.editReply("You can only search one pokemon at a time");
+  //   throw new Error("You can only search one pokemon at a time");
+  // }
 
-  const pokemon = pokemonBase || pokemonJungle;
-  const set = pokemonBase ? "Base Set 1st Edition" : "Jungle 1st Edition";
+  const pokemon = pokemonBase || pokemonJungle || pokemonSilverTempest;
+  const set = pokemonBase
+    ? "Base Set 1st Edition"
+    : pokemonJungle
+    ? "Jungle 1st Edition"
+    : "Silver Tempest";
+  console.log("set is: ", set);
+
   const value = interaction.options.getString("value");
 
   console.log("pokemon is: ", pokemon);
   const caughtPokemon = findCard(pokemon, set);
+  console.log("caughtPokemon is: ", caughtPokemon);
 
   const priceMessage =
     "\n" +
@@ -145,8 +160,6 @@ export const execute = async (interaction) => {
     "$" +
     caughtPokemon[value] +
     "\n";
-
-  console.log("formatted Pokemon in price: ", priceMessage);
 
   await interaction.editReply(priceMessage);
 };
