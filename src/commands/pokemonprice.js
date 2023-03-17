@@ -130,10 +130,10 @@ export const execute = async (interaction) => {
   const pokemonJungle = interaction.options.getString("jungle");
   const pokemonSilverTempest = interaction.options.getString("silvertempest");
 
-  // if (pokemonBase && pokemonJungle) {
-  //   await interaction.editReply("You can only search one pokemon at a time");
-  //   throw new Error("You can only search one pokemon at a time");
-  // }
+  if (pokemonBase && pokemonJungle && pokemonSilverTempest) {
+    await interaction.editReply("You can only search one pokemon at a time");
+    throw new Error("You can only search one pokemon at a time");
+  }
 
   const pokemon = pokemonBase || pokemonJungle || pokemonSilverTempest;
   const set = pokemonBase
