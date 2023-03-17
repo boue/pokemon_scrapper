@@ -99,7 +99,11 @@ export const execute = async (interaction) => {
   const pokemonJungle = interaction.options.getString("jungle");
   const pokemonSilverTempest = interaction.options.getString("silvertempest");
 
-  if (pokemonBase && pokemonJungle && pokemonSilverTempest) {
+  const truthyArray = [pokemonBase, pokemonJungle, pokemonSilverTempest].filter(
+    Boolean
+  );
+
+  if (truthyArray.length > 1) {
     await interaction.editReply("You can only search one pokemon at a time");
     throw new Error("You can only search one pokemon at a time");
   }
