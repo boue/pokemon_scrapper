@@ -12,7 +12,8 @@ export const CompareAllCommand = new SlashCommandBuilder()
       .setDescription("Select the Set")
       .addChoices(
         { name: "Base Set 1st Edition", value: "Base Set 1st Edition" },
-        { name: "Jungle 1st Edition", value: "Jungle 1st Edition" }
+        { name: "Jungle 1st Edition", value: "Jungle 1st Edition" },
+        { name: "Silver Tempest", value: "Silver Tempest" }
       )
       .setRequired(true)
   )
