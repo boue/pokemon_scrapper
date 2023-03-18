@@ -43,13 +43,30 @@ export const PsaComparisonCommand = new SlashCommandBuilder()
       .setMinLength(1)
       .setAutocomplete(true)
   )
+  .addStringOption((option) =>
+    option
+      .setName("silvertempest")
+      .setDescription("Search a card in Silver Tempest")
+      .setMinLength(1)
+      .setAutocomplete(true)
+  )
   .toJSON();
 
 export const execute = async (interaction) => {
   const pokemonBase = interaction.options.getString("base");
   const pokemonJungle = interaction.options.getString("jungle");
+  const pokemonSilverTempest = interaction.options.getString("silvertempest");
   const value1 = interaction.options.getString("value1");
   const value2 = interaction.options.getString("value2");
+
+  const truthyArray = [pokemonBase, pokemonJungle, pokemonSilverTempest].filter(
+    Boolean
+  );
+
+  if (truthyArray.length > 1) {
+    await interaction.editReply("You can only search one pokemon at a time");
+    throw new Error("You can only search one pokemon at a time");
+  }
 
   if (value1 === value2) {
     await interaction.editReply("Please pick two different values to compare.");
@@ -62,13 +79,12 @@ export const execute = async (interaction) => {
     );
   // throw new Error("PSA9/PS10 is not supported. Pick PSA10 first then PS9.");
 
-  if (pokemonBase && pokemonJungle) {
-    await interaction.editReply("You can only search one pokemon at a time");
-    throw new Error("You can only search one pokemon at a time");
-  }
-
-  const pokemon = pokemonBase || pokemonJungle;
-  const set = pokemonBase ? "Base Set 1st Edition" : "Jungle 1st Edition";
+  const pokemon = pokemonBase || pokemonJungle || pokemonSilverTempest;
+  const set = pokemonBase
+    ? "Base Set 1st Edition"
+    : pokemonJungle
+    ? "Jungle 1st Edition"
+    : "Silver Tempest";
   const caughtPokemon = findCard(pokemon, set);
 
   let result =
