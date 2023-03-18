@@ -51,7 +51,14 @@ export const execute = async (interaction) => {
   const totalMarketCap = marketCaps.reduce((a, b) => a + b);
 
   const result =
-    "\n" + "Total Marketcap for: " + set + "\n" + "$" + totalMarketCap;
+    "\n" +
+    "Total Marketcap for: " +
+    set +
+    " " +
+    value +
+    "\n" +
+    "$" +
+    totalMarketCap;
 
   await interaction.reply(result);
 };
