@@ -144,12 +144,15 @@ export const execute = async (interaction) => {
     " current prices: " +
     "\n" +
     "PSA 10: " +
+    "$" +
     caughtPokemon["psa10"] +
     "\n" +
     "PSA 9: " +
+    "$" +
     caughtPokemon["psa9"] +
     "\n" +
     "Raw: " +
+    "$" +
     caughtPokemon["raw"] +
     "\n";
 
