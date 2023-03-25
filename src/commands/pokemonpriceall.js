@@ -141,7 +141,7 @@ export const execute = async (interaction) => {
   const priceAllMessage =
     "\n" +
     caughtPokemon["name"] +
-    " current prices: " +
+    " current prices " +
     "\n" +
     "PSA 10: " +
     "$" +
