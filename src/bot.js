@@ -83,7 +83,7 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.commandName === "priceall") {
       console.log("inside price all execution");
       await interaction.reply("Working on getting you all the price info...");
-      await executePokemonPrice(interaction);
+      await executePokemonPriceAll(interaction);
     }
     if (interaction.commandName === "population") {
       console.log("inside population execution");
