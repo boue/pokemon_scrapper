@@ -15,6 +15,10 @@ import {
   execute as executePopulation,
 } from "./commands/population.js";
 import {
+  PokemonPriceAllCommand,
+  execute as executePokemonPriceAll,
+} from "./commands/pokemonpriceall.js";
+import {
   SetWeightCommand,
   execute as executeSetWeights,
 } from "./commands/setweights.js";
@@ -76,6 +80,11 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply("Working on getting you price info...");
       await executePokemonPrice(interaction);
     }
+    if (interaction.commandName === "priceall") {
+      console.log("inside price all execution");
+      await interaction.reply("Working on getting you all the price info...");
+      await executePokemonPrice(interaction);
+    }
     if (interaction.commandName === "population") {
       console.log("inside population execution");
       await interaction.reply("Working on getting you population info...");
@@ -128,6 +137,7 @@ client.on("interactionCreate", async (interaction) => {
 
 async function main() {
   const commands = [
+    PokemonPriceAllCommand,
     PokemonPriceCommand,
     MarketSummaryCommand,
     PsaComparisonCommand,
