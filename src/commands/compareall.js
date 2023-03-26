@@ -4,7 +4,7 @@ import data from "../../data/data.json" assert { type: "json" };
 export const CompareAllCommand = new SlashCommandBuilder()
   .setName("compareall")
   .setDescription(
-    "Gives the difference in % between PSA10 and PSA9 for each card in the set"
+    "Gives the difference in % between either PSA10/PSA9 OR PSA10/RAW OR PSA9/RAW for each card in the set"
   )
   .addStringOption((option) =>
     option
@@ -17,19 +17,44 @@ export const CompareAllCommand = new SlashCommandBuilder()
       )
       .setRequired(true)
   )
+  .addStringOption((option) =>
+    option
+      .setName("options")
+      .setDescription("PSA10/PSA9 OR PSA10/RAW OR PSA9/RAW")
+      .addChoices(
+        { name: "PSA10/PSA9 ", value: "psa10psa9" },
+        { name: "PSA10/RAW", value: "psa10raw" },
+        { name: "PSA9/RAW", value: "psa9raw" }
+      )
+      .setRequired(true)
+  )
   .toJSON();
 
 export const execute = async (interaction) => {
   const set = interaction.options.getString("set");
+  const options = interaction.options.getString("options");
+  let value1;
+  let value2;
+
+  if (options === "psa10psa9") {
+    value1 = "psa10";
+    value2 = "psa9";
+  } else if (options === "psa10raw") {
+    value1 = "psa10";
+    value2 = "raw";
+  } else if (options === "psa9raw") {
+    value1 = "psa9";
+    value2 = "raw";
+  }
 
   let formattedReply = "";
 
   const differencePokemons = data
     .find((d) => d.name === set)
     ?.cards?.map((card) => {
-      const psa10 = card["psa10"] - 20;
-      const psa9 = card["psa9"];
-      const result = (psa10 / psa9) * 100 - 100;
+      const result1 = card[value1] - 20;
+      const result2 = card[value2];
+      const result = (result1 / result2) * 100 - 100;
 
       return [card["name"], result.toFixed(0)];
     })
