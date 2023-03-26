@@ -48,12 +48,12 @@ export const execute = async (interaction) => {
   let formattedReply =
     "\n" +
     "Difference in percentage between " +
-    value1 +
+    value1.toUpperCase() +
     " with " +
-    value2 +
-    "for " +
+    value2.toUpperCase() +
+    " in set " +
     set +
-    " :\n";
+    ":\n";
 
   const differencePokemons = data
     .find((d) => d.name === set)
