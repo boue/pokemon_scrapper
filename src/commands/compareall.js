@@ -3,9 +3,7 @@ import data from "../../data/data.json" assert { type: "json" };
 
 export const CompareAllCommand = new SlashCommandBuilder()
   .setName("compareall")
-  .setDescription(
-    "Gives the difference in % between either PSA10/PSA9 OR PSA10/RAW OR PSA9/RAW for each card in the set"
-  )
+  .setDescription("Gives the difference in % between for each card in the set")
   .addStringOption((option) =>
     option
       .setName("set")
