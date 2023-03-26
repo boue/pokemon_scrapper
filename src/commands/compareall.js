@@ -20,9 +20,9 @@ export const CompareAllCommand = new SlashCommandBuilder()
       .setName("options")
       .setDescription("PSA10/PSA9 OR PSA10/RAW OR PSA9/RAW")
       .addChoices(
-        { name: "PSA10/PSA9 ", value: "psa10psa9" },
-        { name: "PSA10/RAW", value: "psa10raw" },
-        { name: "PSA9/RAW", value: "psa9raw" }
+        { name: "PSA10/PSA9 ", value: "PSA10/PSA9" },
+        { name: "PSA10/RAW", value: "PSA10/RAW" },
+        { name: "PSA9/RAW", value: "PSA9/RAW" }
       )
       .setRequired(true)
   )
@@ -34,18 +34,26 @@ export const execute = async (interaction) => {
   let value1;
   let value2;
 
-  if (options === "psa10psa9") {
+  if (options === "PSA10/PSA9") {
     value1 = "psa10";
     value2 = "psa9";
-  } else if (options === "psa10raw") {
+  } else if (options === "PSA10/RAW") {
     value1 = "psa10";
     value2 = "raw";
-  } else if (options === "psa9raw") {
+  } else if (options === "PSA9/RAW") {
     value1 = "psa9";
     value2 = "raw";
   }
 
-  let formattedReply = "";
+  let formattedReply =
+    "\n" +
+    "Difference in percentage between " +
+    value1 +
+    " with " +
+    value2 +
+    "for " +
+    set +
+    " :\n";
 
   const differencePokemons = data
     .find((d) => d.name === set)
