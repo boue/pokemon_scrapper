@@ -30,6 +30,7 @@ import {
   TotalMarketCapCommand,
   execute as executeTotalMarketCap,
 } from "./commands/totalmarketcap.js";
+import { TypeCommand, execute as executeType } from "./commands/type.js";
 import {
   MarketCapCommand,
   execute as executeMarketCap,
@@ -113,6 +114,11 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply("Working on comparing all...");
       await executeCompareAllCommand(interaction);
     }
+    if (interaction.commandName === "type") {
+      console.log("inside type execution");
+      await interaction.reply("Working on type execution...");
+      await executeCompareAllCommand(interaction);
+    }
     if (interaction.commandName === "psacomparison") {
       console.log("inside psacomparison execution");
       await interaction.reply(
@@ -147,6 +153,7 @@ async function main() {
     CompareAllCommand,
     PopulationCommand,
     SetWeightCommand,
+    TypeCommand,
   ];
   try {
     console.log("Started refreshing application (/) commands.");

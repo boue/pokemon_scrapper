@@ -6,123 +6,138 @@
     "cards": [
       {
         "name": "Charizard Holo 4",
+        "type": "Holo",
         "psa10": 270600,
         "psa9": 16144,
         "pop10": 123,
         "pop9": 712,
-        "raw": 2335
+        "raw": 1500
       },
       {
         "name": "Blastoise Holo 2",
+        "type": "Holo",
         "psa10": 23433,
         "psa9": 4000,
         "pop10": 101,
-        "pop9": 639,
+        "pop9": 643,
         "raw": 773
       },
       {
         "name": "Venusaur Holo 15",
-        "psa10": 20000,
-        "psa9": 3000,
+        "type": "Holo",
+        "psa10": 18500,
+        "psa9": 3175,
         "pop10": 144,
-        "pop9": 630,
-        "raw": 694
+        "pop9": 633,
+        "raw": 291
       },
       {
         "name": "Nidoking Holo 11",
+        "type": "Holo",
         "psa10": 8000,
-        "psa9": 1011,
+        "psa9": 1014,
         "pop10": 90,
-        "pop9": 522,
-        "raw": 251
+        "pop9": 525,
+        "raw": 233
       },
       {
         "name": "Chansey Holo 3",
+        "type": "Holo",
         "psa10": 35000,
         "psa9": 1160,
         "pop10": 48,
-        "pop9": 434,
-        "raw": 189
+        "pop9": 435,
+        "raw": 191
       },
       {
         "name": "Clefairy Holo 5",
+        "type": "Holo",
         "psa10": 7350,
         "psa9": 999,
         "pop10": 66,
-        "pop9": 435,
-        "raw": 221
+        "pop9": 436,
+        "raw": 201
       },
       {
         "name": "Alakazam Holo 1",
+        "type": "Holo",
         "psa10": 18999,
         "psa9": 1500,
         "pop10": 91,
-        "pop9": 464,
-        "raw": 164
+        "pop9": 467,
+        "raw": 269
       },
       {
         "name": "Poliwrath Holo 13",
+        "type": "Holo",
         "psa10": 7300,
-        "psa9": 834,
+        "psa9": 647,
         "pop10": 100,
-        "pop9": 484,
-        "raw": 337
+        "pop9": 485,
+        "raw": 210
       },
       {
         "name": "Raichu Holo 14",
+        "type": "Holo",
         "psa10": 2318,
-        "psa9": 965,
+        "psa9": 1125,
         "pop10": 87,
-        "pop9": 451,
-        "raw": 372
+        "pop9": 452,
+        "raw": 228
       },
       {
         "name": "Ninetales Holo 12",
+        "type": "Holo",
         "psa10": 9611,
         "psa9": 1117,
         "pop10": 67,
-        "pop9": 437,
-        "raw": 341
+        "pop9": 438,
+        "raw": 175
       },
       {
         "name": "Hitmonchan Holo 7",
+        "type": "Holo",
         "psa10": 25000,
         "psa9": 1249,
         "pop10": 57,
-        "pop9": 369,
-        "raw": 340
+        "pop9": 370,
+        "raw": 152
       },
       {
         "name": "Mewtwo Holo 10",
+        "type": "Holo",
         "psa10": 200,
         "psa9": 2041,
         "pop10": 82,
-        "pop9": 491,
-        "raw": 171
+        "pop9": 492,
+        "raw": 132
       },
       {
         "name": "Zapdos Holo 16",
+        "type": "Holo",
         "psa10": 7549,
         "psa9": 969,
         "pop10": 131,
-        "pop9": 541,
-        "raw": 245
+        "pop9": 544,
+        "raw": 160
       },
       {
         "name": "Gyarados Holo 6",
-        "psa10": 43,
-        "psa9": 1340,
+        "type": "Holo",
+        "psa10": 36,
+        "psa9": 1499,
         "pop10": 88,
-        "pop9": 445,
-        "raw": 401
+        "pop9": 446,
+        "raw": 256
       },
       {
         "name": "Magneton Holo 9",
+        "type": "Holo",
         "psa10": 210,
-        "psa9": 96,
+        "psa9": 510,
         "pop10": 64,
-        "pop9": 462,
-        "raw": 175
+        "pop9": 463,
+        "raw": 339
       }
     ]
   },
@@ -133,123 +148,138 @@
     "cards": [
       {
         "name": "Electrode Holo 2",
+        "type": "Holo",
         "psa10": 710,
-        "psa9": 113,
+        "psa9": 103,
         "pop10": 108,
-        "pop9": 734,
-        "raw": 34
+        "pop9": 743,
+        "raw": 25
       },
       {
         "name": "Flareon Holo 3",
-        "psa10": 1851,
-        "psa9": 223,
-        "pop10": 199,
-        "pop9": 1004,
-        "raw": 47
+        "type": "Holo",
+        "psa10": 264,
+        "psa9": 177,
+        "pop10": 200,
+        "pop9": 1019,
+        "raw": 58
       },
       {
         "name": "Jolteon Holo 4",
-        "psa10": 2199,
+        "type": "Holo",
+        "psa10": 2349,
         "psa9": 349,
         "pop10": 132,
-        "pop9": 809,
-        "raw": 57
+        "pop9": 818,
+        "raw": 55
       },
       {
         "name": "Kangaskhan Holo 5",
+        "type": "Holo",
         "psa10": 2225,
-        "psa9": 154,
+        "psa9": 172,
         "pop10": 70,
-        "pop9": 665,
-        "raw": 30
+        "pop9": 669,
+        "raw": 15
       },
       {
         "name": "Mr. Mime Holo 6",
+        "type": "Holo",
         "psa10": 1200,
-        "psa9": 113,
+        "psa9": 152,
         "pop10": 103,
-        "pop9": 672,
-        "raw": 26
+        "pop9": 679,
+        "raw": 25
       },
       {
         "name": "Nidoqueen Holo 7",
+        "type": "Holo",
         "psa10": 1080,
-        "psa9": 135,
+        "psa9": 126,
         "pop10": 102,
-        "pop9": 661,
-        "raw": 27
+        "pop9": 668,
+        "raw": 35
       },
       {
         "name": "Pidgeot Holo 8",
+        "type": "Holo",
         "psa10": 1550,
-        "psa9": 200,
+        "psa9": 199,
         "pop10": 109,
-        "pop9": 681,
-        "raw": 40
+        "pop9": 690,
+        "raw": 42
       },
       {
         "name": "Pinsir Holo 9",
+        "type": "Holo",
         "psa10": 830,
-        "psa9": 140,
+        "psa9": 121,
         "pop10": 106,
-        "pop9": 682,
-        "raw": 29
+        "pop9": 688,
+        "raw": 22
       },
       {
         "name": "Scyther Holo 10",
+        "type": "Holo",
         "psa10": 1350,
-        "psa9": 199,
-        "pop10": 135,
-        "pop9": 760,
-        "raw": 50
+        "psa9": 221,
+        "pop10": 136,
+        "pop9": 769,
+        "raw": 41
       },
       {
         "name": "Snorlax Holo 11",
+        "type": "Holo",
         "psa10": 3550,
-        "psa9": 495,
+        "psa9": 462,
         "pop10": 75,
-        "pop9": 710,
-        "raw": 68
+        "pop9": 716,
+        "raw": 62
       },
       {
         "name": "Vaporeon Holo 12",
+        "type": "Holo",
         "psa10": 4000,
-        "psa9": 438,
+        "psa9": 355,
         "pop10": 69,
-        "pop9": 691,
-        "raw": 49
+        "pop9": 697,
+        "raw": 42
       },
       {
         "name": "Venomoth Holo 13",
+        "type": "Holo",
         "psa10": 750,
-        "psa9": 116,
+        "psa9": 123,
         "pop10": 105,
-        "pop9": 619,
-        "raw": 30
+        "pop9": 625,
+        "raw": 18
       },
       {
         "name": "Victreebel Holo 14",
+        "type": "Holo",
         "psa10": 1138,
-        "psa9": 126,
+        "psa9": 122,
         "pop10": 89,
-        "pop9": 580,
-        "raw": 31
+        "pop9": 588,
+        "raw": 20
       },
       {
         "name": "Vileplume Holo 15",
+        "type": "Holo",
         "psa10": 830,
-        "psa9": 122,
+        "psa9": 130,
         "pop10": 103,
-        "pop9": 659,
-        "raw": 26
+        "pop9": 665,
+        "raw": 21
       },
       {
         "name": "Wigglytuff Holo 16",
+        "type": "Holo",
         "psa10": 1200,
-        "psa9": 144,
+        "psa9": 104,
         "pop10": 72,
-        "pop9": 552,
-        "raw": 34
+        "pop9": 557,
+        "raw": 24
       }
     ]
   },
@@ -260,171 +290,192 @@
     "cards": [
       {
         "name": "Lugia V 186",
-        "psa10": 399,
-        "psa9": 208,
-        "pop10": 209,
-        "pop9": 1076,
-        "raw": 174
+        "type": "V Alternate Art Ultra Rare",
+        "psa10": 382,
+        "psa9": 202,
+        "pop10": 255,
+        "pop9": 1327,
+        "raw": 168
       },
       {
         "name": "Serena 193",
-        "psa10": 110,
-        "psa9": 38,
-        "pop10": 63,
-        "pop9": 280,
+        "type": "Trainer Full Art Ultra Rare",
+        "psa10": 96,
+        "psa9": 36,
+        "pop10": 71,
+        "pop9": 353,
         "raw": 32
       },
       {
         "name": "Lugia VSTAR 202",
-        "psa10": 122,
-        "psa9": 35,
-        "pop10": 50,
-        "pop9": 220,
-        "raw": 31
+        "type": "V Star Secret Rare Rainbow",
+        "psa10": 107,
+        "psa9": 38,
+        "pop10": 59,
+        "pop9": 269,
+        "raw": 29
       },
       {
         "name": "Unown V 177",
-        "psa10": 100,
-        "psa9": 40,
-        "pop10": 110,
-        "pop9": 386,
-        "raw": 32
+        "type": "V Alternate Full Art Ultra Rare",
+        "psa10": 81,
+        "psa9": 41,
+        "pop10": 130,
+        "pop9": 466,
+        "raw": 30
       },
       {
         "name": "Regidrago V 184",
-        "psa10": 100,
-        "psa9": 40,
-        "pop10": 45,
-        "pop9": 307,
-        "raw": 32
+        "type": "V Alternate Full Art Ultra Rare",
+        "psa10": 81,
+        "psa9": 41,
+        "pop10": 50,
+        "pop9": 351,
+        "raw": 30
       },
       {
         "name": "Serena 207",
-        "psa10": 29,
-        "psa9": 18,
-        "pop10": 20,
-        "pop9": 86,
+        "type": "Trainer Secret Rare Rainbow",
+        "psa10": 35,
+        "psa9": 16,
+        "pop10": 26,
+        "pop9": 99,
         "raw": 14
       },
       {
         "name": "Alolan Vulpix VSTAR 197",
-        "psa10": 90,
-        "psa9": 26,
-        "pop10": 22,
-        "pop9": 75,
-        "raw": 16
-      },
-      {
-        "name": "Skuntank V 181",
-        "psa10": 40,
-        "psa9": 32,
-        "pop10": 38,
-        "pop9": 193,
+        "type": "V Star Secret Rare Rainbow",
+        "psa10": 53,
+        "psa9": 23,
+        "pop10": 27,
+        "pop9": 87,
         "raw": 17
       },
       {
+        "name": "Skuntank V 181",
+        "type": "V Alternate Full Art Ultra Rare",
+        "psa10": 43,
+        "psa9": 30,
+        "pop10": 44,
+        "pop9": 228,
+        "raw": 16
+      },
+      {
         "name": "Unown VSTAR 199",
-        "psa10": 29,
-        "psa9": 20,
-        "pop10": 19,
-        "pop9": 69,
-        "raw": 12
+        "type": "V Star Secret Rare Rainbow",
+        "psa10": 35,
+        "psa9": 25,
+        "pop10": 21,
+        "pop9": 79,
+        "raw": 11
       },
       {
         "name": "Candice 189",
-        "psa10": 52,
-        "psa9": 22,
-        "pop10": 231,
-        "pop9": 130,
+        "type": "Trainer Full Art Ultra Rare",
+        "psa10": 47,
+        "psa9": 20,
+        "pop10": 300,
+        "pop9": 159,
         "raw": 11
       },
       {
         "name": "Wallace 194",
+        "type": "Trainer Full Art Ultra Rare",
         "psa10": 25,
         "psa9": 10,
         "pop10": 6,
-        "pop9": 17,
+        "pop9": 20,
         "raw": 9
       },
       {
         "name": "Regieleki VMAX 198",
-        "psa10": 23,
+        "type": "VMAX Secret Rare Rainbow",
+        "psa10": 22,
         "psa9": 10,
-        "pop10": 1,
-        "pop9": 11,
-        "raw": 10
+        "pop10": 2,
+        "pop9": 13,
+        "raw": 14
       },
       {
         "name": "Regidrago VSTAR 201",
+        "type": "V Star Secret Rare Rainbow",
         "psa10": 43,
-        "psa9": 21,
-        "pop10": 5,
-        "pop9": 45,
-        "raw": 12
-      },
-      {
-        "name": "Candice 204",
-        "psa10": 33,
         "psa9": 15,
-        "pop10": 7,
-        "pop9": 42,
+        "pop10": 5,
+        "pop9": 49,
         "raw": 9
       },
       {
+        "name": "Candice 204",
+        "type": "Trainer Secret Rare Rainbow",
+        "psa10": 25,
+        "psa9": 9,
+        "pop10": 10,
+        "pop9": 46,
+        "raw": 10
+      },
+      {
         "name": "Furisode Girl 205",
-        "psa10": 42,
-        "psa9": 12,
-        "pop10": 14,
-        "pop9": 48,
-        "raw": 8
+        "type": "Trainer Secret Rare Rainbow",
+        "psa10": 44,
+        "psa9": 16,
+        "pop10": 16,
+        "pop9": 58,
+        "raw": 10
       },
       {
         "name": "Serperior VSTAR 196",
-        "psa10": 15,
-        "psa9": 12,
-        "pop10": 6,
-        "pop9": 41,
-        "raw": 8
+        "type": "V Star Secret Rare Rainbow",
+        "psa10": 13,
+        "psa9": 14,
+        "pop10": 7,
+        "pop9": 46,
+        "raw": 7
       },
       {
         "name": "Lance 206",
-        "psa10": 36,
-        "psa9": 13,
+        "type": "V Star Secret Rare Rainbow",
+        "psa10": 22,
+        "psa9": 7,
         "pop10": 8,
-        "pop9": 29,
+        "pop9": 38,
         "raw": 7
       },
       {
         "name": "Wallace 208",
-        "psa10": 25,
+        "type": "V Star Secret Rare Rainbow",
+        "psa10": 26,
         "psa9": 11,
         "pop10": 2,
-        "pop9": 29,
+        "pop9": 33,
         "raw": 6
       },
       {
         "name": "Lance 192",
-        "psa10": 33,
+        "type": "Trainer Full Art Ultra Rare",
+        "psa10": 29,
         "psa9": 14,
-        "pop10": 12,
-        "pop9": 36,
-        "raw": 5
+        "pop10": 13,
+        "pop9": 39,
+        "raw": 6
       },
       {
         "name": "Worker 209",
+        "type": "V Star Secret Rare Rainbow",
         "psa10": 26,
-        "psa9": 20,
-        "pop10": 3,
-        "pop9": 26,
-        "raw": 5
+        "psa9": 19,
+        "pop10": 4,
+        "pop9": 30,
+        "raw": 7
       },
       {
         "name": "Brandon 203",
-        "psa10": 17,
+        "type": "Trainer Secret Rare Rainbow",
+        "psa10": 44,
         "psa9": 10,
-        "pop10": 3,
-        "pop9": 15,
-        "raw": 6
+        "pop10": 7,
+        "pop9": 17,
+        "raw": 7
       }
     ]
   }

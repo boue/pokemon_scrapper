@@ -11,6 +11,16 @@ export const findCard = (name, set) => {
   return card;
 };
 
+export const findCardsType = (type, set) => {
+  const setFound = data.find((d) => d.name === set);
+  console.log("set found: ", setFound);
+  const cardsInSet = setFound?.cards;
+  console.log("cards in set: ", cardsInSet);
+  const cards = cardsInSet.filter((card) => card.type === type);
+  console.log("cards found: ", cards);
+  return cards;
+};
+
 const parseAndAdd = (str) => {
   let tempArray = [];
   const strArray = str.split(" ");
