@@ -117,7 +117,7 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.commandName === "type") {
       console.log("inside type execution");
       await interaction.reply("Working on type execution...");
-      await executeCompareAllCommand(interaction);
+      await executeType(interaction);
     }
     if (interaction.commandName === "psacomparison") {
       console.log("inside psacomparison execution");
