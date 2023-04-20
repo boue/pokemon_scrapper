@@ -12,6 +12,7 @@ export const findCard = (name, set) => {
 };
 
 export const findCardsType = (type, set) => {
+  console.log("type: ", type);
   const setFound = data.find((d) => d.name === set);
   console.log("set found: ", setFound);
   const cardsInSet = setFound?.cards;
