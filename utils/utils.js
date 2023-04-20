@@ -1,5 +1,5 @@
 import { POKE_DATA_DOMAIN } from "../constants/pokemons.js";
-import data from "../data/data.json" assert { type: "json" };
+import data from "../data/dataList.json" assert { type: "json" };
 
 export const findCard = (name, set) => {
   const setFound = data.find((d) => d.name === set);

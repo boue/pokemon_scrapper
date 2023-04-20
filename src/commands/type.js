@@ -55,6 +55,8 @@ export const execute = async (interaction) => {
 
   const cardsByType = findCard(type, set);
 
+  console.log("cardsByType: ", cardsByType);
+
   let formattedReply = "\n" + type + " in set " + set + ":\n";
 
   cardsByType.forEach((pokemon) => {
