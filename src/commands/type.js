@@ -59,8 +59,8 @@ export const execute = async (interaction) => {
 
   let formattedReply = "\n" + type + " in set " + set + ":\n";
 
-  cardsByType.forEach((pokemon) => {
-    const tempStr = pokemon[0] + "\n";
+  cardsByType.forEach(({ name }) => {
+    const tempStr = name + "\n";
     return (formattedReply += tempStr);
   });
 
