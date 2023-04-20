@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { findCard } from "../../utils/utils.js";
+import { findCardsType } from "../../utils/utils.js";
 
 export const TypeCommand = new SlashCommandBuilder()
   .setName("type")
@@ -53,7 +53,7 @@ export const execute = async (interaction) => {
   const set = interaction.options.getString("set");
   const type = interaction.options.getString("type");
 
-  const cardsByType = findCard(type, set);
+  const cardsByType = findCardsType(type, set);
 
   console.log("cardsByType: ", cardsByType);
 
