@@ -59,8 +59,9 @@ export const execute = async (interaction) => {
 
   let formattedReply = "\n" + type + " in set " + set + ":\n";
 
-  cardsByType.forEach(({ name }) => {
-    const tempStr = name + "\n";
+  cardsByType.forEach(({ name, psa10, psa9, raw }) => {
+    const tempStr =
+      name + ": PSA10 $" + psa10 + " / PSA9 $" + psa9 + " / Raw $" + raw + "\n";
     return (formattedReply += tempStr);
   });
 
