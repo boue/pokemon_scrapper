@@ -1,7 +1,6 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { SUPPORTED_TYPES_SET } from "../../constants/supported.js";
 import data from "../../data/dataList.json" assert { type: "json" };
-import { findCardsType } from "../../utils/utils.js";
 
 export const TypeCommand = new SlashCommandBuilder()
   .setName("type")
@@ -82,18 +81,21 @@ export const execute = async (interaction) => {
 
   if (option === "Raw Price") {
     result = cardsByTypeAll.sort((a, b) => b.raw - a.raw).slice(0, 25);
+    console.log("result: ", result);
     result.forEach(({ name, raw }) => {
       const tempStr = name + ": $" + raw + "\n";
       return (formattedReply += tempStr);
     });
   } else if (option === "PSA10 Price") {
     result = cardsByTypeAll.sort((a, b) => b.psa10 - a.psa10).slice(0, 25);
+    console.log("result: ", result);
     result.forEach(({ name, psa10 }) => {
       const tempStr = name + ": $" + psa10 + "\n";
       return (formattedReply += tempStr);
     });
   } else if (option === "PSA9 Price") {
     result = cardsByTypeAll.sort((a, b) => b.psa9 - a.psa9).slice(0, 25);
+    console.log("result: ", result);
     result.forEach(({ name, psa9 }) => {
       const tempStr = name + ": $" + psa9 + "\n";
       return (formattedReply += tempStr);
