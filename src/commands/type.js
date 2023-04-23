@@ -70,14 +70,16 @@ export const execute = async (interaction) => {
 
   const cardsByTypeAll = supportedSets
     .map((set) => {
-      return data.find((s) => s.name === set.name).cards;
+      return data
+        .find((s) => s.name === set.name)
+        .cards.filter((card) => card.type === type);
     })
     .flat(1);
 
   console.log("cardsByType: ", cardsByTypeAll);
 
   let formattedReply =
-    "\n" + "Top 25 cards by" + option + type + "types: " + "\n";
+    "\n" + "Top 25 " + type + " cards " + "by " + option + ": " + "\n";
 
   if (option === "Raw Price") {
     result = cardsByTypeAll.sort((a, b) => b.raw - a.raw).slice(0, 25);
