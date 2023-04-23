@@ -1,13 +1,11 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { SUPPORTED_TYPES_SET } from "../../constants/dataList";
+import { SUPPORTED_TYPES_SET } from "../../constants/supported";
 import data from "../../data/dataList.json" assert { type: "json" };
 import { findCardsType } from "../../utils/utils.js";
 
 export const TypeCommand = new SlashCommandBuilder()
   .setName("type")
-  .setDescription(
-    "Gives you info for top 25 by type from all sets supported combined"
-  )
+  .setDescription("Retreats the top 25 by type from all modern sets")
   .addStringOption((option) =>
     option
       .setName("type")
