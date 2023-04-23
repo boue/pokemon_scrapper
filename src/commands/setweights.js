@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import data from "../../data/data.json" assert { type: "json" };
+import data from "../../data/dataList.json" assert { type: "json" };
 
 export const SetWeightCommand = new SlashCommandBuilder()
   .setName("weight")

@@ -1,9 +1,13 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
+import { SUPPORTED_TYPES_SET } from "../../constants/dataList";
+import data from "../../data/dataList.json" assert { type: "json" };
 import { findCardsType } from "../../utils/utils.js";
 
 export const TypeCommand = new SlashCommandBuilder()
   .setName("type")
-  .setDescription("Gives you all pokemons of a specific type from a set")
+  .setDescription(
+    "Gives you info for top 25 by type from all sets supported combined"
+  )
   .addStringOption((option) =>
     option
       .setName("type")
@@ -39,31 +43,68 @@ export const TypeCommand = new SlashCommandBuilder()
   )
   .addStringOption((option) =>
     option
-      .setName("set")
-      .setDescription("Select the set")
-      .addChoices({
-        name: "Silver Tempest",
-        value: "Silver Tempest",
-      })
+      .setName("option")
+      .setDescription("Select the option")
+      .addChoices(
+        {
+          name: "Raw Price",
+          value: "Raw Price",
+        },
+        {
+          name: "PSA10 Price",
+          value: "PSA10 Price",
+        },
+        {
+          name: "PSA9 Price",
+          value: "PSA9 Price",
+        }
+      )
       .setRequired(true)
   )
   .toJSON();
 
 export const execute = async (interaction) => {
-  const set = interaction.options.getString("set");
   const type = interaction.options.getString("type");
+  const option = interaction.options.getString("option");
 
-  const cardsByType = findCardsType(type, set);
+  const supportedSets = data.filter((set) =>
+    SUPPORTED_TYPES_SET.includes(set.name)
+  );
 
-  console.log("cardsByType: ", cardsByType);
+  const cardsByTypeAll = supportedSets
+    .map((set) => findCardsType(set, type))
+    .flat(1);
 
-  let formattedReply = "\n" + type + " in set " + set + ":\n";
+  console.log("cardsByType: ", cardsByTypeAll);
 
-  cardsByType.forEach(({ name, psa10, psa9, raw }) => {
-    const tempStr =
-      name + ": PSA10 $" + psa10 + " / PSA9 $" + psa9 + " / Raw $" + raw + "\n";
-    return (formattedReply += tempStr);
-  });
+  let formattedReply =
+    "\n" + "Top 25 cards by" + option + type + "types: " + "\n";
+
+  if (option === "Raw Price") {
+    result = cardsByTypeAll.sort((a, b) => b.raw - a.raw).slice(0, 25);
+    result.forEach(({ name, raw }) => {
+      const tempStr = name + ": $" + raw + "\n";
+      return (formattedReply += tempStr);
+    });
+  } else if (option === "PSA10 Price") {
+    result = cardsByTypeAll.sort((a, b) => b.psa10 - a.psa10).slice(0, 25);
+    result.forEach(({ name, psa10 }) => {
+      const tempStr = name + ": $" + psa10 + "\n";
+      return (formattedReply += tempStr);
+    });
+  } else if (option === "PSA9 Price") {
+    result = cardsByTypeAll.sort((a, b) => b.psa9 - a.psa9).slice(0, 25);
+    result.forEach(({ name, psa9 }) => {
+      const tempStr = name + ": $" + psa9 + "\n";
+      return (formattedReply += tempStr);
+    });
+  }
+
+  // cardsByType.forEach(({ name, psa10, psa9, raw }) => {
+  //   const tempStr =
+  //     name + ": PSA10 $" + psa10 + " / PSA9 $" + psa9 + " / Raw $" + raw + "\n";
+  //   return (formattedReply += tempStr);
+  // });
 
   await interaction.editReply(formattedReply);
 };

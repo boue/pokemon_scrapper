@@ -1,5 +1,4 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import data from "../../data/data.json" assert { type: "json" };
 import { findCard } from "../../utils/utils.js";
 
 export const PsaSpreadCommand = new SlashCommandBuilder()

@@ -31,6 +31,7 @@
 //   "mode": "cors",
 //   "credentials": "include"
 // });
+export const SUPPORTED_TYPES_SET = ["Silver Tempest"];
 export const dataList = [
   {
     name: "Base Set 1st Edition",
