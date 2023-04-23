@@ -70,7 +70,9 @@ export const execute = async (interaction) => {
   );
 
   const cardsByTypeAll = supportedSets
-    .map((set) => findCardsType(set, type))
+    .map((set) => {
+      return data.find((s) => s.name === set.name).cards;
+    })
     .flat(1);
 
   console.log("cardsByType: ", cardsByTypeAll);
