@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { SUPPORTED_TYPES_SET } from "../../constants/supported";
+import { SUPPORTED_TYPES_SET } from "../../constants/supported.js";
 import data from "../../data/dataList.json" assert { type: "json" };
 import { findCardsType } from "../../utils/utils.js";
 
