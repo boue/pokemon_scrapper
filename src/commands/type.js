@@ -63,7 +63,7 @@ export const TypeCommand = new SlashCommandBuilder()
 export const execute = async (interaction) => {
   const type = interaction.options.getString("type");
   const option = interaction.options.getString("option");
-
+  let result;
   const supportedSets = data.filter((set) =>
     SUPPORTED_TYPES_SET.includes(set.name)
   );
