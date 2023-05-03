@@ -68,7 +68,33 @@ export const generateModernDataObject = (data) => {
       : d.name.includes("V Star")
       ? "V Star"
       : "normal";
-    let link = `https://www.pokedata.io/card/Silver+Tempest/${name}`;
+    let link = `https://www.pokedata.io/card/Crown+Zenith/${name}`;
     return { name: `${d.name} ${d.num}`, type, link };
   });
 };
+
+// get only V VMAX and VSTAR
+function filterCards(cards) {
+  return cards.filter((card) => {
+    const hasVKeywords = ["V", "VMAX", "VSTAR"].some((keyword) =>
+      card.name.includes(keyword)
+    );
+    return hasVKeywords || card.secret;
+  });
+}
+
+function transformCards(cards) {
+  return cards.map((card) => {
+    const name = card.name.replace(/ /g, "+");
+    const type = card.secret ? "Secret Rare" : "Ultra Rare";
+
+    return {
+      name: card.name,
+      type,
+      pokeDataLink: `https://www.pokedata.io/card/Crown+Zenith/${name}`,
+      psaLink: `https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/${type
+        .toLowerCase()
+        .replace(/ /g, "-")}/summary/${card.id}`,
+    };
+  });
+}
