@@ -47,6 +47,10 @@ import {
   PsaSpreadCommand,
   execute as executePsaSpreadCommand,
 } from "./commands/psaspread.js";
+import {
+  CompareAllByTypeCommand,
+  execute as executeCompareAllByTypeCommand,
+} from "./commands/compareAllByType.js";
 
 config();
 
@@ -114,6 +118,11 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply("Working on comparing all...");
       await executeCompareAllCommand(interaction);
     }
+    if (interaction.commandName === "compareallbytype") {
+      console.log("inside compareallbytype execution");
+      await interaction.reply("Working on comparing all by type...");
+      await executeCompareAllByTypeCommand(interaction);
+    }
     if (interaction.commandName === "type") {
       console.log("inside type execution");
       await interaction.reply("Working on type execution...");
@@ -151,6 +160,7 @@ async function main() {
     TotalMarketCapCommand,
     PsaSpreadCommand,
     CompareAllCommand,
+    CompareAllByTypeCommand,
     PopulationCommand,
     SetWeightCommand,
     TypeCommand,
