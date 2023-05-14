@@ -3,12 +3,17 @@ import data from "../../data/dataList.json" assert { type: "json" };
 
 export const Top25Command = new SlashCommandBuilder()
   .setName("top25")
-  .setDescription("Top 25 spreads by set")
+  .setDescription("Top 25 by spread per set")
   .addStringOption((option) =>
     option
       .setName("set")
       .setDescription("Select the Set")
-      .addChoices({ name: "Crown Zenith", value: "Crown Zenith" })
+      .addChoices(
+        { name: "Base Set 1st Edition", value: "Base Set 1st Edition" },
+        { name: "Jungle 1st Edition", value: "Jungle 1st Edition" },
+        { name: "Silver Tempest", value: "Silver Tempest" },
+        { name: "Crown Zenith", value: "Crown Zenith" }
+      )
       .setRequired(true)
   )
   .addStringOption((option) =>
@@ -43,7 +48,7 @@ export const execute = async (interaction) => {
 
   let formattedReply =
     "\n" +
-    "Top 25 " +
+    "Top 25 by spread for difference in percentage between " +
     value1.toUpperCase() +
     " with " +
     value2.toUpperCase() +
