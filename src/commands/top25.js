@@ -1,19 +1,14 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
 import data from "../../data/dataList.json" assert { type: "json" };
 
-export const CompareAllCommand = new SlashCommandBuilder()
-  .setName("compareall")
-  .setDescription("Gives the difference in % between for each card in the set")
+export const Top25Command = new SlashCommandBuilder()
+  .setName("top25")
+  .setDescription("Top 25 spreads by set")
   .addStringOption((option) =>
     option
       .setName("set")
       .setDescription("Select the Set")
-      .addChoices(
-        { name: "Base Set 1st Edition", value: "Base Set 1st Edition" },
-        { name: "Jungle 1st Edition", value: "Jungle 1st Edition" },
-        { name: "Silver Tempest", value: "Silver Tempest" },
-        { name: "Crown Zenith", value: "Crown Zenith" }
-      )
+      .addChoices({ name: "Crown Zenith", value: "Crown Zenith" })
       .setRequired(true)
   )
   .addStringOption((option) =>
@@ -48,7 +43,7 @@ export const execute = async (interaction) => {
 
   let formattedReply =
     "\n" +
-    "Difference in percentage between " +
+    "Top 25 " +
     value1.toUpperCase() +
     " with " +
     value2.toUpperCase() +
@@ -58,7 +53,7 @@ export const execute = async (interaction) => {
 
   const differencePokemons = data
     .find((d) => d.name === set)
-    ?.cards?.map((card) => {
+    ?.cards.map((card) => {
       const result1 = card[value1] - 20;
       const result2 = card[value2];
       const result = (result1 / result2) * 100 - 100;
@@ -67,7 +62,8 @@ export const execute = async (interaction) => {
     })
     .sort(function (a, b) {
       return b[1] - a[1];
-    });
+    })
+    .slice(0, 25);
 
   differencePokemons.forEach((pokemon) => {
     const tempStr = pokemon[0] + ": " + pokemon[1] + "%" + "\n";

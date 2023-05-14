@@ -18,6 +18,7 @@ import {
   PokemonPriceAllCommand,
   execute as executePokemonPriceAll,
 } from "./commands/pokemonpriceall.js";
+import { Top25Command, execute as executeTop25 } from "./commands/top25.js";
 import {
   SetWeightCommand,
   execute as executeSetWeights,
@@ -51,6 +52,7 @@ import {
   CompareAllByTypeCommand,
   execute as executeCompareAllByTypeCommand,
 } from "./commands/compareAllByType.js";
+import { Top25Command } from "./commands/top25";
 
 config();
 
@@ -123,6 +125,11 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.reply("Working on comparing all by type...");
       await executeCompareAllByTypeCommand(interaction);
     }
+    if (interaction.commandName === "top25") {
+      console.log("inside top25 execution");
+      await interaction.reply("Working on top25 by set...");
+      await executeTop25(interaction);
+    }
     if (interaction.commandName === "type") {
       console.log("inside type execution");
       await interaction.reply("Working on type execution...");
@@ -164,6 +171,7 @@ async function main() {
     PopulationCommand,
     SetWeightCommand,
     TypeCommand,
+    Top25Command,
   ];
   try {
     console.log("Started refreshing application (/) commands.");
