@@ -52,7 +52,6 @@ import {
   CompareAllByTypeCommand,
   execute as executeCompareAllByTypeCommand,
 } from "./commands/compareAllByType.js";
-import { Top25Command } from "./commands/top25";
 
 config();
 
