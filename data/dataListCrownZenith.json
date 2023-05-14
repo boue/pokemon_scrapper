@@ -1,0 +1,585 @@
+[
+  {
+    "name": "Crown Zenith",
+    "light": "N/A",
+    "heavy": "N/A",
+    "cards": [
+      {
+        "name": "Comfey",
+        "type": "Character Rare",
+        "psa10": 26,
+        "psa9": 9,
+        "pop10": 52,
+        "pop9": 37,
+        "raw": 3.12
+      },
+      {
+        "name": "Eevee V",
+        "type": "V",
+        "psa10": 31,
+        "psa9": 17,
+        "pop10": 70,
+        "pop9": 50,
+        "raw": 1.22
+      },
+      {
+        "name": "Solrock",
+        "type": "Character Rare",
+        "psa10": 89,
+        "psa9": 10,
+        "pop10": 17,
+        "pop9": 34,
+        "raw": 1.97
+      },
+      {
+        "name": "Altaria",
+        "type": "Character Rare",
+        "psa10": 70,
+        "psa9": 15,
+        "pop10": 22,
+        "pop9": 52,
+        "raw": 1.13
+      },
+      {
+        "name": "Oricorio",
+        "type": "Character Rare",
+        "psa10": 24,
+        "psa9": 7,
+        "pop10": 44,
+        "pop9": 58,
+        "raw": 0.92
+      },
+      {
+        "name": "Mareep",
+        "type": "Character Rare",
+        "psa10": 31,
+        "psa9": 17,
+        "pop10": 54,
+        "pop9": 56,
+        "raw": 1.93
+      },
+      {
+        "name": "Kricketune",
+        "type": "Character Rare",
+        "psa10": 16,
+        "psa9": 12,
+        "pop10": 40,
+        "pop9": 56,
+        "raw": 1.25
+      },
+      {
+        "name": "Hisuian Goodra",
+        "type": "Character Rare",
+        "psa10": 22,
+        "psa9": 9,
+        "pop10": 28,
+        "pop9": 30,
+        "raw": 1.22
+      },
+      {
+        "name": "Ditto",
+        "type": "Character Rare",
+        "psa10": 43,
+        "psa9": 14,
+        "pop10": 44,
+        "pop9": 93,
+        "raw": 1.43
+      },
+      {
+        "name": "Drapion V",
+        "type": "V Alternate Art",
+        "psa10": 24,
+        "psa9": 10,
+        "pop10": 180,
+        "pop9": 80,
+        "raw": 8.99
+      },
+      {
+        "name": "Elesa's Sparkle",
+        "type": "Alternate Art Trainer",
+        "psa10": 78,
+        "psa9": 30,
+        "pop10": 402,
+        "pop9": 262,
+        "raw": 25.34
+      },
+      {
+        "name": "Entei V",
+        "type": "V Alternate Art",
+        "psa10": 61,
+        "psa9": 26,
+        "pop10": 1135,
+        "pop9": 423,
+        "raw": 14.18
+      },
+      {
+        "name": "Gardenia's Vigor",
+        "type": "Alternate Art Trainer",
+        "psa10": 40,
+        "psa9": 16,
+        "pop10": 291,
+        "pop9": 129,
+        "raw": 9.11
+      },
+      {
+        "name": "Giratina VSTAR",
+        "type": "VSTAR Alternate Art",
+        "psa10": 219,
+        "psa9": 100,
+        "pop10": 1607,
+        "pop9": 884,
+        "raw": 101.25
+      },
+      {
+        "name": "Glaceon V",
+        "type": "V",
+        "psa10": 19,
+        "psa9": 12,
+        "pop10": 38,
+        "pop9": 29,
+        "raw": 0.94
+      },
+      {
+        "name": "Glaceon VSTAR",
+        "type": "VSTAR Alternate Art",
+        "psa10": 59,
+        "psa9": 31,
+        "pop10": 963,
+        "pop9": 378,
+        "raw": 20.04
+      },
+      {
+        "name": "Hatterene VMAX",
+        "type": "VMAX Alternate Art",
+        "psa10": 24,
+        "psa9": 8,
+        "pop10": 34,
+        "pop9": 5,
+        "raw": 4.03
+      },
+      {
+        "name": "Manaphy",
+        "type": "Character Rare",
+        "psa10": 37,
+        "psa9": 7,
+        "pop10": 54,
+        "pop9": 62,
+        "raw": 3
+      },
+      {
+        "name": "Lapras",
+        "type": "Character Rare",
+        "psa10": 42,
+        "psa9": 16,
+        "pop10": 58,
+        "pop9": 152,
+        "raw": 2.63
+      },
+      {
+        "name": "Latias",
+        "type": "Character Rare",
+        "psa10": 42,
+        "psa9": 14,
+        "pop10": 63,
+        "pop9": 139,
+        "raw": 2.5
+      },
+      {
+        "name": "Thievul",
+        "type": "Character Rare",
+        "psa10": 24,
+        "psa9": 14,
+        "pop10": 42,
+        "pop9": 30,
+        "raw": 1.04
+      },
+      {
+        "name": "Diancie",
+        "type": "Character Rare",
+        "psa10": 29,
+        "psa9": 18,
+        "pop10": 71,
+        "pop9": 35,
+        "raw": 1.02
+      },
+      {
+        "name": "Miltank",
+        "type": "Character Rare",
+        "psa10": 71,
+        "psa9": 14,
+        "pop10": 24,
+        "pop9": 72,
+        "raw": 2.35
+      },
+      {
+        "name": "Bidoof",
+        "type": "Character Rare",
+        "psa10": 34,
+        "psa9": 15,
+        "pop10": 39,
+        "pop9": 59,
+        "raw": 2.45
+      },
+      {
+        "name": "Bibarel",
+        "type": "Character Rare",
+        "psa10": 34,
+        "psa9": 15,
+        "pop10": 36,
+        "pop9": 56,
+        "raw": 2.14
+      },
+      {
+        "name": "Hisuian Samurott VSTAR",
+        "type": "VSTAR Alternate Art",
+        "psa10": 28,
+        "psa9": 17,
+        "pop10": 316,
+        "pop9": 147,
+        "raw": 6.37
+      },
+      {
+        "name": "Hisuian Voltorb",
+        "type": "Character Rare",
+        "psa10": 31,
+        "psa9": 14,
+        "pop10": 25,
+        "pop9": 40,
+        "raw": 0.69
+      },
+      {
+        "name": "Riolu",
+        "type": "Character Rare",
+        "psa10": 44,
+        "psa9": 12,
+        "pop10": 37,
+        "pop9": 85,
+        "raw": 1.15
+      },
+      {
+        "name": "Cheren's Care",
+        "type": "Alternate Art Trainer",
+        "psa10": 22,
+        "psa9": 11,
+        "pop10": 94,
+        "pop9": 27,
+        "raw": 3.53
+      },
+      {
+        "name": "Grant",
+        "type": "Alternate Art Trainer",
+        "psa10": 28,
+        "psa9": 6,
+        "pop10": 80,
+        "pop9": 37,
+        "raw": 2.78
+      },
+      {
+        "name": "Hisuian Zoroark VSTAR",
+        "type": "VSTAR Alternate Art",
+        "psa10": 45,
+        "psa9": 23,
+        "pop10": 689,
+        "pop9": 267,
+        "raw": 17.82
+      },
+      {
+        "name": "Hoopa V",
+        "type": "V Alternate Art",
+        "psa10": 34,
+        "psa9": 19,
+        "pop10": 245,
+        "pop9": 96,
+        "raw": 5.17
+      },
+      {
+        "name": "Irida",
+        "type": "Alternate Art Trainer",
+        "psa10": 49,
+        "psa9": 19,
+        "pop10": 664,
+        "pop9": 312,
+        "raw": 17.92
+      },
+      {
+        "name": "Kyogre V",
+        "type": "V",
+        "psa10": 41,
+        "psa9": 13,
+        "pop10": 14,
+        "pop9": 8,
+        "raw": 0.74
+      },
+      {
+        "name": "Leafeon V",
+        "type": "V",
+        "psa10": 22,
+        "psa9": 12,
+        "pop10": 25,
+        "pop9": 22,
+        "raw": 0.86
+      },
+      {
+        "name": "Leafeon VSTAR",
+        "type": "VSTAR",
+        "psa10": 25,
+        "psa9": 19,
+        "pop10": 87,
+        "pop9": 47,
+        "raw": 1.72
+      },
+      {
+        "name": "Leafeon VSTAR",
+        "type": "VSTAR Alternate Art",
+        "psa10": 62,
+        "psa9": 36,
+        "pop10": 1039,
+        "pop9": 409,
+        "raw": 25.77
+      },
+      {
+        "name": "Lumineon V",
+        "type": "V Alternate Art",
+        "psa10": 39,
+        "psa9": 21,
+        "pop10": 536,
+        "pop9": 236,
+        "raw": 12.14
+      },
+      {
+        "name": "Melony",
+        "type": "Trainer Alternate Art",
+        "psa10": 35,
+        "psa9": 17,
+        "pop10": 229,
+        "pop9": 93,
+        "raw": 8.86
+      },
+      {
+        "name": "Mewtwo VSTAR",
+        "type": "VSTAR Alternate Art",
+        "psa10": 179,
+        "psa9": 80,
+        "pop10": 2028,
+        "pop9": 744,
+        "raw": 70.16
+      },
+      {
+        "name": "Mew V",
+        "type": "V",
+        "psa10": 34,
+        "psa9": 40,
+        "pop10": 60,
+        "pop9": 47,
+        "raw": 1.21
+      },
+      {
+        "name": "Mew V Alternate Art",
+        "type": "V Alternate Art",
+        "psa10": 51,
+        "psa9": 22,
+        "pop10": 424,
+        "pop9": 819,
+        "raw": 6.51
+      },
+      {
+        "name": "Origin Forme Dialga VSTAR",
+        "type": "VSTAR Full Art",
+        "psa10": 116,
+        "psa9": 53,
+        "pop10": 990,
+        "pop9": 561,
+        "raw": 43.82
+      },
+      {
+        "name": "Origin Forme Palkia VSTAR",
+        "type": "VSTAR Full Art",
+        "psa10": 123,
+        "psa9": 52,
+        "pop10": 911,
+        "pop9": 587,
+        "raw": 42.26
+      },
+      {
+        "name": "Pikachu Full Art",
+        "type": "V Alternate Art",
+        "psa10": 73,
+        "psa9": 26,
+        "pop10": 3353,
+        "pop9": 1953,
+        "raw": 15.84
+      },
+      {
+        "name": "Pikachu Character Rare",
+        "type": "Character Rare",
+        "psa10": 50,
+        "psa9": 17,
+        "pop10": 545,
+        "pop9": 703,
+        "raw": 5.01
+      },
+      {
+        "name": "Raikou V Full Art",
+        "type": "V Alternate Art",
+        "psa10": 61,
+        "psa9": 27,
+        "pop10": 935,
+        "pop9": 460,
+        "raw": 24.28
+      },
+      {
+        "name": "Raihan",
+        "type": "Trainer Alternate Art",
+        "psa10": 28,
+        "psa9": 14,
+        "pop10": 94,
+        "pop9": 58,
+        "raw": 5.76
+      },
+      {
+        "name": "Rayquaza V",
+        "type": "V",
+        "psa10": 27,
+        "psa9": 15,
+        "pop10": 41,
+        "pop9": 21,
+        "raw": 0.86
+      },
+      {
+        "name": "Rayquaza VMAX Full Art 101",
+        "type": "VMAX Full Art",
+        "psa10": 29,
+        "psa9": 13,
+        "pop10": 130,
+        "pop9": 25,
+        "raw": 2.05
+      },
+      {
+        "name": "Regigigas V",
+        "type": "V",
+        "psa10": 16,
+        "psa9": 8,
+        "pop10": 13,
+        "pop9": 9,
+        "raw": 0.65
+      },
+      {
+        "name": "Regigigas VSTAR",
+        "type": "VSTAR",
+        "psa10": 24,
+        "psa9": 11,
+        "pop10": 44,
+        "pop9": 11,
+        "raw": 1.14
+      },
+      {
+        "name": "Regigigas VSTAR Full Art",
+        "type": "VSTAR Alternate Art",
+        "psa10": 32,
+        "psa9": 15,
+        "pop10": 401,
+        "pop9": 152,
+        "raw": 9.79
+      },
+      {
+        "name": "Simisear VSTAR",
+        "type": "VSTAR",
+        "psa10": 51,
+        "psa9": 18,
+        "pop10": 33,
+        "pop9": 16,
+        "raw": 13.31
+      },
+      {
+        "name": "Simisear VSTAR Full Art",
+        "type": "VSTAR Full Art",
+        "psa10": 51,
+        "psa9": 18,
+        "pop10": 420,
+        "pop9": 247,
+        "raw": 13.31
+      },
+      {
+        "name": "Suicune V",
+        "type": "V Full Art",
+        "psa10": 71,
+        "psa9": 29,
+        "pop10": 1143,
+        "pop9": 510,
+        "raw": 19.86
+      },
+      {
+        "name": "Volo",
+        "type": "Alternate Art Trainer",
+        "psa10": 28,
+        "psa9": 9,
+        "pop10": 68,
+        "pop9": 36,
+        "raw": 2.24
+      },
+      {
+        "name": "Zacian V",
+        "type": "V",
+        "psa10": 30,
+        "psa9": 9,
+        "pop10": 17,
+        "pop9": 9,
+        "raw": 0.66
+      },
+      {
+        "name": "Zacian V Full Art",
+        "type": "V Alternate Art",
+        "psa10": 45,
+        "psa9": 20,
+        "pop10": 464,
+        "pop9": 237,
+        "raw": 20.88
+      },
+      {
+        "name": "Zacian VSTAR",
+        "type": "VSTAR",
+        "psa10": 19,
+        "psa9": 16,
+        "pop10": 86,
+        "pop9": 32,
+        "raw": 1.73
+      },
+      {
+        "name": "Zamazenta V",
+        "type": "V",
+        "psa10": 16,
+        "psa9": 12,
+        "pop10": 16,
+        "pop9": 16,
+        "raw": 0.86
+      },
+      {
+        "name": "Zamazenta V Full Art",
+        "type": "V Alternate Art",
+        "psa10": 38,
+        "psa9": 20,
+        "pop10": 429,
+        "pop9": 165,
+        "raw": 9.02
+      },
+      {
+        "name": "Zeraora VMAX Full Art",
+        "type": "VMAX Alternate Art",
+        "psa10": 28,
+        "psa9": 12,
+        "pop10": 491,
+        "pop9": 74,
+        "raw": 10.51
+      },
+      {
+        "name": "Zeraora VSTAR Full Art",
+        "type": "VSTAR Alternate Art",
+        "psa10": 36,
+        "psa9": 19,
+        "pop10": 409,
+        "pop9": 197,
+        "raw": 9.49
+      }
+    ]
+  }
+]

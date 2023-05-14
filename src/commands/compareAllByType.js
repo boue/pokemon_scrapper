@@ -13,19 +13,30 @@ export const CompareAllByTypeCommand = new SlashCommandBuilder()
       .addChoices({ name: "Crown Zenith", value: "Crown Zenith" })
       .setRequired(true)
   )
+
+  // Alternate Art Trainer,
+  // V Alternate Art,
+  // VSTAR Alternate Art,
+  // VMAX Alternate Art,
+  // Vstar,
+  // Vmax,
+  // V
+  // Character Rare
   .addStringOption((option) =>
     option
       .setName("type")
       .setDescription("Select the Type")
+      .addChoices({ name: "V Alternate Art", value: "V Alternate Art" })
+      .addChoices({ name: "VMAX Alternate Art", value: "VMAX Alternate Art" })
+      .addChoices({ name: "VSTAR Alternate Art", value: "VSTAR Alternate Art" })
+      .addChoices({
+        name: "Alternate Art Trainer",
+        value: "Alternate Art Trainer",
+      })
+      .addChoices({ name: "Character Rare", value: "Character Rare" })
       .addChoices({ name: "V", value: "V" })
-      .addChoices({ name: "V Full Art", value: "V Full Art" })
-      .addChoices({ name: "Trainer Full Art", value: "Trainer Full Art" })
-      .addChoices({ name: "GG Full Art", value: "GG Full Art" })
-      .addChoices({ name: "V Full Art", value: "V Full Art" })
       .addChoices({ name: "VMAX", value: "VMAX" })
-      .addChoices({ name: "VMAX Full Art", value: "VMAX Full Art" })
       .addChoices({ name: "VSTAR", value: "VSTAR" })
-      .addChoices({ name: "VSTAR Full Art", value: "VSTAR Full Art" })
       .setRequired(true)
   )
   .addStringOption((option) =>
