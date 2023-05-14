@@ -107,7 +107,12 @@ export const execute = async (interaction) => {
           .slice(0, 25);
 
   differencePokemons.forEach((pokemon) => {
-    const tempStr = pokemon[0] + ": " + pokemon[1] + "%" + "\n";
+    let tempStr;
+
+    tempStr =
+      set === "All"
+        ? pokemon[0] + ": from set " + set + " " + pokemon[1] + "%" + "\n"
+        : pokemon[0] + ": " + pokemon[1] + "%" + "\n";
     return (formattedReply += tempStr);
   });
 
