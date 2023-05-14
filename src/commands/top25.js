@@ -12,7 +12,8 @@ export const Top25Command = new SlashCommandBuilder()
         { name: "Base Set 1st Edition", value: "Base Set 1st Edition" },
         { name: "Jungle 1st Edition", value: "Jungle 1st Edition" },
         { name: "Silver Tempest", value: "Silver Tempest" },
-        { name: "Crown Zenith", value: "Crown Zenith" }
+        { name: "Crown Zenith", value: "Crown Zenith" },
+        { name: "All", value: "All" }
       )
       .setRequired(true)
   )
@@ -47,28 +48,63 @@ export const execute = async (interaction) => {
   }
 
   let formattedReply =
-    "\n" +
-    "Top 25 by spread for difference in percentage between " +
-    value1.toUpperCase() +
-    " with " +
-    value2.toUpperCase() +
-    " in set " +
-    set +
-    ":\n";
+    set === "All"
+      ? "\n" +
+        "Top 25 by spread for difference in percentage between " +
+        value1.toUpperCase() +
+        " with " +
+        value2.toUpperCase() +
+        " in all sets we support" +
+        ":\n"
+      : "\n" +
+        "Top 25 by spread for difference in percentage between " +
+        value1.toUpperCase() +
+        " with " +
+        value2.toUpperCase() +
+        " in set " +
+        set +
+        ":\n";
 
-  const differencePokemons = data
-    .find((d) => d.name === set)
-    ?.cards.map((card) => {
-      const result1 = card[value1] - 20;
-      const result2 = card[value2];
-      const result = (result1 / result2) * 100 - 100;
+  const differencePokemons =
+    set === "All"
+      ? data
+          .map((d) => d.cards)
+          .flat()
+          ?.filter((card) => card.psa9 !== null && card.psa10 !== null)
+          .map((card) => {
+            const result1 = card[value1] - 20;
+            const result2 = card[value2];
+            const result = (result1 / result2) * 100 - 100;
 
-      return [card["name"], result.toFixed(0)];
-    })
-    .sort(function (a, b) {
-      return b[1] - a[1];
-    })
-    .slice(0, 25);
+            return [card.name, result.toFixed(0)];
+          })
+          .reduce(
+            (uniqueArr, currentArr) => {
+              const stringified = JSON.stringify(currentArr);
+              if (!uniqueArr.set.has(stringified)) {
+                uniqueArr.set.add(stringified);
+                uniqueArr.arr.push(currentArr);
+              }
+              return uniqueArr;
+            },
+            { set: new Set(), arr: [] }
+          )
+          .arr.sort((a, b) => b[1] - a[1])
+          .slice(0, 25)
+      : data
+          .find((d) => d.name === set)
+          ?.cards?.filter((card) => card.psa9 !== null && card.psa10 !== null)
+          .map((card) => {
+            const result1 = card[value1] - 20;
+            const result2 = card[value2];
+            const result = (result1 / result2) * 100 - 100;
+
+            return [card["name"], result.toFixed(0)];
+          })
+          .sort(function (a, b) {
+            return b[1] - a[1];
+          })
+          .slice(0, 25);
 
   differencePokemons.forEach((pokemon) => {
     const tempStr = pokemon[0] + ": " + pokemon[1] + "%" + "\n";
