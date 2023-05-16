@@ -1,333 +1,333 @@
 const dataList = [
-  // {
-  //   name: "Base Set 1st Edition",
-  //   light: 20.75,
-  //   heavy: 21.23,
-  //   cards: [
-  //     {
-  //       name: "Charizard Holo 4",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Charizard+Holo+4",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/charizard-holo-1st-edition-4/605253",
-  //     },
-  //     {
-  //       name: "Blastoise Holo 2",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Blastoise+Holo+2",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/blastoise-holo-1st-edition-2/605247",
-  //     },
-  //     {
-  //       name: "Venusaur Holo 15",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "  https://www.pokedata.io/card/Base+Set+1st+Edition/Venusaur+Holo+15",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/venusaur-holo-1st-edition-15/605284",
-  //     },
-  //     {
-  //       name: "Nidoking Holo 11",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Nidoking+Holo+11",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/nidoking-holo-1st-edition-11/605272",
-  //     },
-  //     {
-  //       name: "Chansey Holo 3",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Chansey+Holo+3",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/chansey-holo-1st-edition-3/605249",
-  //     },
-  //     {
-  //       name: "Clefairy Holo 5",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Clefairy+Holo+5",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/clefairy-holo-1st-edition-5/605255",
-  //     },
-  //     {
-  //       name: "Alakazam Holo 1",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Alakazam+Holo+1",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/alakazam-holo-1st-edition-1/605243",
-  //     },
-  //     {
-  //       name: "Poliwrath Holo 13",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Poliwrath+Holo+13",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/poliwrath-holo-1st-edition-13/605278",
-  //     },
-  //     {
-  //       name: "Raichu Holo 14",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Raichu+Holo+14",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/raichu-holo-1st-edition-14/605281",
-  //     },
-  //     {
-  //       name: "Ninetales Holo 12",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Ninetales+Holo+12",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/ninetales-holo-1st-edition-12/605274",
-  //     },
-  //     {
-  //       name: "Hitmonchan Holo 7",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Hitmonchan+Holo+7",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/hitmonchan-holo-1st-edition-7/605262",
-  //     },
-  //     {
-  //       name: "Mewtwo Holo 10",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Mewtwo+Holo+10",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/mewtwo-holo-1st-edition-10/605269",
-  //     },
-  //     {
-  //       name: "Zapdos Holo 16",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Zapdos+Holo+16",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/zapdos-holo-1st-edition-16/605286",
-  //     },
-  //     {
-  //       name: "Gyarados Holo 6",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Gyarados+Holo+6",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/gyarados-holo-1st-edition-6/605259",
-  //     },
-  //     {
-  //       name: "Magneton Holo 9",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Magneton+Holo+9",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/magneton-holo-1st-edition-9/605266",
-  //     },
-  //   ],
-  // },
-  // {
-  //   name: "Jungle 1st Edition",
-  //   light: 20.91,
-  //   heavy: 21.12,
-  //   cards: [
-  //     {
-  //       name: "Electrode Holo 2",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Electrode+Holo+2",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/electrode-holo-1st-edition-2/641290",
-  //     },
+  {
+    name: "Base Set 1st Edition",
+    light: 20.75,
+    heavy: 21.23,
+    cards: [
+      {
+        name: "Charizard Holo 4",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Charizard+Holo+4",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/charizard-holo-1st-edition-4/605253",
+      },
+      {
+        name: "Blastoise Holo 2",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Blastoise+Holo+2",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/blastoise-holo-1st-edition-2/605247",
+      },
+      {
+        name: "Venusaur Holo 15",
+        type: "Holo",
+        pokeDataLink:
+          "  https://www.pokedata.io/card/Base+Set+1st+Edition/Venusaur+Holo+15",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/venusaur-holo-1st-edition-15/605284",
+      },
+      {
+        name: "Nidoking Holo 11",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Nidoking+Holo+11",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/nidoking-holo-1st-edition-11/605272",
+      },
+      {
+        name: "Chansey Holo 3",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Chansey+Holo+3",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/chansey-holo-1st-edition-3/605249",
+      },
+      {
+        name: "Clefairy Holo 5",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Clefairy+Holo+5",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/clefairy-holo-1st-edition-5/605255",
+      },
+      {
+        name: "Alakazam Holo 1",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Alakazam+Holo+1",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/alakazam-holo-1st-edition-1/605243",
+      },
+      {
+        name: "Poliwrath Holo 13",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Poliwrath+Holo+13",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/poliwrath-holo-1st-edition-13/605278",
+      },
+      {
+        name: "Raichu Holo 14",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Raichu+Holo+14",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/raichu-holo-1st-edition-14/605281",
+      },
+      {
+        name: "Ninetales Holo 12",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Ninetales+Holo+12",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/ninetales-holo-1st-edition-12/605274",
+      },
+      {
+        name: "Hitmonchan Holo 7",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Hitmonchan+Holo+7",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/hitmonchan-holo-1st-edition-7/605262",
+      },
+      {
+        name: "Mewtwo Holo 10",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Mewtwo+Holo+10",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/mewtwo-holo-1st-edition-10/605269",
+      },
+      {
+        name: "Zapdos Holo 16",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Zapdos+Holo+16",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/zapdos-holo-1st-edition-16/605286",
+      },
+      {
+        name: "Gyarados Holo 6",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Gyarados+Holo+6",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/gyarados-holo-1st-edition-6/605259",
+      },
+      {
+        name: "Magneton Holo 9",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Base+Set+1st+Edition/Magneton+Holo+9",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/magneton-holo-1st-edition-9/605266",
+      },
+    ],
+  },
+  {
+    name: "Jungle 1st Edition",
+    light: 20.91,
+    heavy: 21.12,
+    cards: [
+      {
+        name: "Electrode Holo 2",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Electrode+Holo+2",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/electrode-holo-1st-edition-2/641290",
+      },
 
-  //     {
-  //       name: "Flareon Holo 3",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Flareon+Holo+3",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/flareon-holo-1st-edition-3/641293",
-  //     },
-  //     {
-  //       name: "Jolteon Holo 4",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Jolteon+Holo+4",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/jolteon-holo-1st-edition-4/641296",
-  //     },
+      {
+        name: "Flareon Holo 3",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Flareon+Holo+3",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/flareon-holo-1st-edition-3/641293",
+      },
+      {
+        name: "Jolteon Holo 4",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Jolteon+Holo+4",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/jolteon-holo-1st-edition-4/641296",
+      },
 
-  //     {
-  //       name: "Kangaskhan Holo 5",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Kangaskhan+Holo+5",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/kangaskhan-holo-1st-edition-5/641299",
-  //     },
+      {
+        name: "Kangaskhan Holo 5",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Kangaskhan+Holo+5",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/kangaskhan-holo-1st-edition-5/641299",
+      },
 
-  //     {
-  //       name: "Mr. Mime Holo 6",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Mr.+Holo+6",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/mr-mime-holo-1st-edition-6/641302",
-  //     },
+      {
+        name: "Mr. Mime Holo 6",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Mr.+Holo+6",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/mr-mime-holo-1st-edition-6/641302",
+      },
 
-  //     {
-  //       name: "Nidoqueen Holo 7",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Nidoqueen+Holo+7",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/nidoqueen-holo-1st-edition-7/641305",
-  //     },
+      {
+        name: "Nidoqueen Holo 7",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Nidoqueen+Holo+7",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/nidoqueen-holo-1st-edition-7/641305",
+      },
 
-  //     {
-  //       name: "Pidgeot Holo 8",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Pidgeot+Holo+8",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pidgeot-holo-1st-edition-8/641308",
-  //     },
+      {
+        name: "Pidgeot Holo 8",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Pidgeot+Holo+8",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pidgeot-holo-1st-edition-8/641308",
+      },
 
-  //     {
-  //       name: "Pinsir Holo 9",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Pinsir+Holo+9",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pinsir-holo-1st-edition-9/641311",
-  //     },
+      {
+        name: "Pinsir Holo 9",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Pinsir+Holo+9",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pinsir-holo-1st-edition-9/641311",
+      },
 
-  //     {
-  //       name: "Scyther Holo 10",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Scyther+Holo+10",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/scyther-holo-1st-edition-10/641314",
-  //     },
+      {
+        name: "Scyther Holo 10",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Scyther+Holo+10",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/scyther-holo-1st-edition-10/641314",
+      },
 
-  //     {
-  //       name: "Snorlax Holo 11",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Snorlax+Holo+11",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/snorlax-holo-1st-edition-11/641317",
-  //     },
+      {
+        name: "Snorlax Holo 11",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Snorlax+Holo+11",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/snorlax-holo-1st-edition-11/641317",
+      },
 
-  //     {
-  //       name: "Vaporeon Holo 12",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Vaporeon+Holo+12",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vaporeon-holo-1st-edition-12/641320",
-  //     },
+      {
+        name: "Vaporeon Holo 12",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Vaporeon+Holo+12",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vaporeon-holo-1st-edition-12/641320",
+      },
 
-  //     {
-  //       name: "Venomoth Holo 13",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Venomoth+Holo+13",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/venomoth-holo-1st-edition-13/641323",
-  //     },
+      {
+        name: "Venomoth Holo 13",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Venomoth+Holo+13",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/venomoth-holo-1st-edition-13/641323",
+      },
 
-  //     {
-  //       name: "Victreebel Holo 14",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Victreebel+Holo+14",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/victreebel-holo-1st-edition-14/641326",
-  //     },
+      {
+        name: "Victreebel Holo 14",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Victreebel+Holo+14",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/victreebel-holo-1st-edition-14/641326",
+      },
 
-  //     {
-  //       name: "Vileplume Holo 15",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Vileplume+Holo+15",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vileplume-holo-1st-edition-15/641329",
-  //     },
+      {
+        name: "Vileplume Holo 15",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Vileplume+Holo+15",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vileplume-holo-1st-edition-15/641329",
+      },
 
-  //     {
-  //       name: "Wigglytuff Holo 16",
-  //       type: "Holo",
-  //       pokeDataLink:
-  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Wigglytuff+Holo+16",
-  //       psaLink:
-  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/wigglytuff-holo-1st-edition-16/641332",
-  //     },
-  //   ],
-  // },
+      {
+        name: "Wigglytuff Holo 16",
+        type: "Holo",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Jungle+1st+Edition/Wigglytuff+Holo+16",
+        psaLink:
+          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/wigglytuff-holo-1st-edition-16/641332",
+      },
+    ],
+  },
   {
     name: "Silver Tempest",
     cards: [
-      // {
-      //   name: "Lugia V 186",
-      //   type: "V Alternate Art Ultra Rare",
-      //   pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lugia+V+186",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-v/summary/7653413",
-      // },
-      // {
-      //   name: "Serena 193",
-      //   type: "Trainer Full Art Ultra Rare",
-      //   pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+193",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7729854",
-      // },
-      // {
-      //   name: "Lugia VSTAR 202",
-      //   type: "V Star Secret Rare Rainbow",
-      //   pokeDataLink:
-      //     "https://www.pokedata.io/card/Silver+Tempest/Lugia+VSTAR+202",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-vstar/summary/7704011",
-      // },
-      // {
-      //   name: "Unown V 177",
-      //   type: "V Alternate Full Art Ultra Rare",
-      //   pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-v/summary/7717224",
-      // },
-      // {
-      //   name: "Regidrago V 184",
-      //   type: "V Alternate Full Art Ultra Rare",
-      //   pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-v/summary/7727442",
-      // },
-      // {
-      //   name: "Serena 207",
-      //   type: "Trainer Secret Rare Rainbow",
-      //   pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+207",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7759270",
-      // },
-      // {
-      //   name: "Alolan Vulpix VSTAR 197",
-      //   type: "V Star Secret Rare Rainbow",
-      //   pokeDataLink:
-      //     "https://www.pokedata.io/card/Silver+Tempest/Alolan+Vulpix+VSTAR+197",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-alolan-vulpix-vstar/summary/7732305",
-      // },
-      // {
-      //   name: "Skuntank V 181",
-      //   type: "V Alternate Full Art Ultra Rare",
-      //   pokeDataLink:
-      //     "https://www.pokedata.io/card/Silver+Tempest/Skuntank+V+181",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-skuntank-v/summary/7727443",
-      // },
+      {
+        name: "Lugia V 186",
+        type: "V Alternate Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lugia+V+186",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-v/summary/7653413",
+      },
+      {
+        name: "Serena 193",
+        type: "Trainer Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+193",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7729854",
+      },
+      {
+        name: "Lugia VSTAR 202",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Lugia+VSTAR+202",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-vstar/summary/7704011",
+      },
+      {
+        name: "Unown V 177",
+        type: "V Alternate Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-v/summary/7717224",
+      },
+      {
+        name: "Regidrago V 184",
+        type: "V Alternate Full Art Ultra Rare",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-v/summary/7727442",
+      },
+      {
+        name: "Serena 207",
+        type: "Trainer Secret Rare Rainbow",
+        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+207",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7759270",
+      },
+      {
+        name: "Alolan Vulpix VSTAR 197",
+        type: "V Star Secret Rare Rainbow",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Alolan+Vulpix+VSTAR+197",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-alolan-vulpix-vstar/summary/7732305",
+      },
+      {
+        name: "Skuntank V 181",
+        type: "V Alternate Full Art Ultra Rare",
+        pokeDataLink:
+          "https://www.pokedata.io/card/Silver+Tempest/Skuntank+V+181",
+        psaLink:
+          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-skuntank-v/summary/7727443",
+      },
       {
         name: "Unown VSTAR 199",
         type: "V Star Secret Rare Rainbow",
