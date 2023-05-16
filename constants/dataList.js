@@ -32,1190 +32,1190 @@
 //   "credentials": "include"
 // });
 export const dataList = [
-  {
-    name: "Base Set 1st Edition",
-    light: 20.75,
-    heavy: 21.23,
-    cards: [
-      {
-        name: "Charizard Holo 4",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Charizard+Holo+4",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/charizard-holo-1st-edition-4/605253",
-      },
-      {
-        name: "Blastoise Holo 2",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Blastoise+Holo+2",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/blastoise-holo-1st-edition-2/605247",
-      },
-      {
-        name: "Venusaur Holo 15",
-        type: "Holo",
-        pokeDataLink:
-          "  https://www.pokedata.io/card/Base+Set+1st+Edition/Venusaur+Holo+15",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/venusaur-holo-1st-edition-15/605284",
-      },
-      {
-        name: "Nidoking Holo 11",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Nidoking+Holo+11",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/nidoking-holo-1st-edition-11/605272",
-      },
-      {
-        name: "Chansey Holo 3",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Chansey+Holo+3",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/chansey-holo-1st-edition-3/605249",
-      },
-      {
-        name: "Clefairy Holo 5",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Clefairy+Holo+5",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/clefairy-holo-1st-edition-5/605255",
-      },
-      {
-        name: "Alakazam Holo 1",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Alakazam+Holo+1",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/alakazam-holo-1st-edition-1/605243",
-      },
-      {
-        name: "Poliwrath Holo 13",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Poliwrath+Holo+13",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/poliwrath-holo-1st-edition-13/605278",
-      },
-      {
-        name: "Raichu Holo 14",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Raichu+Holo+14",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/raichu-holo-1st-edition-14/605281",
-      },
-      {
-        name: "Ninetales Holo 12",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Ninetales+Holo+12",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/ninetales-holo-1st-edition-12/605274",
-      },
-      {
-        name: "Hitmonchan Holo 7",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Hitmonchan+Holo+7",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/hitmonchan-holo-1st-edition-7/605262",
-      },
-      {
-        name: "Mewtwo Holo 10",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Mewtwo+Holo+10",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/mewtwo-holo-1st-edition-10/605269",
-      },
-      {
-        name: "Zapdos Holo 16",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Zapdos+Holo+16",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/zapdos-holo-1st-edition-16/605286",
-      },
-      {
-        name: "Gyarados Holo 6",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Gyarados+Holo+6",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/gyarados-holo-1st-edition-6/605259",
-      },
-      {
-        name: "Magneton Holo 9",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Base+Set+1st+Edition/Magneton+Holo+9",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/magneton-holo-1st-edition-9/605266",
-      },
-    ],
-  },
-  {
-    name: "Jungle 1st Edition",
-    light: 20.91,
-    heavy: 21.12,
-    cards: [
-      {
-        name: "Electrode Holo 2",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Electrode+Holo+2",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/electrode-holo-1st-edition-2/641290",
-      },
+  // {
+  //   name: "Base Set 1st Edition",
+  //   light: 20.75,
+  //   heavy: 21.23,
+  //   cards: [
+  //     {
+  //       name: "Charizard Holo 4",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Charizard+Holo+4",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/charizard-holo-1st-edition-4/605253",
+  //     },
+  //     {
+  //       name: "Blastoise Holo 2",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Blastoise+Holo+2",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/blastoise-holo-1st-edition-2/605247",
+  //     },
+  //     {
+  //       name: "Venusaur Holo 15",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "  https://www.pokedata.io/card/Base+Set+1st+Edition/Venusaur+Holo+15",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/venusaur-holo-1st-edition-15/605284",
+  //     },
+  //     {
+  //       name: "Nidoking Holo 11",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Nidoking+Holo+11",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/nidoking-holo-1st-edition-11/605272",
+  //     },
+  //     {
+  //       name: "Chansey Holo 3",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Chansey+Holo+3",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/chansey-holo-1st-edition-3/605249",
+  //     },
+  //     {
+  //       name: "Clefairy Holo 5",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Clefairy+Holo+5",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/clefairy-holo-1st-edition-5/605255",
+  //     },
+  //     {
+  //       name: "Alakazam Holo 1",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Alakazam+Holo+1",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/alakazam-holo-1st-edition-1/605243",
+  //     },
+  //     {
+  //       name: "Poliwrath Holo 13",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Poliwrath+Holo+13",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/poliwrath-holo-1st-edition-13/605278",
+  //     },
+  //     {
+  //       name: "Raichu Holo 14",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Raichu+Holo+14",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/raichu-holo-1st-edition-14/605281",
+  //     },
+  //     {
+  //       name: "Ninetales Holo 12",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Ninetales+Holo+12",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/ninetales-holo-1st-edition-12/605274",
+  //     },
+  //     {
+  //       name: "Hitmonchan Holo 7",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Hitmonchan+Holo+7",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/hitmonchan-holo-1st-edition-7/605262",
+  //     },
+  //     {
+  //       name: "Mewtwo Holo 10",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Mewtwo+Holo+10",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/mewtwo-holo-1st-edition-10/605269",
+  //     },
+  //     {
+  //       name: "Zapdos Holo 16",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Zapdos+Holo+16",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/zapdos-holo-1st-edition-16/605286",
+  //     },
+  //     {
+  //       name: "Gyarados Holo 6",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Gyarados+Holo+6",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/gyarados-holo-1st-edition-6/605259",
+  //     },
+  //     {
+  //       name: "Magneton Holo 9",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Base+Set+1st+Edition/Magneton+Holo+9",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-game/magneton-holo-1st-edition-9/605266",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "Jungle 1st Edition",
+  //   light: 20.91,
+  //   heavy: 21.12,
+  //   cards: [
+  //     {
+  //       name: "Electrode Holo 2",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Electrode+Holo+2",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/electrode-holo-1st-edition-2/641290",
+  //     },
 
-      {
-        name: "Flareon Holo 3",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Flareon+Holo+3",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/flareon-holo-1st-edition-3/641293",
-      },
-      {
-        name: "Jolteon Holo 4",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Jolteon+Holo+4",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/jolteon-holo-1st-edition-4/641296",
-      },
+  //     {
+  //       name: "Flareon Holo 3",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Flareon+Holo+3",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/flareon-holo-1st-edition-3/641293",
+  //     },
+  //     {
+  //       name: "Jolteon Holo 4",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Jolteon+Holo+4",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/jolteon-holo-1st-edition-4/641296",
+  //     },
 
-      {
-        name: "Kangaskhan Holo 5",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Kangaskhan+Holo+5",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/kangaskhan-holo-1st-edition-5/641299",
-      },
+  //     {
+  //       name: "Kangaskhan Holo 5",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Kangaskhan+Holo+5",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/kangaskhan-holo-1st-edition-5/641299",
+  //     },
 
-      {
-        name: "Mr. Mime Holo 6",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Mr.+Holo+6",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/mr-mime-holo-1st-edition-6/641302",
-      },
+  //     {
+  //       name: "Mr. Mime Holo 6",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Mr.+Holo+6",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/mr-mime-holo-1st-edition-6/641302",
+  //     },
 
-      {
-        name: "Nidoqueen Holo 7",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Nidoqueen+Holo+7",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/nidoqueen-holo-1st-edition-7/641305",
-      },
+  //     {
+  //       name: "Nidoqueen Holo 7",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Nidoqueen+Holo+7",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/nidoqueen-holo-1st-edition-7/641305",
+  //     },
 
-      {
-        name: "Pidgeot Holo 8",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Pidgeot+Holo+8",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pidgeot-holo-1st-edition-8/641308",
-      },
+  //     {
+  //       name: "Pidgeot Holo 8",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Pidgeot+Holo+8",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pidgeot-holo-1st-edition-8/641308",
+  //     },
 
-      {
-        name: "Pinsir Holo 9",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Pinsir+Holo+9",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pinsir-holo-1st-edition-9/641311",
-      },
+  //     {
+  //       name: "Pinsir Holo 9",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Pinsir+Holo+9",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/pinsir-holo-1st-edition-9/641311",
+  //     },
 
-      {
-        name: "Scyther Holo 10",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Scyther+Holo+10",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/scyther-holo-1st-edition-10/641314",
-      },
+  //     {
+  //       name: "Scyther Holo 10",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Scyther+Holo+10",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/scyther-holo-1st-edition-10/641314",
+  //     },
 
-      {
-        name: "Snorlax Holo 11",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Snorlax+Holo+11",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/snorlax-holo-1st-edition-11/641317",
-      },
+  //     {
+  //       name: "Snorlax Holo 11",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Snorlax+Holo+11",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/snorlax-holo-1st-edition-11/641317",
+  //     },
 
-      {
-        name: "Vaporeon Holo 12",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Vaporeon+Holo+12",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vaporeon-holo-1st-edition-12/641320",
-      },
+  //     {
+  //       name: "Vaporeon Holo 12",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Vaporeon+Holo+12",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vaporeon-holo-1st-edition-12/641320",
+  //     },
 
-      {
-        name: "Venomoth Holo 13",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Venomoth+Holo+13",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/venomoth-holo-1st-edition-13/641323",
-      },
+  //     {
+  //       name: "Venomoth Holo 13",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Venomoth+Holo+13",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/venomoth-holo-1st-edition-13/641323",
+  //     },
 
-      {
-        name: "Victreebel Holo 14",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Victreebel+Holo+14",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/victreebel-holo-1st-edition-14/641326",
-      },
+  //     {
+  //       name: "Victreebel Holo 14",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Victreebel+Holo+14",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/victreebel-holo-1st-edition-14/641326",
+  //     },
 
-      {
-        name: "Vileplume Holo 15",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Vileplume+Holo+15",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vileplume-holo-1st-edition-15/641329",
-      },
+  //     {
+  //       name: "Vileplume Holo 15",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Vileplume+Holo+15",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/vileplume-holo-1st-edition-15/641329",
+  //     },
 
-      {
-        name: "Wigglytuff Holo 16",
-        type: "Holo",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Jungle+1st+Edition/Wigglytuff+Holo+16",
-        psaLink:
-          "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/wigglytuff-holo-1st-edition-16/641332",
-      },
-    ],
-  },
-  {
-    name: "Silver Tempest",
-    cards: [
-      {
-        name: "Lugia V 186",
-        type: "V Alternate Art Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lugia+V+186",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-v/summary/7653413",
-      },
-      {
-        name: "Serena 193",
-        type: "Trainer Full Art Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+193",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7729854",
-      },
-      {
-        name: "Lugia VSTAR 202",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Lugia+VSTAR+202",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-vstar/summary/7704011",
-      },
-      {
-        name: "Unown V 177",
-        type: "V Alternate Full Art Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-v/summary/7717224",
-      },
-      {
-        name: "Regidrago V 184",
-        type: "V Alternate Full Art Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-v/summary/7727442",
-      },
-      {
-        name: "Serena 207",
-        type: "Trainer Secret Rare Rainbow",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+207",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7759270",
-      },
-      {
-        name: "Alolan Vulpix VSTAR 197",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Alolan+Vulpix+VSTAR+197",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-alolan-vulpix-vstar/summary/7732305",
-      },
-      {
-        name: "Skuntank V 181",
-        type: "V Alternate Full Art Ultra Rare",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Skuntank+V+181",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-skuntank-v/summary/7727443",
-      },
-      {
-        name: "Unown VSTAR 199",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Unown+VSTAR+199",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-vstar/summary/7759260",
-      },
-      {
-        name: "Candice 189",
-        type: "Trainer Full Art Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Candice+189",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-candice/summary/7717484",
-      },
-      {
-        name: "Wallace 194",
-        type: "Trainer Full Art Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Wallace+194",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-wallace/summary/7779542",
-      },
-      {
-        name: "Regieleki VMAX 198",
-        type: "VMAX Secret Rare Rainbow",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Regieleki+VMAX+198",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regieleki-vmax/summary/7763027",
-      },
-      {
-        name: "Regidrago VSTAR 201",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Regidrago+VSTAR+201",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-vstar/summary/7763030",
-      },
-      {
-        name: "Candice 204",
-        type: "Trainer Secret Rare Rainbow",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Candice+204",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-candice/summary/7759261",
-      },
-      {
-        name: "Furisode Girl 205",
-        type: "Trainer Secret Rare Rainbow",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Furisode+Girl+205",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-furisode-girl/summary/7759265",
-      },
-      {
-        name: "Serperior VSTAR 196",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Silver+Tempest/Serperior+VSTAR+196",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serperior-vstar/summary/7727486",
-      },
-      {
-        name: "Lance 206",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lance+206",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lance/summary/7759269",
-      },
-      {
-        name: "Wallace 208",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Wallace+208",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-wallace/summary/7763033",
-      },
-      {
-        name: "Lance 192",
-        type: "Trainer Full Art Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lance+192",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lance/summary/7759259",
-      },
-      // {
-      //   name: "Mawile VSTAR 200",
-      //   type: "V Star Secret Rare Rainbow",
-      //   pokeDataLink:
-      //     "https://www.pokedata.io/card/Silver+Tempest/Mawile+VSTAR+200",
-      //   psaLink:
-      //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-mawile-vstar/summary/7763029",
-      // },
-      {
-        name: "Worker 209",
-        type: "V Star Secret Rare Rainbow",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Worker+209",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-worker/summary/7759272",
-      },
-      {
-        name: "Brandon 203",
-        type: "Trainer Secret Rare Rainbow",
-        pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Brandon+203",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-brandon/summary/7763032",
-      },
-    ],
-  },
+  //     {
+  //       name: "Wigglytuff Holo 16",
+  //       type: "Holo",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Jungle+1st+Edition/Wigglytuff+Holo+16",
+  //       psaLink:
+  //         "https://www.psacard.com/cardfacts/non-sports-cards/1999-nintendo-pokemon-jungle/wigglytuff-holo-1st-edition-16/641332",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "Silver Tempest",
+  //   cards: [
+  //     {
+  //       name: "Lugia V 186",
+  //       type: "V Alternate Art Ultra Rare",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lugia+V+186",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-v/summary/7653413",
+  //     },
+  //     {
+  //       name: "Serena 193",
+  //       type: "Trainer Full Art Ultra Rare",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+193",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7729854",
+  //     },
+  //     {
+  //       name: "Lugia VSTAR 202",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Lugia+VSTAR+202",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lugia-vstar/summary/7704011",
+  //     },
+  //     {
+  //       name: "Unown V 177",
+  //       type: "V Alternate Full Art Ultra Rare",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-v/summary/7717224",
+  //     },
+  //     {
+  //       name: "Regidrago V 184",
+  //       type: "V Alternate Full Art Ultra Rare",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Unown+V+177",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-v/summary/7727442",
+  //     },
+  //     {
+  //       name: "Serena 207",
+  //       type: "Trainer Secret Rare Rainbow",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Serena+207",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serena/summary/7759270",
+  //     },
+  //     {
+  //       name: "Alolan Vulpix VSTAR 197",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Alolan+Vulpix+VSTAR+197",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-alolan-vulpix-vstar/summary/7732305",
+  //     },
+  //     {
+  //       name: "Skuntank V 181",
+  //       type: "V Alternate Full Art Ultra Rare",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Skuntank+V+181",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-skuntank-v/summary/7727443",
+  //     },
+  //     {
+  //       name: "Unown VSTAR 199",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Unown+VSTAR+199",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-unown-vstar/summary/7759260",
+  //     },
+  //     {
+  //       name: "Candice 189",
+  //       type: "Trainer Full Art Ultra Rare",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Candice+189",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-candice/summary/7717484",
+  //     },
+  //     {
+  //       name: "Wallace 194",
+  //       type: "Trainer Full Art Ultra Rare",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Wallace+194",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-wallace/summary/7779542",
+  //     },
+  //     {
+  //       name: "Regieleki VMAX 198",
+  //       type: "VMAX Secret Rare Rainbow",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Regieleki+VMAX+198",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regieleki-vmax/summary/7763027",
+  //     },
+  //     {
+  //       name: "Regidrago VSTAR 201",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Regidrago+VSTAR+201",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-regidrago-vstar/summary/7763030",
+  //     },
+  //     {
+  //       name: "Candice 204",
+  //       type: "Trainer Secret Rare Rainbow",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Candice+204",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-candice/summary/7759261",
+  //     },
+  //     {
+  //       name: "Furisode Girl 205",
+  //       type: "Trainer Secret Rare Rainbow",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Furisode+Girl+205",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-furisode-girl/summary/7759265",
+  //     },
+  //     {
+  //       name: "Serperior VSTAR 196",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink:
+  //         "https://www.pokedata.io/card/Silver+Tempest/Serperior+VSTAR+196",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-serperior-vstar/summary/7727486",
+  //     },
+  //     {
+  //       name: "Lance 206",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lance+206",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lance/summary/7759269",
+  //     },
+  //     {
+  //       name: "Wallace 208",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Wallace+208",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-wallace/summary/7763033",
+  //     },
+  //     {
+  //       name: "Lance 192",
+  //       type: "Trainer Full Art Ultra Rare",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Lance+192",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-lance/summary/7759259",
+  //     },
+  //     // {
+  //     //   name: "Mawile VSTAR 200",
+  //     //   type: "V Star Secret Rare Rainbow",
+  //     //   pokeDataLink:
+  //     //     "https://www.pokedata.io/card/Silver+Tempest/Mawile+VSTAR+200",
+  //     //   psaLink:
+  //     //     "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-mawile-vstar/summary/7763029",
+  //     // },
+  //     {
+  //       name: "Worker 209",
+  //       type: "V Star Secret Rare Rainbow",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Worker+209",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-worker/summary/7759272",
+  //     },
+  //     {
+  //       name: "Brandon 203",
+  //       type: "Trainer Secret Rare Rainbow",
+  //       pokeDataLink: "https://www.pokedata.io/card/Silver+Tempest/Brandon+203",
+  //       psaLink:
+  //         "https://www.psacard.com/auctionprices/tcg-cards/2022-pokemon-sword-shield-silver-tempest/full-art-brandon/summary/7763032",
+  //     },
+  //   ],
+  // },
 
   {
     name: "Crown Zenith",
     cards: [
-      {
-        name: "Comfey",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Comfey+GG14",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-comfey/summary/8152729",
-      },
-      {
-        name: "Eevee V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Eevee+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/eevee-v/summary/8152578",
-      },
-      {
-        name: "Hatterene V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Hatterene+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58005",
-      },
-      {
-        name: "Duraludon V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Duraludon+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/duraludon-v/summary/8152573",
-      },
-      {
-        name: "Duraludon VMAX",
-        type: "VMAX Full Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Duraludon+VMAX",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-duraludon-vmax/summary/8152574",
-      },
-      {
-        name: "Solrock",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Solrock+GG15",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-solrock/summary/8152730",
-      },
-      {
-        name: "Altaria",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Altaria+GG19",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-altaria/summary/8152737",
-      },
-      {
-        name: "Oricorio",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Oricorio+GG04",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-oricorio/summary/8152713",
-      },
-      {
-        name: "Mareep",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Mareep+GG34",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-mareep/summary/8152760",
-      },
-      {
-        name: "Arceus VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Arceus+VSTAR+GG70",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-arceus-vstar/summary/8152804",
-      },
-      {
-        name: "Charizard V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Charizard+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/charizard-v/summary/8152467",
-      },
-      {
-        name: "Charizard VSTAR",
-        type: "VSTAR",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Charizard+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/charizard-vstar/summary/8152468",
-      },
-      {
-        name: "Colress's Experiment",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Colress's+Experiment+GG59",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-colresss-experiment/summary/8152791",
-      },
-      {
-        name: "Adaman",
-        type: "Alternate Art Trainer",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Adaman+GG57",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-adaman/summary/8152789",
-      },
-      {
-        name: "Professor's Research",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Professor's+Research+150",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-professors-research/summary/8152625",
-      },
-      {
-        name: "Friends in Sinnoh",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Friends+in+Sinnoh+149",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-friends-sinnoh/summary/8152624",
-      },
-      {
-        name: "Friends in Hisui",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Friends+in+Hisui+148",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-friends-hisui/summary/8152623",
-      },
-      {
-        name: "Roxanne",
-        type: "Alternate Art Trainer",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Roxanne+GG66",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-roxanne/summary/8152799",
-      },
-      {
-        name: "Cynthia's Ambition",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Cynthia's+Ambition+GG60",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-cynthias-ambition/summary/8152792",
-      },
-      {
-        name: "Darkrai VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Darkrai+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-darkrai-vstar/summary/8152782",
-      },
-      {
-        name: "Deoxys VMAX",
-        type: "VMAX Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Deoxys+VMAX",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-deoxys-vmax/summary/8152777",
-      },
-      {
-        name: "Deoxys VSTAR Alternate Art",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Deoxys+VSTAR+GG46",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-deoxys-vstar/summary/8152778",
-      },
-      {
-        name: "Deoxys",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Deoxys+GG12",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-deoxys/summary/8152726",
-      },
-      {
-        name: "Magnezone",
-        type: "Character Rare",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Magnezone+GG18",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-magnezone/summary/8152735",
-      },
-      {
-        name: "Magmortar",
-        type: "Character Rare",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Magmortar+GG03",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-magmortar/summary/8152711",
-      },
-      {
-        name: "Electivire",
-        type: "Character Rare",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Electivire+GG08",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-electivire/summary/8152719",
-      },
-      {
-        name: "Turtwig",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Turtwig+GG31",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-turtwig/summary/8152756",
-      },
-      {
-        name: "Absol",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Absol+GG16",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-absol/summary/8152732",
-      },
-      {
-        name: "Kricketune",
-        type: "Character Rare",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Kricketune+GG02",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-kricketune/summary/8152710",
-      },
-      {
-        name: "Hisuian Goodra",
-        type: "Character Rare",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Goodra+GG21",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-goodra/summary/8152740",
-      },
-      {
-        name: "Ditto",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Ditto+GG22",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-ditto/summary/8152742",
-      },
+      // {
+      //   name: "Comfey",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Comfey+GG14",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-comfey/summary/8152729",
+      // },
+      // {
+      //   name: "Eevee V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Eevee+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/eevee-v/summary/8152578",
+      // },
+      // {
+      //   name: "Hatterene V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Hatterene+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58005",
+      // },
+      // {
+      //   name: "Duraludon V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Duraludon+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/duraludon-v/summary/8152573",
+      // },
+      // {
+      //   name: "Duraludon VMAX",
+      //   type: "VMAX Full Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Duraludon+VMAX",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-duraludon-vmax/summary/8152574",
+      // },
+      // {
+      //   name: "Solrock",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Solrock+GG15",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-solrock/summary/8152730",
+      // },
+      // {
+      //   name: "Altaria",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Altaria+GG19",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-altaria/summary/8152737",
+      // },
+      // {
+      //   name: "Oricorio",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Oricorio+GG04",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-oricorio/summary/8152713",
+      // },
+      // {
+      //   name: "Mareep",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Mareep+GG34",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-mareep/summary/8152760",
+      // },
+      // {
+      //   name: "Arceus VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Arceus+VSTAR+GG70",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-arceus-vstar/summary/8152804",
+      // },
+      // {
+      //   name: "Charizard V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Charizard+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/charizard-v/summary/8152467",
+      // },
+      // {
+      //   name: "Charizard VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Charizard+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/charizard-vstar/summary/8152468",
+      // },
+      // {
+      //   name: "Colress's Experiment",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Colress's+Experiment+GG59",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-colresss-experiment/summary/8152791",
+      // },
+      // {
+      //   name: "Adaman",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Adaman+GG57",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-adaman/summary/8152789",
+      // },
+      // {
+      //   name: "Professor's Research",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Professor's+Research+150",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-professors-research/summary/8152625",
+      // },
+      // {
+      //   name: "Friends in Sinnoh",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Friends+in+Sinnoh+149",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-friends-sinnoh/summary/8152624",
+      // },
+      // {
+      //   name: "Friends in Hisui",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Friends+in+Hisui+148",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-friends-hisui/summary/8152623",
+      // },
+      // {
+      //   name: "Roxanne",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Roxanne+GG66",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-roxanne/summary/8152799",
+      // },
+      // {
+      //   name: "Cynthia's Ambition",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Cynthia's+Ambition+GG60",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-cynthias-ambition/summary/8152792",
+      // },
+      // {
+      //   name: "Darkrai VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Darkrai+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-darkrai-vstar/summary/8152782",
+      // },
+      // {
+      //   name: "Deoxys VMAX",
+      //   type: "VMAX Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Deoxys+VMAX",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-deoxys-vmax/summary/8152777",
+      // },
+      // {
+      //   name: "Deoxys VSTAR Alternate Art",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Deoxys+VSTAR+GG46",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-deoxys-vstar/summary/8152778",
+      // },
+      // {
+      //   name: "Deoxys",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Deoxys+GG12",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-deoxys/summary/8152726",
+      // },
+      // {
+      //   name: "Magnezone",
+      //   type: "Character Rare",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Magnezone+GG18",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-magnezone/summary/8152735",
+      // },
+      // {
+      //   name: "Magmortar",
+      //   type: "Character Rare",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Magmortar+GG03",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-magmortar/summary/8152711",
+      // },
+      // {
+      //   name: "Electivire",
+      //   type: "Character Rare",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Electivire+GG08",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-electivire/summary/8152719",
+      // },
+      // {
+      //   name: "Turtwig",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Turtwig+GG31",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-turtwig/summary/8152756",
+      // },
+      // {
+      //   name: "Absol",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Absol+GG16",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-absol/summary/8152732",
+      // },
+      // {
+      //   name: "Kricketune",
+      //   type: "Character Rare",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Kricketune+GG02",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-kricketune/summary/8152710",
+      // },
+      // {
+      //   name: "Hisuian Goodra",
+      //   type: "Character Rare",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Goodra+GG21",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-goodra/summary/8152740",
+      // },
+      // {
+      //   name: "Ditto",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Ditto+GG22",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-ditto/summary/8152742",
+      // },
 
-      {
-        name: "Drapion V",
-        type: "V Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Drapion+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-drapion-v/summary/8152781",
-      },
-      {
-        name: "Elesa's Sparkle",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Elesa's+Sparkle+147",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-elesas-sparkle/summary/8152622",
-      },
-      {
-        name: "Entei V",
-        type: "V Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Entei+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-entei-v/summary/8152765",
-      },
-      {
-        name: "Gardenia's Vigor",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Gardenia's+Vigor",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-gardenias-vigor/summary/8152793",
-      },
-      {
-        name: "Giratina VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Giratina+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-giratina-vstar/summary/8152803",
-      },
-      {
-        name: "Glaceon V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Glaceon+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/glaceon-v/summary/8152503",
-      },
-      {
-        name: "Glaceon VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Glaceon+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-glaceon-vstar/summary/8152772",
-      },
+      // {
+      //   name: "Drapion V",
+      //   type: "V Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Drapion+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-drapion-v/summary/8152781",
+      // },
+      // {
+      //   name: "Elesa's Sparkle",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Elesa's+Sparkle+147",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-elesas-sparkle/summary/8152622",
+      // },
+      // {
+      //   name: "Entei V",
+      //   type: "V Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Entei+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-entei-v/summary/8152765",
+      // },
+      // {
+      //   name: "Gardenia's Vigor",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Gardenia's+Vigor",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-gardenias-vigor/summary/8152793",
+      // },
+      // {
+      //   name: "Giratina VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Giratina+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-giratina-vstar/summary/8152803",
+      // },
+      // {
+      //   name: "Glaceon V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Glaceon+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/glaceon-v/summary/8152503",
+      // },
+      // {
+      //   name: "Glaceon VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Glaceon+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-glaceon-vstar/summary/8152772",
+      // },
 
+      // {
+      //   name: "Hatterene VMAX",
+      //   type: "VMAX Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Hatterene+VMAX",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hatterene-vmax/summary/8152532",
+      // },
+      // {
+      //   name: "Manaphy",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Manaphy+GG06",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-manaphy/summary/8152715",
+      // },
+      // {
+      //   name: "Lapras",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Lapras+GG05",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-lapras/summary/8152714",
+      // },
+      // {
+      //   name: "Latias",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Latias+GG20",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-latias/summary/8152739",
+      // },
+      // {
+      //   name: "Thievul",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Thievul+GG17",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-thievul/summary/8152733",
+      // },
+      // {
+      //   name: "Diancie",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Diancie+GG13",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-diancie/summary/8152727",
+      // },
+      // {
+      //   name: "Miltank",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Miltank+GG24",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-miltank/summary/8152745",
+      // },
+      // {
+      //   name: "Bidoof",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Bidoof+GG29",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-bidoof/summary/8152753",
+      // },
+      // {
+      //   name: "Bibarel",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Bibarel+GG25",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-bibarel/summary/8152746",
+      // },
+      // {
+      //   name: "Hisuian Samurott VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Samurott+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-samurott-vstar/summary/8152784",
+      // },
+      // {
+      //   name: "Hisuian Voltorb",
+      //   type: "Character Rare",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Voltorb",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-voltorb/summary/8152708",
+      // },
+      // {
+      //   name: "Riolu",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Riolu+GG26",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-riolu/summary/8152748",
+      // },
+      // {
+      //   name: "Cheren's Care",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Cheren's+Care+GG58",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-cherens-care/summary/8152790",
+      // },
+      // {
+      //   name: "Grant",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Grant+GG62",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-grant/summary/8152794",
+      // },
+      // {
+      //   name: "Hisuian Zoroark VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Zoroark+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-zoroark-vstar/summary/8152788",
+      // },
+      // {
+      //   name: "Hoopa V",
+      //   type: "V Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Hoopa+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hoopa-v/summary/8152785",
+      // },
+      // {
+      //   name: "Irida",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Irida+GG63",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-irida/summary/8152795",
+      // },
+      // {
+      //   name: "Kyogre V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Kyogre+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/kyogre-v/summary/8152502",
+      // },
+      // {
+      //   name: "Leafeon V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Leafeon+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/leafeon-v/summary/8152460",
+      // },
+      // {
+      //   name: "Leafeon VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Leafeon+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/leafeon-vstar/summary/8152461",
+      // },
+      // {
+      //   name: "Leafeon VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Leafeon+VSTAR+GG35",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-leafeon-vstar/summary/8152762",
+      // },
+      // {
+      //   name: "Lumineon V",
+      //   type: "V Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Lumineon+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-lumineon-v/summary/8152770",
+      // },
+      // {
+      //   name: "Melony",
+      //   type: "Trainer Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Melony+GG64",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-melony/summary/8152797",
+      // },
+      // {
+      //   name: "Mewtwo VSTAR",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Mewtwo+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-mewtwo-vstar/summary/8152776",
+      // },
+      // {
+      //   name: "Mew V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Mew+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/mew-v/summary/8152526",
+      // },
       {
-        name: "Hatterene VMAX",
-        type: "VMAX Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Hatterene+VMAX",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hatterene-vmax/summary/8152532",
-      },
-      {
-        name: "Manaphy",
+        name: "Mew V GG",
         type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Manaphy+GG06",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-manaphy/summary/8152715",
-      },
-      {
-        name: "Lapras",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Lapras+GG05",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-lapras/summary/8152714",
-      },
-      {
-        name: "Latias",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Latias+GG20",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-latias/summary/8152739",
-      },
-      {
-        name: "Thievul",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Thievul+GG17",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-thievul/summary/8152733",
-      },
-      {
-        name: "Diancie",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Diancie+GG13",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-diancie/summary/8152727",
-      },
-      {
-        name: "Miltank",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Miltank+GG24",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-miltank/summary/8152745",
-      },
-      {
-        name: "Bidoof",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Bidoof+GG29",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-bidoof/summary/8152753",
-      },
-      {
-        name: "Bibarel",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Bibarel+GG25",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-bibarel/summary/8152746",
-      },
-      {
-        name: "Hisuian Samurott VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Samurott+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-samurott-vstar/summary/8152784",
-      },
-      {
-        name: "Hisuian Voltorb",
-        type: "Character Rare",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Voltorb",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-voltorb/summary/8152708",
-      },
-      {
-        name: "Riolu",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Riolu+GG26",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-riolu/summary/8152748",
-      },
-      {
-        name: "Cheren's Care",
-        type: "Alternate Art Trainer",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Cheren's+Care+GG58",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-cherens-care/summary/8152790",
-      },
-      {
-        name: "Grant",
-        type: "Alternate Art Trainer",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Grant+GG62",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-grant/summary/8152794",
-      },
-      {
-        name: "Hisuian Zoroark VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Hisuian+Zoroark+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hisuian-zoroark-vstar/summary/8152788",
-      },
-      {
-        name: "Hoopa V",
-        type: "V Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Hoopa+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-hoopa-v/summary/8152785",
-      },
-      {
-        name: "Irida",
-        type: "Alternate Art Trainer",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Irida+GG63",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-irida/summary/8152795",
-      },
-      {
-        name: "Kyogre V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Kyogre+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/kyogre-v/summary/8152502",
-      },
-      {
-        name: "Leafeon V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Leafeon+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/leafeon-v/summary/8152460",
-      },
-      {
-        name: "Leafeon VSTAR",
-        type: "VSTAR",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Leafeon+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/leafeon-vstar/summary/8152461",
-      },
-      {
-        name: "Leafeon VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Leafeon+VSTAR+GG35",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-leafeon-vstar/summary/8152762",
-      },
-      {
-        name: "Lumineon V",
-        type: "V Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Lumineon+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-lumineon-v/summary/8152770",
-      },
-      {
-        name: "Melony",
-        type: "Trainer Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Melony+GG64",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-melony/summary/8152797",
-      },
-      {
-        name: "Mewtwo VSTAR",
-        type: "VSTAR Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Mewtwo+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-mewtwo-vstar/summary/8152776",
-      },
-      {
-        name: "Mew V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Mew+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/mew-v/summary/8152526",
-      },
-      {
-        name: "Mew V Alternate Art",
-        type: "V Alternate Art",
         pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Mew+GG10",
         psaLink:
           "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-mew/summary/8152723",
       },
-      {
-        name: "Origin Forme Dialga VSTAR",
-        type: "VSTAR Full Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Origin+Forme+Dialga+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-origin-forme-dialga-vstar/summary/8152801",
-      },
-      {
-        name: "Origin Forme Palkia VSTAR",
-        type: "VSTAR Full Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Origin+Forme+Palkia+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-origin-forme-palkia-vstar/summary/8152800",
-      },
-      {
-        name: "Pikachu Full Art",
-        type: "V Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Pikachu",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-pikachu/summary/8152638",
-      },
-      {
-        name: "Pikachu Character Rare",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Pikachu+GG30",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-pikachu/summary/8152754",
-      },
-      {
-        name: "Raikou V Full Art",
-        type: "V Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Raikou+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-raikou-v/summary/8152773",
-      },
-      {
-        name: "Raihan",
-        type: "Trainer Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Raihan+GG65",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-raihan/summary/8152798",
-      },
-      {
-        name: "Rayquaza V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Rayquaza+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/rayquaza-v/summary/8152570",
-      },
-      {
-        name: "Rayquaza VMAX Full Art 101",
-        type: "VMAX Full Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Rayquaza+VMAX+101",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-rayquaza-vmax/summary/8152571",
-      },
+      // {
+      //   name: "Origin Forme Dialga VSTAR",
+      //   type: "VSTAR Full Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Origin+Forme+Dialga+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-origin-forme-dialga-vstar/summary/8152801",
+      // },
+      // {
+      //   name: "Origin Forme Palkia VSTAR",
+      //   type: "VSTAR Full Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Origin+Forme+Palkia+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-origin-forme-palkia-vstar/summary/8152800",
+      // },
+      // {
+      //   name: "Pikachu Full Art",
+      //   type: "V Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Pikachu",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-pikachu/summary/8152638",
+      // },
+      // {
+      //   name: "Pikachu Character Rare",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Pikachu+GG30",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-pikachu/summary/8152754",
+      // },
+      // {
+      //   name: "Raikou V A",
+      //   type: "V Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Raikou+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-raikou-v/summary/8152773",
+      // },
+      // {
+      //   name: "Raihan",
+      //   type: "Trainer Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Raihan+GG65",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-raihan/summary/8152798",
+      // },
+      // {
+      //   name: "Rayquaza V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Rayquaza+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/rayquaza-v/summary/8152570",
+      // },
+      // {
+      //   name: "Rayquaza VMAX Full Art 101",
+      //   type: "VMAX Full Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Rayquaza+VMAX+101",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-rayquaza-vmax/summary/8152571",
+      // },
 
-      {
-        name: "Regigigas V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Regigigas+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/regigigas-v/summary/8152585",
-      },
-      {
-        name: "Regigigas VSTAR",
-        type: "VSTAR",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Regigigas+VSTAR+114",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/regigigas-vstar/summary/8152586",
-      },
-      {
-        name: "Regigigas VSTAR Full Art",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Regigigas+VSTAR+GG55",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-regigigas-vstar/summary/8152787",
-      },
+      // {
+      //   name: "Regigigas V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Regigigas+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/regigigas-v/summary/8152585",
+      // },
+      // {
+      //   name: "Regigigas VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Regigigas+VSTAR+114",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/regigigas-vstar/summary/8152586",
+      // },
+      // {
+      //   name: "Regigigas VSTAR Full Art",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Regigigas+VSTAR+GG55",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-regigigas-vstar/summary/8152787",
+      // },
 
-      {
-        name: "Simisear VSTAR",
-        type: "VSTAR",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Simisear+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/simisear-vstar/summary/8152474",
-      },
-      {
-        name: "Simisear VSTAR Full Art",
-        type: "VSTAR Full Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Simisear+VSTAR+GG37",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-simisear-vstar/summary/8152767",
-      },
+      // {
+      //   name: "Simisear VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Simisear+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/simisear-vstar/summary/8152474",
+      // },
+      // {
+      //   name: "Simisear VSTAR Full Art",
+      //   type: "VSTAR Full Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Simisear+VSTAR+GG37",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-simisear-vstar/summary/8152767",
+      // },
 
       {
         name: "Suicune V",
-        type: "V Full Art",
+        type: "V Alternate Art",
         pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Suicune+V",
         psaLink:
           "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-suicune-v/summary/8152769",
       },
 
-      {
-        name: "Volo",
-        type: "Alternate Art Trainer",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Volo",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-volo/summary/8152626",
-      },
-      {
-        name: "Zacian V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Zacian+V+095",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zacian-v/summary/8152564",
-      },
-      {
-        name: "Zacian V Full Art",
-        type: "V Alternate Art",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Zacian+V+GG48",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zacian-v/summary/8152780",
-      },
-      {
-        name: "Zacian VSTAR",
-        type: "VSTAR",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zacian+VSTAR+096",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zacian-vstar/summary/8152565",
-      },
-      {
-        name: "Zamazenta V",
-        type: "V",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zamazenta+V+098",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zamazenta-v/summary/8152567",
-      },
-      {
-        name: "Zamazenta V Full Art",
-        type: "V Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zamazenta+V+GG54",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zamazenta-v/summary/8152786",
-      },
-      {
-        name: "Zeraora VMAX Full Art",
-        type: "VMAX Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VMAX+GG42",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zeraora-vmax/summary/8152774",
-      },
-      {
-        name: "Zeraora VSTAR Full Art",
-        type: "VSTAR Alternate Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VSTAR+GG43",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zeraora-vstar/summary/8152775",
-      },
-      {
-        name: "Lunatone",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Lunatone+GG11",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-lunatone/summary/8152724",
-      },
-      {
-        name: "Zeraora VSTAR",
-        type: "VSTAR",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VSTAR+055",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zeraora-vstar/summary/8152521",
-      },
-      {
-        name: "Zamazenta VSTAR",
-        type: "VSTAR",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zamazenta+VSTAR+099",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zamazenta-vstar/summary/8152568",
-      },
-      {
-        name: "Zeraora V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Zeraora+V+053",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zeraora-v/summary/8152519",
-      },
-      {
-        name: "Zeraora VMAX",
-        type: "VMAX",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VMAX+054",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zeraora-vmax/summary/8152520",
-      },
-      {
-        name: "Volcanion",
-        type: "Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Volcanion",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58135",
-      },
-      {
-        name: "Volcarona",
-        type: "Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Volcarona",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58048",
-      },
-      {
-        name: "Stoutland V",
-        type: "Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Stoutland+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58043",
-      },
-      {
-        name: "Rotom V",
-        type: "Ultra Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Rotom+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58034",
-      },
-      {
-        name: "Rotom VSTAR",
-        type: "VSTAR",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Rotom+VSTAR",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/rotom-vstar/summary/8152512",
-      },
-      {
-        name: "Simisear V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Simisear+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/simisear-v/summary/8152472",
-      },
-      {
-        name: "Rayquaza VMAX Full Art 102",
-        type: "VMAX Full Art",
-        pokeDataLink:
-          "https://www.pokedata.io/card/Crown+Zenith/Rayquaza+VMAX+102",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-rayquaza-vmax/summary/8152572",
-      },
-      {
-        name: "Keldeo",
-        type: "Character Rare",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Keldeo+GG07",
-        psaLink:
-          "https://www.psacard.com/errors?aspxerrorpath=/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-keldeo/summary/8152717",
-      },
-      {
-        name: "Greedent V",
-        type: "V",
-        pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Greedent+V",
-        psaLink:
-          "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/greedent-v/summary/8152592",
-      },
+      // {
+      //   name: "Volo",
+      //   type: "Alternate Art Trainer",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Volo",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-volo/summary/8152626",
+      // },
+      // {
+      //   name: "Zacian V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Zacian+V+095",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zacian-v/summary/8152564",
+      // },
+      // {
+      //   name: "Zacian V A",
+      //   type: "V Alternate Art",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Zacian+V+GG48",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zacian-v/summary/8152780",
+      // },
+      // {
+      //   name: "Zacian VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zacian+VSTAR+096",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zacian-vstar/summary/8152565",
+      // },
+      // {
+      //   name: "Zamazenta V",
+      //   type: "V",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zamazenta+V+098",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zamazenta-v/summary/8152567",
+      // },
+      // {
+      //   name: "Zamazenta V A",
+      //   type: "V Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zamazenta+V+GG54",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zamazenta-v/summary/8152786",
+      // },
+      // {
+      //   name: "Zeraora VMAX Full Art",
+      //   type: "VMAX Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VMAX+GG42",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zeraora-vmax/summary/8152774",
+      // },
+      // {
+      //   name: "Zeraora VSTAR Full Art",
+      //   type: "VSTAR Alternate Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VSTAR+GG43",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-zeraora-vstar/summary/8152775",
+      // },
+      // {
+      //   name: "Lunatone",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Lunatone+GG11",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-lunatone/summary/8152724",
+      // },
+      // {
+      //   name: "Zeraora VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VSTAR+055",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zeraora-vstar/summary/8152521",
+      // },
+      // {
+      //   name: "Zamazenta VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zamazenta+VSTAR+099",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zamazenta-vstar/summary/8152568",
+      // },
+      // {
+      //   name: "Zeraora V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Zeraora+V+053",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zeraora-v/summary/8152519",
+      // },
+      // {
+      //   name: "Zeraora VMAX",
+      //   type: "VMAX",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Zeraora+VMAX+054",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/zeraora-vmax/summary/8152520",
+      // },
+      // {
+      //   name: "Volcanion",
+      //   type: "Ultra Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Volcanion",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58135",
+      // },
+      // {
+      //   name: "Volcarona",
+      //   type: "Ultra Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Volcarona",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58048",
+      // },
+      // {
+      //   name: "Stoutland V",
+      //   type: "Ultra Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Stoutland+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58043",
+      // },
+      // {
+      //   name: "Rotom V",
+      //   type: "Ultra Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Rotom+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/ultra-rare/summary/58034",
+      // },
+      // {
+      //   name: "Rotom VSTAR",
+      //   type: "VSTAR",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Rotom+VSTAR",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/rotom-vstar/summary/8152512",
+      // },
+      // {
+      //   name: "Simisear V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Simisear+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/simisear-v/summary/8152472",
+      // },
+      // {
+      //   name: "Rayquaza VMAX Full Art 102",
+      //   type: "VMAX Full Art",
+      //   pokeDataLink:
+      //     "https://www.pokedata.io/card/Crown+Zenith/Rayquaza+VMAX+102",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-rayquaza-vmax/summary/8152572",
+      // },
+      // {
+      //   name: "Keldeo",
+      //   type: "Character Rare",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Keldeo+GG07",
+      //   psaLink:
+      //     "https://www.psacard.com/errors?aspxerrorpath=/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/full-art-keldeo/summary/8152717",
+      // },
+      // {
+      //   name: "Greedent V",
+      //   type: "V",
+      //   pokeDataLink: "https://www.pokedata.io/card/Crown+Zenith/Greedent+V",
+      //   psaLink:
+      //     "https://www.psacard.com/auctionprices/tcg-cards/2023-pokemon-sword-shield-crown-zenith/greedent-v/summary/8152592",
+      // },
     ],
   },
 ];

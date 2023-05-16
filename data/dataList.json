@@ -5,6 +5,24 @@
     "heavy": "N/A",
     "cards": [
       {
+        "name": "Mew V GG",
+        "type": "Character Rare",
+        "psa10": 51,
+        "psa9": 22,
+        "pop10": 424,
+        "pop9": 819,
+        "raw": 6.51
+      },
+      {
+        "name": "Suicune V",
+        "type": "V Alternate Art",
+        "psa10": 71,
+        "psa9": 29,
+        "pop10": 1143,
+        "pop9": 510,
+        "raw": 19.86
+      },
+      {
         "name": "Comfey",
         "type": "Character Rare",
         "psa10": 26,
@@ -374,17 +392,8 @@
         "raw": 1.21
       },
       {
-        "name": "Mew V Alternate Art",
-        "type": "V Alternate Art",
-        "psa10": 51,
-        "psa9": 22,
-        "pop10": 424,
-        "pop9": 819,
-        "raw": 6.51
-      },
-      {
         "name": "Origin Forme Dialga VSTAR",
-        "type": "VSTAR Full Art",
+        "type": "VSTAR Alternate Art",
         "psa10": 116,
         "psa9": 53,
         "pop10": 990,
@@ -393,7 +402,7 @@
       },
       {
         "name": "Origin Forme Palkia VSTAR",
-        "type": "VSTAR Full Art",
+        "type": "VSTAR Alternate Art",
         "psa10": 123,
         "psa9": 52,
         "pop10": 911,
@@ -401,7 +410,7 @@
         "raw": 42.26
       },
       {
-        "name": "Pikachu Full Art",
+        "name": "Pikachu Alternate Art",
         "type": "V Alternate Art",
         "psa10": 73,
         "psa9": 26,
@@ -419,7 +428,7 @@
         "raw": 5.01
       },
       {
-        "name": "Raikou V Full Art",
+        "name": "Raikou V",
         "type": "V Alternate Art",
         "psa10": 61,
         "psa9": 27,
@@ -446,8 +455,8 @@
         "raw": 0.86
       },
       {
-        "name": "Rayquaza VMAX Full Art 101",
-        "type": "VMAX Full Art",
+        "name": "Rayquaza VMAX 101",
+        "type": "VMAX Alternate Art",
         "psa10": 29,
         "psa9": 13,
         "pop10": 130,
@@ -473,7 +482,7 @@
         "raw": 1.14
       },
       {
-        "name": "Regigigas VSTAR Full Art",
+        "name": "Regigigas VSTAR Alternate Art",
         "type": "VSTAR Alternate Art",
         "psa10": 32,
         "psa9": 15,
@@ -491,22 +500,13 @@
         "raw": 13.31
       },
       {
-        "name": "Simisear VSTAR Full Art",
-        "type": "VSTAR Full Art",
+        "name": "Simisear VSTAR Alternate Art",
+        "type": "VSTAR Alternate Art",
         "psa10": 51,
         "psa9": 18,
         "pop10": 420,
         "pop9": 247,
         "raw": 13.31
-      },
-      {
-        "name": "Suicune V",
-        "type": "V Full Art",
-        "psa10": 71,
-        "psa9": 29,
-        "pop10": 1143,
-        "pop9": 510,
-        "raw": 19.86
       },
       {
         "name": "Volo",
@@ -527,7 +527,7 @@
         "raw": 0.66
       },
       {
-        "name": "Zacian V Full Art",
+        "name": "Zacian V Alternate Art",
         "type": "V Alternate Art",
         "psa10": 45,
         "psa9": 20,
@@ -554,7 +554,7 @@
         "raw": 0.86
       },
       {
-        "name": "Zamazenta V Full Art",
+        "name": "Zamazenta V Alternate Art",
         "type": "V Alternate Art",
         "psa10": 38,
         "psa9": 20,
@@ -563,7 +563,7 @@
         "raw": 9.02
       },
       {
-        "name": "Zeraora VMAX Full Art",
+        "name": "Zeraora VMAX Alternate Art",
         "type": "VMAX Alternate Art",
         "psa10": 28,
         "psa9": 12,
@@ -572,7 +572,7 @@
         "raw": 10.51
       },
       {
-        "name": "Zeraora VSTAR Full Art",
+        "name": "Zeraora VSTAR Alternate Art",
         "type": "VSTAR Alternate Art",
         "psa10": 36,
         "psa9": 19,
@@ -1105,7 +1105,7 @@
       },
       {
         "name": "Duraludon VMAX",
-        "type": "VMAX Full Art",
+        "type": "VMAX Alternate Art",
         "psa10": 16,
         "psa9": null,
         "pop10": 43,
@@ -1698,8 +1698,8 @@
         "raw": 0.86
       },
       {
-        "name": "Rayquaza VMAX Full Art 101",
-        "type": "VMAX Full Art",
+        "name": "Rayquaza VMAX Alternate Art 101",
+        "type": "VMAX Alternate Art",
         "psa10": 29,
         "psa9": 13,
         "pop10": 130,
@@ -1750,15 +1750,6 @@
         "pop10": 420,
         "pop9": 247,
         "raw": 13.31
-      },
-      {
-        "name": "Suicune V",
-        "type": "V Full Art",
-        "psa10": 71,
-        "psa9": 29,
-        "pop10": 1143,
-        "pop9": 510,
-        "raw": 19.86
       },
       {
         "name": "Volo",
@@ -1815,7 +1806,7 @@
         "raw": 9.02
       },
       {
-        "name": "Zeraora VMAX Full Art",
+        "name": "Zeraora VMAX Alternate Art",
         "type": "VMAX Alternate Art",
         "psa10": 28,
         "psa9": 12,
@@ -2357,7 +2348,7 @@
       },
       {
         "name": "Duraludon VMAX",
-        "type": "VMAX Full Art",
+        "type": "VMAX Alternate Art",
         "psa10": 16,
         "psa9": null,
         "pop10": 43,
@@ -2959,8 +2950,8 @@
         "raw": 0.86
       },
       {
-        "name": "Rayquaza VMAX Full Art 101",
-        "type": "VMAX Full Art",
+        "name": "Rayquaza VMAX Alternate Art 101",
+        "type": "VMAX Alternate Art",
         "psa10": 29,
         "psa9": 13,
         "pop10": 130,
@@ -3011,15 +3002,6 @@
         "pop10": 420,
         "pop9": 247,
         "raw": 13.31
-      },
-      {
-        "name": "Suicune V",
-        "type": "V Full Art",
-        "psa10": 71,
-        "psa9": 29,
-        "pop10": 1143,
-        "pop9": 510,
-        "raw": 19.86
       },
       {
         "name": "Volo",
@@ -3076,7 +3058,7 @@
         "raw": 9.02
       },
       {
-        "name": "Zeraora VMAX Full Art",
+        "name": "Zeraora VMAX Alternate Art",
         "type": "VMAX Alternate Art",
         "psa10": 28,
         "psa9": 12,
@@ -3193,8 +3175,8 @@
         "raw": 0.57
       },
       {
-        "name": "Rayquaza VMAX Full Art 102",
-        "type": "VMAX Full Art",
+        "name": "Rayquaza VMAX Alternate Art 102",
+        "type": "VMAX Alternate Art",
         "psa10": 28,
         "psa9": 20,
         "pop10": 160,
