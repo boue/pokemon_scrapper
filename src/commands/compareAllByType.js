@@ -11,6 +11,7 @@ export const CompareAllByTypeCommand = new SlashCommandBuilder()
       .setName("set")
       .setDescription("Select the Set")
       .addChoices({ name: "Crown Zenith", value: "Crown Zenith" })
+      .addChoices({ name: "Silver Tempest", value: "Silver Tempest" })
       .setRequired(true)
   )
 
