@@ -68,7 +68,7 @@ export const generateModernDataObject = (data) => {
       : d.name.includes("V Star")
       ? "V Star"
       : "normal";
-    let link = `https://www.pokedata.io/card/Crown+Zenith/${name}`;
+    let link = `https://www.pokedata.io/card/Cosmic+Eclipse/${name}`;
     return { name: `${d.name} ${d.num}`, type, link };
   });
 };
@@ -98,3 +98,20 @@ function transformCards(cards) {
     };
   });
 }
+
+export const generateModernDataObjectWithEncoding = (data) => {
+  return data.map((d) => {
+    let name = `${encodeURIComponent(d.name)}+${d.num}`;
+    let type = d.num.includes("TG")
+      ? "Trainer Gallery"
+      : d.name.includes("V")
+      ? "V"
+      : d.name.includes("VMAX")
+      ? "VMAX"
+      : d.name.includes("V Star")
+      ? "V Star"
+      : "normal";
+    let pokeDataLink = `https://www.pokedata.io/card/Cosmic+Eclipse/${name}`;
+    return { name: `${d.name} ${d.num}`, type, pokeDataLink };
+  });
+};
