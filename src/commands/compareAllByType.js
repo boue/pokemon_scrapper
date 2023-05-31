@@ -14,15 +14,6 @@ export const CompareAllByTypeCommand = new SlashCommandBuilder()
       .addChoices({ name: "Silver Tempest", value: "Silver Tempest" })
       .setRequired(true)
   )
-
-  Alternate Art Trainer,
-  V Alternate Art,
-  VSTAR Alternate Art,
-  VMAX Alternate Art,
-  Vstar,
-  Vmax,
-  V
-  Character Rare
   .addStringOption((option) =>
     option
       .setName("type")
