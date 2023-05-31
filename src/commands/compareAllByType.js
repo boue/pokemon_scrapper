@@ -15,14 +15,14 @@ export const CompareAllByTypeCommand = new SlashCommandBuilder()
       .setRequired(true)
   )
 
-  // Alternate Art Trainer,
-  // V Alternate Art,
-  // VSTAR Alternate Art,
-  // VMAX Alternate Art,
-  // Vstar,
-  // Vmax,
-  // V
-  // Character Rare
+  Alternate Art Trainer,
+  V Alternate Art,
+  VSTAR Alternate Art,
+  VMAX Alternate Art,
+  Vstar,
+  Vmax,
+  V
+  Character Rare
   .addStringOption((option) =>
     option
       .setName("type")
